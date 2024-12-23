@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MdOutlineCancel } from "react-icons/md";
 import { FaListCheck } from "react-icons/fa6";
@@ -9,6 +9,16 @@ import { FaListCheck } from "react-icons/fa6";
 
 
 export const Header = () => {
+
+   
+       const [state,setState]=useState(false)
+       console.log(state);
+       
+
+       
+
+
+
   return (
    <>
       <div className=' max-[400px]:h-[70px] w-full  h-24 bg-gradient-to-t from-zinc-200 to-indigo-400 shadow-xl flex  justify-between items-center  px-1'>
@@ -27,29 +37,32 @@ export const Header = () => {
             <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold' to="about">About</Link>
          </div>
 
-         <div className=''>
-             <FaListCheck/>
+         <div className=' flex justify-center items-center border py-2 px-3 min-[450px]:hidden'>
+             <FaListCheck onClick={()=>{setState(!state)}}/>
          </div>
          
 
       </div>
 
-
+ 
       {/* sidenavbar */}
-      <div className='trans w-full h-full bg-violet-400 z-40 top-0  absolute  pb-14 px-3  text-left border min-[450px]:hidden  '>
+     {
+        state===true?
+        <div className='trans w-full h-full bg-violet-400 z-40 top-0  absolute  pb-14 px-3  text-left border'>
       
       <div className=' w-12 h-12 absolute top-0 right-0  z-50 flex justify-center items-center text-[30px]  text-black'>
-      <MdOutlineCancel/>
+      <MdOutlineCancel onClick={()=>{setState(!state)}} />
       </div>
 
         <div className=' w-full h-11 mt-2 flex flex-col justify-evenly items-start'>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="hotels">Booking..Rooms</Link>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="home">Home</Link>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="contact">Contact</Link>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="about">About</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/hotels">Booking..Rooms</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/home">Home</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/contact">Contact</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/about">About</Link>
          </div>
    
-      </div>
+      </div>:""
+     }
    </>
   )
 }

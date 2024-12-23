@@ -19,10 +19,10 @@ function App() {
       <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="home" element={<Home/>} />
-          <Route path="contact" element={<Contact/>} />
-          <Route path="about" element={<About/>} />
-          <Route path="hotels" element={<Hotels/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/hotels" element={<Hotels/>} />
          
         </Routes>
         <Footer/>
