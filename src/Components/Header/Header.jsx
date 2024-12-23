@@ -31,13 +31,13 @@ export const Header = () => {
          {/* Options */}
 
          <div className=' w-3/6 h-11 flex justify-evenly items-center max-[450px]:hidden'>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 animatedes text-[16px] font-mono text-blue-800 font-semibold' to="hotels">Booking..Rooms</Link>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold' to="home">Home</Link>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold' to="contact">Contact</Link>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold' to="about">About</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 animatedes text-[18px] font-mono text-blue-800 font-semibold' to="hotels">Booking..Rooms</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="home">Home</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="contact">Contact</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="about">About</Link>
          </div>
 
-         <div className=' flex justify-center items-center border py-2 px-3 min-[450px]:hidden'>
+         <div className=' flex justify-center items-center  text-lg text-blue-900 py-2 px-3 min-[450px]:hidden'>
              <FaListCheck onClick={()=>{setState(!state)}}/>
          </div>
          
@@ -48,17 +48,19 @@ export const Header = () => {
       {/* sidenavbar */}
      {
         state===true?
-        <div className='trans w-full h-full bg-violet-400 z-40 top-0  absolute  pb-14 px-3  text-left border'>
+        <div className='trans w-full h-full bg-gradient-to-t from-zinc-200 to-indigo-400  z-40 top-0  absolute  pb-14 px-3  text-left border min-[450px]:hidden'>
       
       <div className=' w-12 h-12 absolute top-0 right-0  z-50 flex justify-center items-center text-[30px]  text-black'>
       <MdOutlineCancel onClick={()=>{setState(!state)}} />
       </div>
-
+           <div className=' w-full  h-8 mt-8  text-xl px-1  '>
+                <span className=' text-blue-900 font-sans font-extrabold'>Booking hotels</span>
+           </div>
         <div className=' w-full h-11 mt-2 flex flex-col justify-evenly items-start'>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/hotels">Booking..Rooms</Link>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/home">Home</Link>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/contact">Contact</Link>
-            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[20px] font-mono text-blue-500 font-semibold' to="/about">About</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold  ' to="/hotels">Booking..Rooms</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold ' to="/home">Home</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold ' to="/contact">Contact</Link>
+            <Link className='  py- px-2 text-left   hover:border hover:text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold ' to="/about">About</Link>
          </div>
    
       </div>:""
