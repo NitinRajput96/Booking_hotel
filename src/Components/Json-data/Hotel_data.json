@@ -1,0 +1,58 @@
+{
+    "hotelDetails":[
+        {
+            "id":1,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/img_1.jpeg",
+            "hot_location":"Alipur",
+            "hot_city":"Delhi",
+            "hot_reviow":"230"
+        },
+        {
+            "id":2,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/img_2.jpeg",
+            "hot_location":"Alipur",
+            "hot_city":"Delhi",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":3,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/img_3.jpeg",
+            "hot_location":"Alipur",
+            "hot_city":"Delhi",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":4,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/img_4.jpeg",
+            "hot_location":"Alipur",
+            "hot_city":"Delhi",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":5,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/img_5.jpeg",
+            "hot_location":"Alipur",
+            "hot_city":"Delhi",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":6,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/img_6.jpeg",
+            "hot_location":"Alipur",
+            "hot_city":"Delhi",
+            "hot_reviow":"230"
+
+        }
+
+    ]
+}
