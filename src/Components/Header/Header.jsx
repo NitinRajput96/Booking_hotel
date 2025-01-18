@@ -31,10 +31,10 @@ export const Header = () => {
          {/* Options */}
 
          <div className=' w-3/6 h-11 flex justify-evenly items-center max-[450px]:hidden'>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 animatedes text-[18px] font-mono text-blue-800 font-semibold' to="hotels">Booking..Rooms</Link>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="home">Home</Link>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="contact">Contact</Link>
-            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="about">About</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 animatedes text-[18px] font-mono text-blue-800 font-semibold' to="/hotels">Booking..Rooms</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="/home">Home</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="/contact">Contact</Link>
+            <Link className=' py-1 px-2  hover:border hover:text-white rounded-md hover:border-blue-900 text-[18px] font-mono text-blue-800 font-semibold' to="/about">About</Link>
          </div>
 
          <div className=' flex justify-center items-center  text-lg text-blue-900 py-2 px-3 min-[450px]:hidden'>
