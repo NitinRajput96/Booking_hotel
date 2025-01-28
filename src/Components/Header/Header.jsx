@@ -6,6 +6,14 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import Hotel_data from "../Json-data/Hotel_data.json"
 import { FaRegUserCircle } from "react-icons/fa";
 
+// 2kindbar
+import { MdNightsStay } from "react-icons/md";
+import { PiAirplaneTakeoffLight } from "react-icons/pi";
+import { LiaHotelSolid } from "react-icons/lia";
+import { FaCar } from "react-icons/fa";
+import { MdOutlineAttractions } from "react-icons/md";
+import { MdOutlineLocalTaxi } from "react-icons/md";
+
 
 
  
@@ -25,14 +33,15 @@ export const Header = () => {
 
   return (
    <>
-      <div className=' max-[400px]:h-[70px] max-[450px]:px-5 w-full  h-[80px] bg-indigo-600 shadow-xl flex  justify-between items-center   '>
+    <div className=' w-full  h-[80px] flex justify-center items-center  bg-indigo-600 border'>
+    <div className=' max-[400px]:h-[70px] max-[450px]:px-5  w-11/12 h-full  bg-indigo-600  flex  justify-between items-center   '>
          
          {/* logo */}
-         <div className='   w-2/6 max-[400px]:w-3/6   flex justify-center items-center  '>
+         <div className='   w-2/6 max-[400px]:w-3/6   flex  justify-between items-center  '>
               <span className='   border max-[400px]:h-[30px] h-11 max-[400px]:text-[14px] max-[400px]:font-extrabold py-1 px-3  bg-transparent text-white font-mono text-2xl font-semibold  rounded-md justify-center items-center flex'> Booking-hotels</span>
          </div>
 
-         <div className=' w-4/6 h-11 rounded-md  flex justify-center gap-3 items-center max-[450px]:hidden '>
+         <div className=' w-4/6 h-11 rounded-md  flex  justify-end gap-3 items-center max-[450px]:hidden '>
            
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-white font-sans font-semibold'>INR</Link>
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center'>
@@ -43,7 +52,7 @@ export const Header = () => {
                  }</Link>
 
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-lg text-white'><span className=' text-[22px]'><FaRegQuestionCircle /></span></Link>
-              <Link className=' w-auto hover:bg-indigo-500 hover:rounded-md h-11 px-3   flex justify-center items-center text-white font-sans font-semibold border rounded-md '>List your property</Link>
+              <Link className=' w-auto hover:bg-indigo-500 hover:rounded-md h-11 px-3 max-[750px]:hidden   flex justify-center items-center text-white font-sans font-semibold border rounded-md '>List your property</Link>
               <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-10  rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white  '>Register</Link>
               <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-10  rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white '>Sign in</Link>
          </div>
@@ -79,6 +88,7 @@ export const Header = () => {
              <FaListCheck onClick={()=>{setState(!state)}}/>
          </div>  */}
       </div>
+    </div>
 
 
 
@@ -106,6 +116,27 @@ export const Header = () => {
    
       </div>:""
      }
+
+
+
+
+
+
+
+
+     <div className=' w-full h-56 bg-indigo-600 flex justify-center '>
+         <div className=' w-11/12 h-24 bg-indigo-600  flex justify-start items-center gap-4'>
+            <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdNightsStay/>Stays</Link>
+            <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
+            <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
+            <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><FaCar/>Car rentals</Link>
+            <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
+            <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
+            
+         </div>
+     
+
+     </div>
    </>
   )
 }

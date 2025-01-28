@@ -10,10 +10,7 @@ export const Home = () => {
  
   return (
 <>
-    <div className=' w-full h-96 bg-gradient-to-t from-zinc-200 to-indigo-600'>
-     
-
-    </div>
+   
 
       <div className=' w-full h-full grid max-[400px]:grid-cols-1 grid-cols-4 justify-items-center p-1 gap-2'>{
             Hotel_data.hotelDetails.map((item,i)=>
