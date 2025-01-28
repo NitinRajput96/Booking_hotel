@@ -52,7 +52,7 @@ export const Header = () => {
                   <div className=' flex justify-center items-center  text-lg text-white py-2  min-[450px]:hidden'>
                         <FaRegUserCircle />
                   </div>
-                  <div className=' flex justify-center items-center  text-lg text-white py-2  min-[450px]:'>
+                  <div className=' flex justify-center items-center  text-lg text-white py-2  min-[450px]:hidden'>
                   <FaListCheck onClick={()=>{setState(!state)}}/>
                   </div> 
             </div>
