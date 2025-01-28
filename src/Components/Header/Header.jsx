@@ -25,7 +25,7 @@ export const Header = () => {
 
   return (
    <>
-      <div className=' max-[400px]:h-[70px] w-full  h-[80px] bg-indigo-600 shadow-xl flex  justify-between items-center   '>
+      <div className=' max-[400px]:h-[70px] max-[450px]:px-5 w-full  h-[80px] bg-indigo-600 shadow-xl flex  justify-between items-center   '>
          
          {/* logo */}
          <div className='   w-2/6 max-[400px]:w-3/6   flex justify-center items-center  '>
