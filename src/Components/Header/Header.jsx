@@ -40,10 +40,10 @@ export const Header = () => {
                    )
                  }</Link>
 
-              <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-lg text-white'><FaRegQuestionCircle /></Link>
-              <Link className=' w-auto hover:bg-indigo-500 hover:rounded-md h-11 px-3   flex justify-center items-center text-white font-sans font-semibold '>List your property</Link>
-              <Link className=' w-auto px-2  hover:bg-indigo-500 hover:rounded-md h-10  rounded-sm  flex justify-center items-center  text-indigo-600 font-sans bg-white '>Register</Link>
-              <Link className=' w-auto px-2  hover:bg-indigo-500 hover:rounded-md h-10  rounded-sm flex justify-center items-center text-indigo-600 font-sans bg-white '>Sign in</Link>
+              <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-lg text-white'><span className=' text-[22px]'><FaRegQuestionCircle /></span></Link>
+              <Link className=' w-auto hover:bg-indigo-500 hover:rounded-md h-11 px-3   flex justify-center items-center text-white font-sans font-semibold border rounded-md '>List your property</Link>
+              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-10  rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white  '>Register</Link>
+              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-10  rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white '>Sign in</Link>
          </div>
 
             <div className=' flex justify-center items-center  text-lg text-white py-2 px-3 min-[450px]:hidden'>
