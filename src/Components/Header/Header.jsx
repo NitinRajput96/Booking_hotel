@@ -125,7 +125,7 @@ export const Header = () => {
 
 
      <div className=' w-full h-56 bg-indigo-600 flex justify-center '>
-         <div className=' w-11/12 h-24 bg-indigo-600  flex justify-start items-center gap-4'>
+         <div className=' w-11/12 h-24 bg-indigo-600  flex justify-start items-center gap-4 flex-wrap flex-col'>
             <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdNightsStay/>Stays</Link>
             <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
             <Link to="/" className=' py-2 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
