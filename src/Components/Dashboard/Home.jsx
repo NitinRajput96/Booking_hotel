@@ -15,8 +15,7 @@ export const Home = () => {
 
     </div>
 
-      <div className=' w-full h-full grid max-[400px]:grid-cols-1 grid-cols-4 justify-items-center p-1
-          gap-2'>{
+      <div className=' w-full h-full grid max-[400px]:grid-cols-1 grid-cols-4 justify-items-center p-1 gap-2'>{
             Hotel_data.hotelDetails.map((item,i)=>
                 <div className='w-auto h-auto flex  flex-col justify-center items-center m-2 rounded-md bg-gray-100 p-2 gap-2'>
 

@@ -54,5 +54,10 @@
 
         }
 
+    ],
+    "logo":[
+        {
+            "logoFlage":"/images/flAG.png"
+        }
     ]
 }
