@@ -4,6 +4,8 @@ import { MdOutlineCancel } from "react-icons/md";
 import { FaListCheck } from "react-icons/fa6";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import Hotel_data from "../Json-data/Hotel_data.json"
+import { FaRegUserCircle } from "react-icons/fa";
+
 
 
  
@@ -46,9 +48,14 @@ export const Header = () => {
               <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-10  rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white '>Sign in</Link>
          </div>
 
-            <div className=' flex justify-center items-center  text-lg text-white py-2 px-3 min-[450px]:hidden'>
-             <FaListCheck onClick={()=>{setState(!state)}}/>
-            </div> 
+            <div className=' flex justify-center items-center gap-4 px-3'>
+                  <div className=' flex justify-center items-center  text-lg text-white py-2  min-[450px]:hidden'>
+                        <FaRegUserCircle />
+                  </div>
+                  <div className=' flex justify-center items-center  text-lg text-white py-2  min-[450px]:hidden'>
+                  <FaListCheck onClick={()=>{setState(!state)}}/>
+                  </div> 
+            </div>
 
 
 
