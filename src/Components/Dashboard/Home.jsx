@@ -12,11 +12,11 @@ export const Home = () => {
 <>
    
 
-      <div className=' w-full h-full grid max-[400px]:grid-cols-1 grid-cols-4 justify-items-center p-1 gap-2'>{
+      <div className=' w-full h-full grid max-[400px]:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center p-1 gap-2'>{
             Hotel_data.hotelDetails.map((item,i)=>
                 <div className='w-auto h-auto flex  flex-col justify-center items-center m-2 rounded-md bg-gray-100 p-2 gap-2'>
 
-                  <img className=' w-96 h-72 border rounded-md   ' src={item.img} alt="" />
+                  <img className=' w-96 sm:h-40 max-sm:96 border rounded-md   ' src={item.img} alt="" />
                   <div className=' w-72 font-mono text-md text-black font-bold flex flex-wrap flex-col '>
                       <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
                       <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
