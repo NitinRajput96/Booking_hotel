@@ -34,7 +34,7 @@ export const Header = () => {
   return (
    <>
     <div className=' w-full  h-[80px] flex justify-center items-center  bg-indigo-600 '>
-    <div className=' max-[400px]:h-[70px] max-[450px]:px-5  w-11/12 h-full  bg-indigo-600  flex  justify-between items-center   '>
+    <div className=' max-[400px]:h-[70px] max-[450px]:px-2  w-11/12 h-full  bg-indigo-600  flex  justify-between items-center   '>
          
          {/* logo */}
          <div className='   w-2/6 max-[400px]:w-3/6   flex  justify-between items-center  '>
@@ -124,8 +124,8 @@ export const Header = () => {
 
 
 
-     <div className=' w-full h-56 bg-indigo-600 flex justify-center py-1 '>
-         <div className=' w-11/12 h-24 bg-indigo-600  flex justify-start items-center max-[450px]:gap-1 gap-4 flex-wrap '>
+     <div className=' w-full h-auto bg-indigo-600 flex justify-center  '>
+         <div className=' w-11/12 h-auto bg-indigo-600  flex justify-start items-center py-2 min-[450]:gap-4 gap-2 flex-wrap '>
             <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdNightsStay/>Stays</Link>
             <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
             <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
