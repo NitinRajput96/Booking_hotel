@@ -125,13 +125,13 @@ export const Header = () => {
 
 
      <div className=' w-full h-56 bg-indigo-600 flex justify-center py-1 '>
-         <div className=' w-11/12 h-24 bg-indigo-600  flex justify-start items-center gap-4 flex-wrap '>
-            <Link to="/" className=' py-1 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdNightsStay/>Stays</Link>
-            <Link to="/" className=' py-1 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
-            <Link to="/" className=' py-1 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
-            <Link to="/" className=' py-1 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><FaCar/>Car rentals</Link>
-            <Link to="/" className=' py-1 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
-            <Link to="/" className=' py-1 px-3 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
+         <div className=' w-11/12 h-24 bg-indigo-600  flex justify-start items-center max-[450px]:gap-1 gap-4 flex-wrap '>
+            <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdNightsStay/>Stays</Link>
+            <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
+            <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
+            <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><FaCar/>Car rentals</Link>
+            <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
+            <Link to="/" className=' py-1 px-3 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
             
          </div>
      
