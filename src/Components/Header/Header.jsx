@@ -132,10 +132,7 @@ export const Header = () => {
             <Link to="/" className=' py-1 px-2 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><FaCar/>Car rentals</Link>
             <Link to="/" className=' py-1 px-2 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
             <Link to="/" className=' py-1 px-2 max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center border gap-1 text-white rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
-            
          </div>
-     
-
      </div>
    </>
   )
