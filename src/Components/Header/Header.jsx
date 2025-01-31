@@ -57,7 +57,7 @@ export const Header = () => {
               <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-8  rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white '>Sign in</Link>
          </div>
 
-            <div className=' flex justify-center items-center gap-4 px-3 ' >
+            <div className=' flex justify-center items-center gap-4 px-3  sm:hidden ' >
                   <div className=' flex justify-center items-center  text-lg text-white py-2'>
                         <FaRegUserCircle /> 
                   </div>
@@ -65,14 +65,6 @@ export const Header = () => {
                   <FaListCheck onClick={()=>{setState(!state)}}/>
                   </div> 
             </div>
-
-
-
-
-
-
-
-
 
 
     {/* Options
