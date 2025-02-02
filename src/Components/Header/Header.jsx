@@ -37,11 +37,11 @@ export const Header = () => {
     <div className='  max-[450px]:px-2  w-11/12 h-full   bg-indigo-600  flex  justify-between items-center border-b '>
          
          {/* logo */}
-         <div className='   w-3/6 max-[450px]:w-2/6     flex  justify-between items-center '>
-              <span className='   border max-[400px]:h-[30px] h-11 max-[500px]:text-[14px] max-[450px]:font-semibold  sm:py-1 px-2  bg-transparent text-white font-mono sm:text-xl font-semibold  rounded-md justify-center items-center flex'> Booking-hotels</span>
+         <div className=' max-sm:w-3/7 sm:w-40  border-b  px-2 text-white rounded-md font-semibold'>
+              <span className=''> Booking-hotels</span>
          </div>
 
-         <div className=' w-4/6  h-11 rounded-md  flex  justify-end gap-3 items-center max-[450px]:hidden '>
+         <div className=' w-5/6  h-11 rounded-md  flex  justify-end gap-3 items-center max-[450px]:hidden '>
            
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-white font-sans font-semibold'>INR</Link>
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center'>
@@ -52,13 +52,13 @@ export const Header = () => {
                  }</Link>
 
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-lg text-white'><span className=' text-[22px]'><FaRegQuestionCircle /></span></Link>
-              <Link className=' w-auto hover:bg-indigo-500 hover:rounded-md h-8 px-2 max-[750px]:hidden   flex justify-center items-center text-white font-sans font-semibold border rounded-md '>List your property</Link>
-              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-8  rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white  '>Register</Link>
-              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md h-8  rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white '>Sign in</Link>
+              <Link className=' border px-2   rounded-md  text-white hover:bg-indigo-500 max-md:hidden'>List your property</Link>
+              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white max-sm:hidden'>Register</Link>
+              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white  max-sm:hidden'>Sign in</Link>
          </div>
 
-            <div className=' flex justify-center items-center gap-4 px-3  sm:hidden ' >
-                  <div className=' flex justify-center items-center  text-lg text-white py-2'>
+            <div className=' flex justify-center items-center gap-4 px-3 ' >
+                  <div className=' flex justify-center items-center  text-lg text-white py-2 sm:hidden'>
                         <FaRegUserCircle /> 
                   </div>
                   <div className=' flex justify-center items-center  text-lg text-white py-2'>
