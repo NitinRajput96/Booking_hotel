@@ -18,8 +18,8 @@ export const Home = () => {
        <div className=' w-full  xl:col-span-2  h-full  bg-gray-200 rounded-md'>
 
           <div className=' w-full h-auto bg-white p-4 '>
-                 <span className=' text-[26px] font-sans font-bold'>Find your next stay </span>
-                 <p className=' text-[13px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
+                 <span className=' text-[24px] font-sans font-extrabold'>Find your next stay </span>
+                 <p className=' text-[14px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
           </div>
          
 
