@@ -23,12 +23,12 @@ export const Home = () => {
                  <p className=' text-[16px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
           </div>
 
-          <div className=' w-full h-72 bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
+          <div className=' w-full h-64 bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
                      <input className=' w-full text-[18px] font-sans font-bold outline-none' type="search" />
                 </div>
-                <div className=' w-full h-14 grid grid-cols-2 gap-2  ' >
+                <div className=' w-full h-14 grid grid-cols-2 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
                             <span className=' text-[13px]  font-sans' >Check in date</span>
                             <span className=' text-[16px] font-bold font-sans'>Tue 18 Feb 2025</span>
