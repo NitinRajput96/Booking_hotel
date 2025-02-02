@@ -91,8 +91,8 @@ export const Header = () => {
       {/* sidenavbar */}
      {
         state===true?
-        <div className=' w-full h-full  flex justify-center fixed top-0 left-0 right-0 bottom-0 px-3  text-left min-[450px]:hidden'>
-         <div className=' trans bg-indigo-800 w-full h-full   p-5  absolute top-0 right-0 left-0 bottom-0 '>
+        <div className=' w-full h-full  fixed top-0 left-0 right-0 bottom-0   text-left min-[450px]:hidden'>
+         <div className=' trans w-full h-full p-5 bg-indigo-600  '>
            
             <div className=' w-full h-8  flex justify-between items-center'>
             <div className=' w-full  h-8   text-xl px-1   '>
