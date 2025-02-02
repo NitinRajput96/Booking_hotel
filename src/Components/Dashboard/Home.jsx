@@ -4,6 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
+import { IoSearchOutline } from "react-icons/io5";
 
 export const Home = () => {
     
@@ -15,11 +16,49 @@ export const Home = () => {
 </div> */}
 
   <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row   xl:p-3   '>
-       <div className=' w-full  xl:col-span-2  h-full  bg-gray-200 rounded-md'>
+       <div className=' w-full h-auto flex flex-wrap justify-center items-center p-4 gap-7'>
 
-          <div className=' w-full h-auto bg-white p-4 '>
+          <div className=' w-full h-auto bg-white'>
                  <span className=' text-[24px] font-sans font-extrabold'>Find your next stay </span>
                  <p className=' text-[16px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
+          </div>
+
+          <div className=' w-full h-60 bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
+                <div className='w-full h-12 rounded-md flex justify-center items-center  bg-white '>
+                     <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
+                     <input className=' w-full text-[18px] font-sans=[ont-bold outline-none' type="search" />
+                </div>
+                <div className=' w-full h-12 grid grid-cols-2 gap-2  ' >
+                       <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
+                            <span className=' text-[13px]  font-sans' >Check in date</span>
+                            <span className=' text-[16px] font-bold font-sans'>Tue 18 Feb 2025</span>
+                       </div>
+
+                       <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
+                            <span className=' text-[13px]  font-sans' >Check in date</span>
+                            <span className=' text-[16px] font-bold font-sans'>Tue 18 Feb 2025</span>
+                       </div>  
+                </div>
+
+                <div className=' w-full h-12 grid grid-cols-3 gap-1  ' >
+                       <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span className=' text-[13px]  font-sans' >Adults</span>
+                            <span className=' text-[16px] font-bold font-sans'>2</span>
+                       </div>
+
+                       <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span className=' text-[13px]  font-sans' >Children</span>
+                            <span className=' text-[16px] font-bold font-sans'>0</span>
+                       </div>  
+                       <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span className=' text-[13px]  font-sans' >Rooms</span>
+                            <span className=' text-[16px] font-bold font-sans'>1</span>
+                       </div>  
+                </div>
+
+                <div className='w-full h-12 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
+                     <button className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' type="submit">Search</button>
+                </div>
           </div>
          
 
