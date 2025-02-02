@@ -10,9 +10,9 @@ export const Home = () => {
  
   return (
 <>
-<div className='w-full h-60  bg-indigo-600'>
+{/* <div className='w-full h-60  bg-indigo-600'>
 
-</div>
+</div> */}
 
   <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row  p-2   '>
        <div className=' w-full  xl:col-span-2  h-full  bg-gray-200 rounded-md'>
