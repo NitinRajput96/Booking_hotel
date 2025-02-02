@@ -37,11 +37,11 @@ export const Header = () => {
     <div className='  max-[450px]:px-2  w-11/12 h-full   bg-indigo-600  flex  justify-between items-center border-b '>
          
          {/* logo */}
-         <div className='   w-2/6 max-[400px]:w-3/6    flex  justify-between items-center '>
-              <span className='   border max-[400px]:h-[30px] h-11 max-[400px]:text-[14px] max-[400px]:font-extrabold sm:text-xl py-1 px-2  bg-transparent text-white font-mono text-2xl font-semibold  rounded-md justify-center items-center flex'> Booking-hotels</span>
+         <div className='   w-3/6 max-[450px]:w-2/6     flex  justify-between items-center '>
+              <span className='   border max-[400px]:h-[30px] h-11 max-[500px]:text-[14px] max-[450px]:font-semibold  sm:py-1 px-2  bg-transparent text-white font-mono sm:text-xl font-semibold  rounded-md justify-center items-center flex'> Booking-hotels</span>
          </div>
 
-         <div className=' w-4/6 h-11 rounded-md  flex  justify-end gap-3 items-center max-[450px]:hidden '>
+         <div className=' w-4/6  h-11 rounded-md  flex  justify-end gap-3 items-center max-[450px]:hidden '>
            
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-white font-sans font-semibold'>INR</Link>
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center'>
@@ -96,7 +96,7 @@ export const Header = () => {
            
             <div className=' w-full h-8  flex justify-between items-center'>
             <div className=' w-full  h-8   text-xl px-1   '>
-                <span className=' text-white font-sans font-extrabold'>Booking hotels</span>
+                <span className=' text-white font-sans font-extrabold '>Booking hotels</span>
            </div>      
                   <div className=' w-12 h-8 text-[30px]  text-white'>
                   <MdOutlineCancel onClick={()=>{setState(!state)}} />

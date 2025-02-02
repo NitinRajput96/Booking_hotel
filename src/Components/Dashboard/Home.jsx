@@ -21,11 +21,11 @@ export const Home = () => {
          
 
 
-       <div className=' w- xl:col-span-4  gap-2 flex justify-center flex-wrap items-center '>
+       <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center '>
      
        {
          Hotel_data.hotelDetails.map((item,i)=>
-             <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-4 gap-4 flex  justify-center items-center   rounded-md bg-gray-100 '>
+             <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-gray-100 '>
 
                <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
                <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
