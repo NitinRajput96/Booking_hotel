@@ -66,7 +66,7 @@ export const Home = () => {
          
 
 
-       {/* <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center '>
+       <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center '>
      
        {
          Hotel_data.hotelDetails.map((item,i)=>
@@ -83,7 +83,7 @@ export const Home = () => {
              </div>        
          )
        }       
-       </div> */}
+       </div> 
 
 
 
