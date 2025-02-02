@@ -17,11 +17,17 @@ export const Home = () => {
   <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row   xl:p-3   '>
        <div className=' w-full  xl:col-span-2  h-full  bg-gray-200 rounded-md'>
 
+          <div className=' w-full h-auto bg-white p-4 '>
+                 <span className=' text-[26px] font-sans font-bold'>Find your next stay </span>
+                 <p className=' text-[13px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
+          </div>
+         
+
        </div>
          
 
 
-       <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center '>
+       {/* <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center '>
      
        {
          Hotel_data.hotelDetails.map((item,i)=>
@@ -38,7 +44,7 @@ export const Home = () => {
              </div>        
          )
        }       
-       </div>
+       </div> */}
 
 
 
