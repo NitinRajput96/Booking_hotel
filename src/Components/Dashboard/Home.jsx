@@ -19,7 +19,7 @@ export const Home = () => {
 
           <div className=' w-full h-auto bg-white p-4 '>
                  <span className=' text-[24px] font-sans font-extrabold'>Find your next stay </span>
-                 <p className=' text-[14px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
+                 <p className=' text-[16px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
           </div>
          
 
