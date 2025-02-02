@@ -91,22 +91,28 @@ export const Header = () => {
       {/* sidenavbar */}
      {
         state===true?
-        <div className='trans w-full h-full bg-indigo-600   z-50 fixed top-0   pb-14 px-3  text-left border min-[450px]:hidden'>
-      
-      <div className=' w-12 h-12 absolute top-0 right-0  z-50 flex justify-center items-center text-[30px]  text-black'>
-      <MdOutlineCancel onClick={()=>{setState(!state)}} />
-      </div>
-           <div className=' w-full  h-8 mt-8  text-xl px-1  '>
+        <div className=' w-11/12 h-full  flex justify-center fixed top-0 px-3  text-left min-[450px]:hidden'>
+         <div className=' trans bg-indigo-800 w-full h-full   p-5 absolute top-0 right-0 left-0 '>
+           
+            <div className=' w-full h-8  flex justify-between items-center'>
+            <div className=' w-full  h-8   text-xl px-1   '>
                 <span className=' text-white font-sans font-extrabold'>Booking hotels</span>
-           </div>
-        <div className=' w-full h-11 mt-2 flex flex-col justify-evenly items-start'>
+           </div>      
+                  <div className=' w-12 h-8 text-[30px]  text-white'>
+                  <MdOutlineCancel onClick={()=>{setState(!state)}} />
+                  </div>
+            </div>
+      
+          
+        <div className=' w-full h-11 mt-2 flex flex-col justify-evenly items-start '>
             <Link className='  py- px-2 text-left   hover:border text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold  ' to="hotels">Booking..Rooms</Link>
             <Link className='  py- px-2 text-left   hover:border text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold ' to="/">Home</Link>
             <Link className='  py- px-2 text-left   hover:border text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold ' to="contact">Contact</Link>
             <Link className='  py- px-2 text-left   hover:border text-white rounded-md hover:border-blue-900 text-[16px] font-mono text-blue-800 font-semibold ' to="about">About</Link>
          </div>
-   
-      </div>:""
+
+         </div>
+       </div>:""
      }
 
 
