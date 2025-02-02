@@ -11,10 +11,17 @@ export const Home = () => {
   return (
 <>
    
+   <div className='w-full h-60 border bg-indigo-600'>
 
-      <div className=' w-full h-full  absolute top-36 grid max-[400px]:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center p-1 gap-2'>{
+   </div>
+
+     <div className='w-full h-auto  flex justify-center gap-8    border-black  '>
+          <div className=' w-2/6 h-96   bg-slate-600'>
+
+          </div>
+     <div className=' w-3/6  grid max-[400px]:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 justify-items-center  gap-2'>{
             Hotel_data.hotelDetails.map((item,i)=>
-                <div className='w-auto h-auto flex   flex-col justify-center items-center m-2 rounded-md bg-gray-100 p-2 gap-2'>
+                <div className=' w-full border h-auto flex   flex-col justify-center items-center  rounded-md bg-gray-100  gap-2'>
 
                   <img className='  sm:h-40 max-sm:96 border rounded-md   ' src={item.img} alt="" />
                   <div className=' w-72 font-mono text-md text-black font-bold flex flex-wrap flex-col '>
@@ -27,6 +34,7 @@ export const Home = () => {
                 </div>        
             )
           }</div>
+     </div>
 </>
   )
 }
