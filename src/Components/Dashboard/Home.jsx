@@ -26,7 +26,7 @@ export const Home = () => {
           <div className=' w-full h-72 bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
-                     <input className=' w-full text-[18px] font-sans=[ont-bold outline-none' type="search" />
+                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="search" />
                 </div>
                 <div className=' w-full h-14 grid grid-cols-2 gap-2  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
