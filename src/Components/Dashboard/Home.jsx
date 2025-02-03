@@ -37,9 +37,9 @@ export const Home = () => {
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                             <div className=' w-full flex justify-between px-5 items-center'>
+                             <div className=' w-full flex justify-between px-3 items-center'>
                                  <span className=' text-[13px]  font-sans' >Check in date </span>
-                                 <span className=' text-[13px]  font-sans' >Check out date </span>
+                                 <span className=' text-[13px]  font-sans pr-14' >Check out date </span>
                              </div>
                             <span className=' text-[16px] font-bold font-sans  '><RangePicker 
                              onChange={(values)=>{
