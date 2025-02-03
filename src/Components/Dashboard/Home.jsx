@@ -5,8 +5,15 @@ import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
+import { Button, DatePicker } from 'antd';
+import moment from 'moment';
+const {RangePicker} = DatePicker;
 
 export const Home = () => {
+
+   const [datese, setDatese] = useState([])
+   console.log(datese);
+   
     
  
   return (
@@ -28,16 +35,26 @@ export const Home = () => {
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
                      <input className=' w-full text-[18px] font-sans font-bold outline-none' type="search" />
                 </div>
-                <div className=' w-full h-14 grid grid-cols-2 gap-1  ' >
+                <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                            <span className=' text-[13px]  font-sans' >Check in date</span>
-                            <span className=' text-[16px] font-bold font-sans'>Tue 18 Feb 2025</span>
+                             <div className=' w-full flex justify-between px-5 items-center'>
+                                 <span className=' text-[13px]  font-sans' >Check in date </span>
+                                 <span className=' text-[13px]  font-sans' >Check out date </span>
+                             </div>
+                            <span className=' text-[16px] font-bold font-sans  '><RangePicker 
+                             onChange={(values)=>{
+                               
+                                 setDatese(values.map(item=>{
+                                    return moment(item).format('DD-MM-YYYY')
+                                 }))
+
+                            }} placeholder=""  /></span>
                        </div>
 
-                       <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
+                       {/* <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
                             <span className=' text-[13px]  font-sans' >Check in date</span>
                             <span className=' text-[16px] font-bold font-sans'>Tue 18 Feb 2025</span>
-                       </div>  
+                       </div>   */}
                 </div>
 
                 <div className=' w-full h-14 grid grid-cols-3 gap-1  ' >
@@ -61,6 +78,8 @@ export const Home = () => {
                 </div>
           </div>
        </div>
+
+        
 
 
 
@@ -91,10 +110,9 @@ export const Home = () => {
        }       
        </div> 
 
-
-
-
   </div> 
+
+  
   
 </>
   )
