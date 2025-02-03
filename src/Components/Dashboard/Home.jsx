@@ -85,7 +85,14 @@ export const Home = () => {
 
        <div className=' w-full h-auto bg-gray-50 mt-7 '>
                
-               <div className=' w-full'></div>
+               <div className=' w-full p-5 '>
+               
+                   
+                   <h1 className=' font-bold'>Recent Dates</h1>
+                   <h4 className=' font-semibold'>{datese[0]} to {datese[1]}</h4>
+                  
+              
+               </div>
                  
        </div>
          
