@@ -7,6 +7,7 @@ import { MdLocationCity } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import { Button, DatePicker } from 'antd';
 import moment from 'moment';
+
 const {RangePicker} = DatePicker;
 
 export const Home = () => {
@@ -41,7 +42,7 @@ export const Home = () => {
                                  <span className=' text-[13px]  font-sans' >Check in date </span>
                                  <span className=' text-[13px]  font-sans pr-14' >Check out date </span>
                              </div>
-                            <span className=' text-[16px] font-bold font-sans  '><RangePicker 
+                            <span className=' text-[16px] font-bold font-sans w-full  '><RangePicker 
                              onChange={(values)=>{
                                
                                  setDatese(values.map(item=>{
