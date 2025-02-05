@@ -44,10 +44,10 @@ export const Home = () => {
                              </div>
                              <div className=' w-full flex  justify-center '>
                                
-                            <RangePicker className=' w-full outline-none border-none no-underline pl-8 gap-0'/>
+                            <RangePicker className=' w-11/12  outline-white border-none no-underline pl-8 gap-0'/>
                           
 
-                                
+                                 Hello
                              </div>
                        </div>
 
