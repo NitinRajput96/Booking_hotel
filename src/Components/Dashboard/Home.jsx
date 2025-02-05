@@ -4,6 +4,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
+import { MdLocationCity } from "react-icons/md";
 import moment from 'moment';
 import { DatePicker } from 'antd';
 const {RangePicker} = DatePicker;
@@ -12,8 +13,18 @@ const {RangePicker} = DatePicker;
 
 export const Home = () => {
 
+     const [chekDates,setChekDates]=useState([])
+
   
-   
+
+  const handler=(e)=>{
+  console.log(e.target);
+  
+  }
+
+
+
+  
 
     
  
@@ -31,23 +42,29 @@ export const Home = () => {
                  <p className=' text-[16px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
           </div>
 
-          <div className=' w-full h-[262px] bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
+          
+           <form action="">
+           <div className=' w-full h-[262px] bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
-                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="search" />
+                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" placeholder=' Location'  />
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                             <div className=' w-full flex justify-between pl-8 pr-20 items-center border'>
+                             <div className=' w-full flex justify-between pl-8 pr-12 items-center border'>
                                  <span className=' text-[13px]  font-sans' >Check in date </span>
                                  <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
                              <div className=' w-full flex  justify-center '>
-                               
-                            <RangePicker className=' w-11/12  outline-white border-none no-underline pl-8 gap-0'/>
-                          
-
-                                 Hello
+                               <RangePicker className=' w-full font-bold font-sans active:outline-none  outline-none border-none no-underline pl-8 gap-0'
+                                  
+                                     onChange={values=>{setChekDates(values.map((item)=>{
+                                          return moment(item).format('DD-MM-YYYY')
+                                     }))}}
+                                
+                                   
+                                  
+                               />                              
                              </div>
                        </div>
 
@@ -57,23 +74,25 @@ export const Home = () => {
                 <div className=' w-full h-14 grid grid-cols-3 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
                             <span className=' text-[13px]  font-sans' >Adults</span>
-                            <span className=' text-[16px] font-bold font-sans'>2</span>
+                            <span type='text' className=' text-[16px] font-bold font-sans outline-none'  name='adults'   ></span>
                        </div>
 
                        <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
                             <span className=' text-[13px]  font-sans' >Children</span>
-                            <span className=' text-[16px] font-bold font-sans'>0</span>
+                            <span className=' text-[16px] font-bold font-sans outline-none' name='childrens'  >0</span>
                        </div>  
                        <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
                             <span className=' text-[13px]  font-sans' >Rooms</span>
-                            <span className=' text-[16px] font-bold font-sans'>1</span>
+                            <span className=' text-[16px] font-bold font-sans outline-none' >1</span>
                        </div>  
                 </div>
 
                 <div className='w-full h-14 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
-                     <button className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' type="submit">Search</button>
+                     <button className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' >Search</button>
                 </div>
           </div>
+           </form>
+           
        </div>
 
         
@@ -104,7 +123,7 @@ export const Home = () => {
                <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
                <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
                    <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
-                   {/* <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span> */}
+                   <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
                    <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
                    <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
                      
