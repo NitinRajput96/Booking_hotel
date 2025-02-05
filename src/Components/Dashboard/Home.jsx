@@ -3,24 +3,18 @@ import Hotel_data from "../Json-data/Hotel_data.json"
 import { IoLocationSharp } from "react-icons/io5";
 import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
-import { MdLocationCity } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import moment from 'moment';
+import { DatePicker } from 'antd';
+const {RangePicker} = DatePicker;
 
 
-// import { Button, DatePicker } from 'antd';
-// import moment from 'moment';
-// const {RangePicker} = DatePicker;
 
 export const Home = () => {
 
-   const [checkingDate,setCheckingDate] = useState()
-   const [checkOutDate,setCheckOutDate] = useState()
+  
    
 
-
-  
     
  
   return (
@@ -44,21 +38,20 @@ export const Home = () => {
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                             <div className=' w-full flex justify-between px-12  items-center border'>
+                             <div className=' w-full flex justify-between pl-8 pr-20 items-center border'>
                                  <span className=' text-[13px]  font-sans' >Check in date </span>
                                  <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
                              <div className=' w-full flex  justify-center '>
-                                   <DatePicker className=' font-bold outline-none text-center w-full '   placeholderText='start' selected={checkingDate} onChange={date=>setCheckingDate(date)}   />
-                                   <DatePicker className=' font-bold outline-none text-center w-full '                       placeholderText='end'   selected={checkOutDate} onChange={date=>setCheckOutDate(date)} />
-                             </div>
+                               
+                            <RangePicker className=' w-full outline-none border-none no-underline pl-8 gap-0'/>
                           
+
+                                
+                             </div>
                        </div>
 
-                       {/* <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                            <span className=' text-[13px]  font-sans' >Check in date</span>
-                            <span className=' text-[16px] font-bold font-sans'>Tue 18 Feb 2025</span>
-                       </div>   */}
+                    
                 </div>
 
                 <div className=' w-full h-14 grid grid-cols-3 gap-1  ' >
@@ -93,7 +86,7 @@ export const Home = () => {
                
                    
                    <h1 className=' font-bold'>Recent Dates</h1>
-                   <h4 className=' font-semibold'> to </h4>
+                   <h4 className=' font-semibold'>  to </h4>
                   
               
                </div>
@@ -111,7 +104,7 @@ export const Home = () => {
                <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
                <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
                    <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
-                   <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
+                   {/* <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span> */}
                    <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
                    <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
                      
@@ -132,11 +125,3 @@ export const Home = () => {
 
 
 
-{/* <RangePicker 
-                             onChange={(values)=>{
-                               
-                                 setDatese(values.map(item=>{
-                                    return moment(item).format('DD-MM-YYYY')
-                                 }))
-
-                            }} placeholder=""  /> */}
