@@ -13,6 +13,8 @@ import { LiaHotelSolid } from "react-icons/lia";
 import { FaCar } from "react-icons/fa";
 import { MdOutlineAttractions } from "react-icons/md";
 import { MdOutlineLocalTaxi } from "react-icons/md";
+import Picker from 'react-picker';
+
 
 
 
@@ -34,6 +36,7 @@ export const Header = () => {
   return (
    <>
     <div className=' w-full  h-[70px]     flex justify-center items-center  bg-indigo-600  z-10 '>
+          
     <div className='  max-[450px]:px-2  w-11/12 h-full   bg-indigo-600  flex  justify-between items-center border-b '>
          
          {/* logo */}
@@ -95,6 +98,7 @@ export const Header = () => {
          <div className=' trans w-full h-full p-5 bg-indigo-600  '>
            
             <div className=' w-full h-8  flex justify-between items-center'>
+
             <div className=' w-full  h-8   text-xl px-1   '>
                 <span className=' text-white font-sans font-extrabold '>Booking hotels</span>
            </div>      
@@ -133,6 +137,7 @@ export const Header = () => {
          </div>
      </div>
 
+  
       
    </>
   )

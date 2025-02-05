@@ -5,15 +5,24 @@ import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
-import { Button, DatePicker } from 'antd';
-import moment from 'moment';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
-const {RangePicker} = DatePicker;
+
+// import { Button, DatePicker } from 'antd';
+// import moment from 'moment';
+// const {RangePicker} = DatePicker;
 
 export const Home = () => {
 
-   const [datese, setDatese] = useState([])
+   const [datese, setDatese] = useState()
    console.log(datese);
+
+   const handler =(e)=>{
+       const datechek=e.target;
+       console.log(datechek);
+       
+   }
    
     
  
@@ -38,18 +47,15 @@ export const Home = () => {
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                             <div className=' w-full flex justify-between px-3 items-center'>
+                             <div className=' w-full flex justify-between px-12  items-center border'>
                                  <span className=' text-[13px]  font-sans' >Check in date </span>
-                                 <span className=' text-[13px]  font-sans pr-14' >Check out date </span>
+                                 <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
-                            <span className=' text-[16px] font-bold font-sans w-full  '><RangePicker 
-                             onChange={(values)=>{
-                               
-                                 setDatese(values.map(item=>{
-                                    return moment(item).format('DD-MM-YYYY')
-                                 }))
-
-                            }} placeholder=""  /></span>
+                             <div className=' w-full flex  justify-center '>
+                                   <DatePicker className=' font-bold outline-none text-center w-full ' minDate={new Date()}  placeholderText='start' selected={datese} onChange={date=>setDatese(date)}   />
+                                   <DatePicker className=' font-bold outline-none text-center w-full '                       placeholderText='end'   selected={datese} onChange={date=>setDatese(date)} />
+                             </div>
+                          
                        </div>
 
                        {/* <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
@@ -90,7 +96,7 @@ export const Home = () => {
                
                    
                    <h1 className=' font-bold'>Recent Dates</h1>
-                   <h4 className=' font-semibold'>{datese[0]} to {datese[1]}</h4>
+                   <h4 className=' font-semibold'></h4>
                   
               
                </div>
@@ -125,3 +131,15 @@ export const Home = () => {
 </>
   )
 }
+
+
+
+
+{/* <RangePicker 
+                             onChange={(values)=>{
+                               
+                                 setDatese(values.map(item=>{
+                                    return moment(item).format('DD-MM-YYYY')
+                                 }))
+
+                            }} placeholder=""  /> */}
