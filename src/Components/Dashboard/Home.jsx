@@ -15,15 +15,12 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 export const Home = () => {
 
-   const [datese, setDatese] = useState()
-   console.log(datese);
-
-   const handler =(e)=>{
-       const datechek=e.target;
-       console.log(datechek);
-       
-   }
+   const [checkingDate,setCheckingDate] = useState()
+   const [checkOutDate,setCheckOutDate] = useState()
    
+
+
+  
     
  
   return (
@@ -52,8 +49,8 @@ export const Home = () => {
                                  <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
                              <div className=' w-full flex  justify-center '>
-                                   <DatePicker className=' font-bold outline-none text-center w-full ' minDate={new Date()}  placeholderText='start' selected={datese} onChange={date=>setDatese(date)}   />
-                                   <DatePicker className=' font-bold outline-none text-center w-full '                       placeholderText='end'   selected={datese} onChange={date=>setDatese(date)} />
+                                   <DatePicker className=' font-bold outline-none text-center w-full ' minDate={new Date()}  placeholderText='start' selected={checkingDate} onChange={date=>setCheckingDate(date)}   />
+                                   <DatePicker className=' font-bold outline-none text-center w-full '                       placeholderText='end'   selected={checkOutDate} onChange={date=>setCheckOutDate(date)} />
                              </div>
                           
                        </div>
