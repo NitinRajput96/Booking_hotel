@@ -74,7 +74,7 @@ export const Home = () => {
                 <div className=' w-full h-14 grid grid-cols-3 gap-1  ' >
                        <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
                             <span className=' text-[13px]  font-sans' >Adults</span>
-                            <span type='text' className=' text-[16px] font-bold font-sans outline-none'  name='adults'   ></span>
+                            <span type='text' className=' text-[16px] font-bold font-sans outline-none'  name='adults'   >2</span>
                        </div>
 
                        <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
@@ -105,7 +105,7 @@ export const Home = () => {
                
                    
                    <h1 className=' font-bold'>Recent Dates</h1>
-                   <h4 className=' font-semibold'>  to </h4>
+                   <h4 className=' font-semibold'>{chekDates[0]}  to {chekDates[1  ]} </h4>
                   
               
                </div>
