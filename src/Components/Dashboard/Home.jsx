@@ -49,7 +49,7 @@ export const Home = () => {
                                  <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
                              <div className=' w-full flex  justify-center '>
-                                   <DatePicker className=' font-bold outline-none text-center w-full ' minDate={new Date()}  placeholderText='start' selected={checkingDate} onChange={date=>setCheckingDate(date)}   />
+                                   <DatePicker className=' font-bold outline-none text-center w-full '   placeholderText='start' selected={checkingDate} onChange={date=>setCheckingDate(date)}   />
                                    <DatePicker className=' font-bold outline-none text-center w-full '                       placeholderText='end'   selected={checkOutDate} onChange={date=>setCheckOutDate(date)} />
                              </div>
                           
@@ -93,7 +93,7 @@ export const Home = () => {
                
                    
                    <h1 className=' font-bold'>Recent Dates</h1>
-                   <h4 className=' font-semibold'></h4>
+                   <h4 className=' font-semibold'> to </h4>
                   
               
                </div>
