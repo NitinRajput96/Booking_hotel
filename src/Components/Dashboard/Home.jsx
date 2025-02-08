@@ -57,7 +57,7 @@ export const Home = () => {
                              </div>
                              <div className=' w-full flex  justify-center '>
                                 <div className=' w-full'>
-                                <RangePicker className='w-full font-bold font-sans  outline-none border-2 no-underline pl-8 gap-0'
+                                <RangePicker className=' w-10 font-bold font-sans  outline-none border-2 no-underline pl-8 gap-0'
                                   
                                   onChange={values=>{setChekDates(values.map((item)=>{
                                        return moment(item).format('DD-MM-YYYY')
