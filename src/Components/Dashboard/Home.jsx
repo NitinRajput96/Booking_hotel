@@ -56,7 +56,7 @@ export const Home = () => {
                                  <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
                              <div className=' w-full flex  justify-center '>
-                                <div className=' w-full'>
+                                <div className=' w-full border-2'>
                                       nikal lode
                                 </div>                         
                              </div>
