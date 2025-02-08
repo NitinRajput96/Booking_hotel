@@ -55,7 +55,7 @@ export const Home = () => {
                                  <span className=' text-[13px]  font-sans' >Check in date </span>
                                  <span className=' text-[13px]  font-sans' >Check out date </span>
                              </div>
-                             <div className=' w-full flex  justify-center '>
+                             <div className=' w-full flex  justify-center items-center '>
                              <RangePicker className=' w-full font-bold font-sans  outline-none border-2 no-underline pl-8 gap-0'
                                   
                                   onChange={values=>{setChekDates(values.map((item)=>{
