@@ -13,9 +13,6 @@ import { LiaHotelSolid } from "react-icons/lia";
 import { FaCar } from "react-icons/fa";
 import { MdOutlineAttractions } from "react-icons/md";
 import { MdOutlineLocalTaxi } from "react-icons/md";
-import Picker from 'react-picker';
-
-
 
 
  
