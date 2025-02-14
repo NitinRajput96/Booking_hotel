@@ -86,7 +86,7 @@ export const Home = () => {
                 <div className=' w-full h-14 grid grid-cols-3 gap-1' >
                        <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
                             <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Adults</span>
-                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='2'   ></input>
                        </div>
 
                        <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
@@ -96,7 +96,7 @@ export const Home = () => {
 
                        <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
                             <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Rooms</span>
-                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='1'   ></input>
                        </div>
 
                        {/* <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
