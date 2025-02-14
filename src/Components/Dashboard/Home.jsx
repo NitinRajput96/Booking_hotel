@@ -1,26 +1,44 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Hotel_data from "../Json-data/Hotel_data.json"
 import { IoLocationSharp } from "react-icons/io5";
 import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdLocationCity } from "react-icons/md";
-import moment from 'moment';
-import { DatePicker } from 'antd';
-const {RangePicker} = DatePicker;
+import { data } from 'autoprefixer';
+
+
 
 
 
 export const Home = () => {
 
-     const [chekDates,setChekDates]=useState([])
+     const [state,setState]=useState([]);
+     const [newState,setNewState]=useState()
 
-  
+     const handler=(e)=>{
+          const {name,value}=e.target
+          setState({...state,[name]:value})
+     }
+   
+    
+   
 
-  const handler=(e)=>{
-  console.log(e.target);
-  
-  }
+     const getallData=(e)=>{
+          e.preventDefault();
+          
+         setNewState(state)
+       
+     }
+     
+    
+        
+
+     
+     
+     
+   
+     
 
 
 
@@ -43,55 +61,58 @@ export const Home = () => {
           </div>
 
           
-           <form action="">
-           <div className=' w-full h-[262px] bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
+         
+           <form onSubmit={getallData} className=' w-full h-[262px] bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2   '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
-                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" placeholder=' Location'  />
+                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
-                       <div className=' bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                             <div className=' w-full flex justify-between pl-8 pr-12 items-center border'>
-                                 <span className=' text-[13px]  font-sans' >Check in date </span>
-                                 <span className=' text-[13px]  font-sans' >Check out date </span>
+                       <div className=' h-full bg-white rounded-md flex justify-center items-center flex-wrap border'>
+                             <div className=' w-full h-2/4 flex justify-evenly gap-12 items-center '>
+                                 <span className=' text-[13px]  font-sans font-bold' >Check in date </span>
+                                 <span className=' text-[13px]  font-sans font-bold' >Check out date </span>
                              </div>
-                             <div className=' w-full flex  justify-center items-center '>
-                             <RangePicker className=' w-full font-bold font-sans  outline-none border-2 no-underline pl-8 gap-0'
-                                  
-                                  onChange={values=>{setChekDates(values.map((item)=>{
-                                       return moment(item).format('DD-MM-YYYY')
-                                  }))}}
-                             
-                                
-                               
-                            />                            
+                             <div className=' w-full flex h-2/4 border   justify-center items-center '>
+                                    <input type="date"  className=' w-2/4   h-full  border   text-[13px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
+                                    <input type="date"  className=' w-2/4   h-full  border   text-[13px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
                              </div>
                        </div>
 
                     
                 </div>
 
-                <div className=' w-full h-14 grid grid-cols-3 gap-1  ' >
-                       <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
-                            <span className=' text-[13px]  font-sans' >Adults</span>
-                            <span type='text' className=' text-[16px] font-bold font-sans outline-none'  name='adults'   >2</span>
+                <div className=' w-full h-14 grid grid-cols-3 gap-1' >
+                       <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
+                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Adults</span>
+                            <input className='  w-full   text-[16px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='0'   ></input>
                        </div>
 
-                       <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
-                            <span className=' text-[13px]  font-sans' >Children</span>
-                            <span className=' text-[16px] font-bold font-sans outline-none' name='childrens'  >0</span>
+                       <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
+                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Children</span>
+                            <input className='  w-full   text-[16px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='childrens' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                       </div>
+
+                       <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
+                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Rooms</span>
+                            <input className='  w-full   text-[16px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                       </div>
+
+                       {/* <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span  className=' w-full h-2/4 bg-slate-800 text-[13px]  font-sans' >Children</span>
+                            <input className=' text-[16px] font-bold font-sans outline-none' type='text' name='childrens' onChange={(e)=>handler(e)}  ></input>
                        </div>  
-                       <div className=' bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
-                            <span className=' text-[13px]  font-sans' >Rooms</span>
-                            <span className=' text-[16px] font-bold font-sans outline-none' >1</span>
-                       </div>  
+                       <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span  className=' w-full h-2/4 bg-slate-800 text-[13px]  font-sans' >Rooms</span>
+                            <input className='  text-[16px] font-bold font-sans outline-none' type='text' name='room'  onChange={(e)=>handler(e)} ></input>
+                       </div>   */}
                 </div>
 
                 <div className='w-full h-14 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
-                     <button className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' >Search</button>
+                     <button type='submit' className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' >Search</button>
                 </div>
-          </div>
-           </form>
+          </form>
+        
            
        </div>
 
@@ -99,26 +120,34 @@ export const Home = () => {
 
 
 
-       <div className=' w-full h-auto bg-gray-50 mt-7 '>
-               
-               <div className=' w-full p-5 '>
-               
+     {
+          newState!=null?<div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4   '>
+               {
                    
-                   <h1 className=' font-bold'>Recent Dates</h1>
-                   <h4 className=' font-semibold'>{chekDates[0]}  to {chekDates[1]} </h4>
+                    <div className=' w-11/12 p-5 flex justify-center items-center flex-col gap-1 shadow-sm bg-white py-2 hover:border-blue-800  '> 
+                         <h1 className=' font-bold'>Recent Dates</h1>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Adults    <span className=' text-sm px-[10px] bg-yellow-500' >{newState.adults} </span>          </h4>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Childerns <span className=' text-sm px-[10px] bg-yellow-500' >{newState.childrens} </span>       </h4>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Rooms     <span className=' text-sm px-[10px] bg-yellow-500' >{newState.rooms} </span>           </h4>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Location  <span className=' text-sm px-[10px] bg-yellow-500' >{ newState.staylocation} </span>   </h4>
+
+ 
+                    </div>  
                   
-              
-               </div>
-                 
-       </div>
+               } 
+            </div>:""
+     }
          
+         <div className=' w-full h-36 bg-gray-50 flex justify-center items-center py-5 rounded-sm'>
+               <span className=' w-full  h-full flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
+         </div>
 
 
-       <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center bg-slate-50 '>
+       <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center bg-slate-50  '>
      
        {
          Hotel_data.hotelDetails.map((item,i)=>
-             <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white '>
+             <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
 
                <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
                <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
