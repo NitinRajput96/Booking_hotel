@@ -74,9 +74,9 @@ export const Home = () => {
                                  <span className=' text-[13px]  font-sans font-bold' >Check in date </span>
                                  <span className=' text-[13px]  font-sans font-bold' >Check out date </span>
                              </div>
-                             <div className=' w-full flex h-3/5 border   justify-center items-center '>
-                                    <input type="date"  className=' w-2/4   h-full  border   text-[13px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
-                                    <input type="date"  className=' w-2/4   h-full  border   text-[13px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
+                             <div className=' w-full flex h-3/5 border   justify-center items-center  bg-white'>
+                                    <input type="date"  className=' w-2/4   h-full  border bg-white   text-[13px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
+                                    <input type="date"  className=' w-2/4   h-full  border  bg-white  text-[13px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
                              </div>
                        </div>
 
