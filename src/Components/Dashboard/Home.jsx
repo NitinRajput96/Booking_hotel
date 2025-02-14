@@ -28,6 +28,7 @@ export const Home = () => {
           e.preventDefault();
           
          setNewState(state)
+         
        
      }
      
@@ -69,11 +70,11 @@ export const Home = () => {
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1  ' >
                        <div className=' h-full bg-white rounded-md flex justify-center items-center flex-wrap border'>
-                             <div className=' w-full h-2/4 flex justify-evenly gap-12 items-center '>
+                             <div className=' w-full h-2/5 flex justify-evenly gap-12 items-center '>
                                  <span className=' text-[13px]  font-sans font-bold' >Check in date </span>
                                  <span className=' text-[13px]  font-sans font-bold' >Check out date </span>
                              </div>
-                             <div className=' w-full flex h-2/4 border   justify-center items-center '>
+                             <div className=' w-full flex h-3/5 border   justify-center items-center '>
                                     <input type="date"  className=' w-2/4   h-full  border   text-[13px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
                                     <input type="date"  className=' w-2/4   h-full  border   text-[13px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
                              </div>
@@ -85,17 +86,17 @@ export const Home = () => {
                 <div className=' w-full h-14 grid grid-cols-3 gap-1' >
                        <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
                             <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Adults</span>
-                            <input className='  w-full   text-[16px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='0'   ></input>
                        </div>
 
                        <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
                             <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Children</span>
-                            <input className='  w-full   text-[16px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='childrens' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='childrens' onChange={(e)=>handler(e)} placeholder='0'   ></input>
                        </div>
 
                        <div        className='  w-full   bg-white rounded-md flex justify-center items-center flex-col flex-wrap '>
                             <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Rooms</span>
-                            <input className='  w-full   text-[16px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='0'   ></input>
                        </div>
 
                        {/* <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
