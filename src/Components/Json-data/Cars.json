@@ -1,0 +1,306 @@
+{
+    "Cars-and-Bikes":[
+        {
+            "id":1,
+            "carName":"Thar",
+            "img":"images1/35019_AudiA3Cabriolet2017-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":2,
+            "carName":"Thar",
+            "img":"/images1/f-toyata-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":3,
+            "carName":"Thar",
+            "img":"/images1/fortunercar-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":4,
+            "carName":"Thar",
+            "img":"/images1/Lamborghini-Revuelt_-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":5,
+            "carName":"Thar",
+            "img":"/images1/mh-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":6,
+            "carName":"Thar",
+            "img":"/images1/mh1-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":7,
+            "carName":"Thar",
+            "img":"/images1/mh3-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":8,
+            "carName":"Thar",
+            "img":"/images1/mh4-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":9,
+            "carName":"Thar",
+            "img":"/images1/pexels-garvin-st-villier-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":9,
+            "carName":"Thar",
+            "img":"/images1/sp2-1967-ford-mustang-fast-and-furious-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":10,
+            "carName":"Thar",
+            "img":"/images1/sp3lemo-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":11,
+            "carName":"Thar",
+            "img":"/images1/sp4-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":12,
+            "carName":"Thar",
+            "img":"/images1/sp5-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":13,
+            "carName":"Thar",
+            "img":"/images1/spbike-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":14,
+            "carName":"Thar",
+            "img":"/images1/spbike1-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":15,
+            "carName":"Thar",
+            "img":"/images1/spbike2-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":16,
+            "carName":"Thar",
+            "img":"/images1/spbike3-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":17,
+            "carName":"Thar",
+            "img":"/images1/spbike4-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":18,
+            "carName":"Thar",
+            "img":"/images1/spbike5-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":19,
+            "carName":"Thar",
+            "img":"/images1/spbike6-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":20,
+            "carName":"Thar",
+            "img":"/images1/spbike7-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":21,
+            "carName":"Thar",
+            "img":"/images1/spbike8-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":22,
+            "carName":"Thar",
+            "img":"/images1/spbike9-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":23,
+            "carName":"Thar",
+            "img":"/images1/suzuki-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":24,
+            "carName":"Thar",
+            "img":"/images1/suzuki1-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":25,
+            "carName":"Thar",
+            "img":"/images1/suzuki2-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":26,
+            "carName":"Thar",
+            "img":"/images1/toyota-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":27,
+            "carName":"Thar",
+            "img":"/images1/toyota1-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":28,
+            "carName":"Thar",
+            "img":"/images1/toyota2-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        },
+        {
+            "id":29,
+            "carName":"Thar",
+            "img":"/images1/toyota3-removebg-preview.png",
+            "cartype":"sports",
+            "vehical_type":"car",
+            "company":"Mahindra",
+            "rent_price":"6000",
+            "time":"24 hours"
+        }
+     
+      
+    ]
+}

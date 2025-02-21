@@ -47,7 +47,7 @@ export const Header = () => {
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center'>
                  {
                    Hotel_data.logo.map((item,i)=>
-                     <img className=' w-8 h-6' src={item.logoFlage} alt="" />
+                     <img className=' w-8 h-6' src={item.logoFlage} alt="" key={i} />
                    )
                  }</Link>
 

@@ -5,7 +5,8 @@ import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdLocationCity } from "react-icons/md";
-import { data } from 'autoprefixer';
+import { useCategory } from '../../context/context';
+
 
 
 
@@ -13,12 +14,12 @@ import { data } from 'autoprefixer';
 
 export const Home = () => {
 
-     const [state,setState]=useState([]);
+     const {categ,setCateg}=useCategory()
      const [newState,setNewState]=useState()
 
      const handler=(e)=>{
           const {name,value}=e.target
-          setState({...state,[name]:value})
+          setCateg({...categ,[name]:value})
      }
    
     
@@ -26,10 +27,7 @@ export const Home = () => {
 
      const getallData=(e)=>{
           e.preventDefault();
-          
-         setNewState(state)
-         
-       
+         setNewState(categ)  
      }
      
     
