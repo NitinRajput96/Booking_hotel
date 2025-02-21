@@ -21,6 +21,7 @@ export const CarRentls = () => {
         setNewState(carRents)  
     }
     
+    console.log(newState);
     
     
     
@@ -31,8 +32,8 @@ export const CarRentls = () => {
                <div className=' w-full h-auto flex flex-wrap justify-center items-center  gap-7'>
         
                   <div className=' w-full h-auto bg-indigo-600 px-4 pt-8'>
-                         <span className=' text-[24px] font-sans text-white font-extrabold'>Find your rental Cars </span>
-                         <p className=' text-[16px] text-white'> Search low prices on hotels,homes and much more...</p>
+                         <span className=' text-[24px] font-serif text-white font-extrabold'>Car hire for any kind of trip </span>
+                         <p className=' text-[16px] text-white'>Great cars at great prices ,from the biggest car rental companies</p>
 
                          <div className=' w-full h-auto flex  justify-between items-center py-4'>
                              <input type="checkbox" className=' w-5 h-5 rounded-md text-white bg-blue-700 '  onChange={()=>setDropOffLoc(!dropOffLOc)} />
@@ -67,27 +68,27 @@ export const CarRentls = () => {
                         </>:""
                      }
 
-                        <div className=' w-full h-14 grid grid-cols-5 gap-1 py-2 ' >
-                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1    flex-wrap'>
-                                  <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Pick-up-date</div>
-                                 <input type="date"   className=' w-full   h-3/5  outline-none  bg-white  px-5 text-[15px] font-sans   font-semibold ' name='pick_up_date'  onChange={(e)=> handler(e)}  />
+                        <div className=' w-full h-14 grid grid-cols-5 gap-1  rounded-md ' >
+                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1 py-1   flex-wrap'>
+                                  <div className=' w-full h-2/5 text-[13px] pl-5 rounded-md  text-gray-600'>Pick-up-date</div>
+                                 <input type="date"   className=' w-full   h-3/5 rounded-md   outline-none  bg-white  px-5 text-[15px] font-sans   font-semibold ' name='pick_up_date'  onChange={(e)=> handler(e)}  />
                                </div>
 
-                               <div className=' col-span-2 h-full bg-white rounded-md flex justify-center items-center flex-wrap border-2'>
-                               <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Time</div>
-                                 <input type="time"  className=' w-full rounded-sm outline-none    h-3/5  bg-white   text-[15px] font-sans pl-4 pr-1  font-semibold ' name='time'  onChange={(e)=> handler(e)}  />
+                               <div className=' col-span-2 py-1 h-full bg-white rounded-md flex justify-center items-center flex-wrap '>
+                               <div className=' w-full h-auto text-[13px] pl-4 text-gray-600 rounded-md '>Time</div>
+                                 <input type="time"  className=' w-full rounded-md outline-none    h-3/5  bg-white   text-[15px] font-sans pl-4 pr-1  font-semibold ' name='time'  onChange={(e)=> handler(e)}  />
                                </div>   
                         </div>
 
-                        <div className=' w-full h-14 grid grid-cols-5 gap-1 py-2  ' >
-                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1   flex-wrap'>
-                                  <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Drop-off-date</div>
-                                 <input type="date"   className=' w-full   h-3/5  outline-none  bg-white  px-5 text-[15px] font-sans   font-semibold ' name='drop_off_date'  onChange={(e)=> handler(e)}  />
+                        <div className=' w-full h-14 grid grid-cols-5 gap-1   rounded-md  ' >
+                               <div className=' h-full col-span-3 py-1 bg-white rounded-md flex justify-center items-center px-1    flex-wrap'>
+                                  <div className=' w-full h-auto text-[13px] rounded-md  pl-5 text-gray-600 '>Drop-off-date</div>
+                                 <input type="date"   className=' w-full   h-auto  rounded-md  outline-none  bg-white  px-5 text-[15px] font-sans   font-semibold ' name='drop_off_date'  onChange={(e)=> handler(e)}  />
                                </div>
 
-                               <div className=' col-span-2 h-full bg-white rounded-md flex justify-center items-center flex-wrap '>
-                                    <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Time</div>
-                                    <input type="time"  className=' w-full rounded-sm outline-none    h-3/5   bg-white   text-[15px] font-sans pl-4 pr-1  font-semibold ' name='drop_off_time'  onChange={(e)=> handler(e)}  />
+                               <div className=' col-span-2 h-full py-1 bg-white rounded-md flex justify-center items-center flex-wrap '>
+                                    <div className=' w-full h-2/5 text-[13px] rounded-md  pl-4 text-gray-600 '>Time</div>
+                                    <input type="time"  className=' w-full rounded-md outline-none    h-3/5   bg-white   text-[15px] font-sans pl-4 pr-1  font-semibold ' name='drop_off_time'  onChange={(e)=> handler(e)}  />
                                </div>   
                         </div>
         
@@ -114,10 +115,10 @@ export const CarRentls = () => {
                               </div>
 
                               {
-                                newState.drop_off_time? <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                                newState.drop_Off_location!=null? <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
                                   <p className=' w-full font-semibold text-[15px]'>Drop-Off-location</p>
                                   <span >:</span>
-                                  <p className=' w-full text-[15px] pl-6'>{newState.drop_off_time}</p>
+                                  <p className=' w-full text-[15px] pl-6'>{newState.drop_Off_location}</p>
                               </div>:""
                               }
 
