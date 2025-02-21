@@ -16,12 +16,12 @@ export const CarRentls = () => {
    
   
 
-    const carRentl=(e)=>{
+    const carRentlFunction=(e)=>{
          e.preventDefault();
         setNewState(carRents)  
     }
     
-    console.log(newState);
+    
     
     
    
@@ -45,12 +45,12 @@ export const CarRentls = () => {
            
                   
                   
-                   <form onSubmit={carRentl} className=' w-full h-auto bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2  mx-4 mb-5   '>    
+                   <form onSubmit={carRentlFunction} className=' w-full h-auto bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2  mx-4 mb-5   '>    
                         <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                              <div className='w-9 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></div>
-                             <div className=' w-full h-full flex flex-col'>
+                             <div className=' w-full h-full flex flex-col py-2'>
                                  <span className=' text-[13px] text-gray-500'> Pick-up-location</span>
-                                 <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='pick_up_location' onChange={(e)=>handler(e)}  />
+                                 <input className=' w-full text-[15px] font-sans font-bold outline-none' type="text" name='pick_up_location' onChange={(e)=>handler(e)}  />
                              </div>
                         </div>
 
@@ -59,16 +59,16 @@ export const CarRentls = () => {
                         <>
                         <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                              <div className='w-9 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></div>
-                             <div className=' w-full h-full flex flex-col'>
+                             <div className=' w-full h-full flex flex-col py-2 '>
                                  <span className=' text-[13px] text-gray-500'> Drop-off-location</span>
-                                 <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='drop_Off_location' onChange={(e)=>handler(e)}  />
+                                 <input className=' w-full text-[15px] font-sans font-bold outline-none' type="text" name='drop_Off_location' onChange={(e)=>handler(e)}  />
                              </div>
                         </div>
                         </>:""
                      }
 
-                        <div className=' w-full h-14 grid grid-cols-5 gap-1  ' >
-                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1   flex-wrap border-2'>
+                        <div className=' w-full h-14 grid grid-cols-5 gap-1 py-2 ' >
+                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1    flex-wrap'>
                                   <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Pick-up-date</div>
                                  <input type="date"   className=' w-full   h-3/5  outline-none  bg-white  px-5 text-[15px] font-sans   font-semibold ' name='pick_up_date'  onChange={(e)=> handler(e)}  />
                                </div>
@@ -79,15 +79,15 @@ export const CarRentls = () => {
                                </div>   
                         </div>
 
-                        <div className=' w-full h-14 grid grid-cols-5 gap-1  ' >
-                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1   flex-wrap border-2'>
+                        <div className=' w-full h-14 grid grid-cols-5 gap-1 py-2  ' >
+                               <div className=' h-full col-span-3 bg-white rounded-md flex justify-center items-center px-1   flex-wrap'>
                                   <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Drop-off-date</div>
                                  <input type="date"   className=' w-full   h-3/5  outline-none  bg-white  px-5 text-[15px] font-sans   font-semibold ' name='drop_off_date'  onChange={(e)=> handler(e)}  />
                                </div>
 
-                               <div className=' col-span-2 h-full bg-white rounded-md flex justify-center items-center flex-wrap border-2'>
-                               <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Time</div>
-                               <input type="time"  className=' w-full rounded-sm outline-none    h-3/5   bg-white   text-[15px] font-sans pl-4 pr-1  font-semibold ' name='drop_off_time'  onChange={(e)=> handler(e)}  />
+                               <div className=' col-span-2 h-full bg-white rounded-md flex justify-center items-center flex-wrap '>
+                                    <div className=' w-full h-2/5 text-[13px] pl-6 text-gray-500'>Time</div>
+                                    <input type="time"  className=' w-full rounded-sm outline-none    h-3/5   bg-white   text-[15px] font-sans pl-4 pr-1  font-semibold ' name='drop_off_time'  onChange={(e)=> handler(e)}  />
                                </div>   
                         </div>
         
@@ -101,6 +101,41 @@ export const CarRentls = () => {
                    
                </div>
                </div>
+
+           {
+            newState!=null?
+               <div className=' w-full h-auto flex justify-center items-center bg-gray-50 p-4 '>
+                 
+                      <div className=' w-full bg-white shadow-md  px-2'>
+                              <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                                  <p className=' w-full font-semibold text-[15px]'>Pick-up-location</p>
+                                  <span >:</span>
+                                  <p className=' w-full text-[15px] pl-6'>{newState.pick_up_location}</p>
+                              </div>
+
+                              {
+                                newState.drop_off_time? <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                                  <p className=' w-full font-semibold text-[15px]'>Drop-Off-location</p>
+                                  <span >:</span>
+                                  <p className=' w-full text-[15px] pl-6'>{newState.drop_off_time}</p>
+                              </div>:""
+                              }
+
+                              <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                                  <p className=' w-full font-semibold text-[15px]'>Pick-up-date</p>
+                                  <span >:</span>
+                                  <p className=' w-full text-[15px] pl-2 gap-3'> {newState.pick_up_date}  : {newState.time}</p>
+                              </div>
+
+                              <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                                  <p className=' w-full font-semibold text-[15px]'>Drop-Off-date and Time</p>
+                                  <span >:</span>
+                                  <p className=' w-full text-[15px] pl-2 flex  '>{newState.drop_off_date}  : {newState.drop_off_time}</p>
+                              </div>
+                      </div>
+                      
+               </div>:""
+           }
     </>
   )
 }
