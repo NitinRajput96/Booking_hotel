@@ -1,9 +1,9 @@
 {
-    "Cars-and-Bikes":[
+    "CarsandBikes":[
         {
             "id":1,
             "carName":"Thar",
-            "img":"images1/35019_AudiA3Cabriolet2017-removebg-preview.png",
+            "img":"/images1/35019_AudiA3Cabriolet2017-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -91,16 +91,6 @@
             "time":"24 hours"
         },
         {
-            "id":9,
-            "carName":"Thar",
-            "img":"/images1/sp2-1967-ford-mustang-fast-and-furious-removebg-preview.png",
-            "cartype":"sports",
-            "vehical_type":"car",
-            "company":"Mahindra",
-            "rent_price":"6000",
-            "time":"24 hours"
-        },
-        {
             "id":10,
             "carName":"Thar",
             "img":"/images1/sp3lemo-removebg-preview.png",
@@ -133,7 +123,7 @@
         {
             "id":13,
             "carName":"Thar",
-            "img":"/images1/spbike-removebg-preview.png",
+            "img":"/images1/d111.jpeg",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -213,7 +203,7 @@
         {
             "id":21,
             "carName":"Thar",
-            "img":"/images1/spbike8-removebg-preview.png",
+            "img":"/images1/suzuki-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -223,7 +213,7 @@
         {
             "id":22,
             "carName":"Thar",
-            "img":"/images1/spbike9-removebg-preview.png",
+            "img":"/images1/suzuki1-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -233,7 +223,7 @@
         {
             "id":23,
             "carName":"Thar",
-            "img":"/images1/suzuki-removebg-preview.png",
+            "img":"/images1/suzuki2-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -243,7 +233,7 @@
         {
             "id":24,
             "carName":"Thar",
-            "img":"/images1/suzuki1-removebg-preview.png",
+            "img":"/images1/toyota-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -253,7 +243,7 @@
         {
             "id":25,
             "carName":"Thar",
-            "img":"/images1/suzuki2-removebg-preview.png",
+            "img":"/images1/toyota1-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -263,7 +253,7 @@
         {
             "id":26,
             "carName":"Thar",
-            "img":"/images1/toyota-removebg-preview.png",
+            "img":"/images1/toyota2-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -273,7 +263,7 @@
         {
             "id":27,
             "carName":"Thar",
-            "img":"/images1/toyota1-removebg-preview.png",
+            "img":"/images1/toyota3-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -283,17 +273,7 @@
         {
             "id":28,
             "carName":"Thar",
-            "img":"/images1/toyota2-removebg-preview.png",
-            "cartype":"sports",
-            "vehical_type":"car",
-            "company":"Mahindra",
-            "rent_price":"6000",
-            "time":"24 hours"
-        },
-        {
-            "id":29,
-            "carName":"Thar",
-            "img":"/images1/toyota3-removebg-preview.png",
+            "img":"/images1/sp2-1967-ford-mustang-fast-and-furious-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
