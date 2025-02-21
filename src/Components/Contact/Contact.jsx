@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCategory } from '../../Context/context'
+import { useCategory } from '../../context/Context'
 
 
 export const Contact = () => {
