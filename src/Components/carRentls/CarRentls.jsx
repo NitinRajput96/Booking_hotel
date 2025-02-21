@@ -105,30 +105,30 @@ export const CarRentls = () => {
 
            {
             newState!=null?
-               <div className=' w-full h-auto flex justify-center items-center bg-gray-50 p-4 '>
+               <div className=' w-full h-auto flex justify-center items-center bg-gray-50 p-4 mb-7 '>
                  
                       <div className=' w-full bg-white shadow-md  px-2'>
-                              <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                              <div className=' w-full h-auto flex justify-center  items-center  gap-4 '>
                                   <p className=' w-full font-semibold text-[15px]'>Pick-up-location</p>
                                   <span >:</span>
                                   <p className=' w-full text-[15px] pl-6'>{newState.pick_up_location}</p>
                               </div>
 
                               {
-                                newState.drop_Off_location!=null? <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                                newState.drop_Off_location!=null? <div className=' w-full h-auto flex justify-center  items-center  gap-4 '>
                                   <p className=' w-full font-semibold text-[15px]'>Drop-Off-location</p>
                                   <span >:</span>
                                   <p className=' w-full text-[15px] pl-6'>{newState.drop_Off_location}</p>
                               </div>:""
                               }
 
-                              <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                              <div className=' w-full h-auto flex justify-center  items-center  gap-4 '>
                                   <p className=' w-full font-semibold text-[15px]'>Pick-up-date</p>
                                   <span >:</span>
                                   <p className=' w-full text-[15px] pl-2 gap-3'> {newState.pick_up_date}  : {newState.time}</p>
                               </div>
 
-                              <div className=' w-full h-auto flex justify-center  items-center border gap-4 '>
+                              <div className=' w-full h-auto flex justify-center  items-center gap-4 '>
                                   <p className=' w-full font-semibold text-[15px]'>Drop-Off-date and Time</p>
                                   <span >:</span>
                                   <p className=' w-full text-[15px] pl-2 flex  '>{newState.drop_off_date}  : {newState.drop_off_time}</p>
