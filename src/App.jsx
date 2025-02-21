@@ -6,6 +6,7 @@ import { Contact } from "./Components/Contact/Contact"
 import { About } from "./Components/About/About"
 import { Hotels } from "./Components/Hotels/Hotels"
 import UseContaxtProvider from "./context/Context"
+import { CarRentls } from "./Components/carRentls/CarRentls"
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="contact" element={<Contact/>} />
           <Route path="about" element={<About/>} />
           <Route path="hotels" element={<Hotels/>} />
+          <Route path="carsrentl" element={<CarRentls/>} />
          
         </Routes>
         <Footer/>
