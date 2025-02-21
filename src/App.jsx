@@ -5,8 +5,7 @@ import { Home } from "./Components/Dashboard/Home"
 import { Contact } from "./Components/Contact/Contact"
 import { About } from "./Components/About/About"
 import { Hotels } from "./Components/Hotels/Hotels"
-import UseContaxtProvider from "./context/context"
-
+import UseContaxtProvider from "./Context/context"
 
 
 

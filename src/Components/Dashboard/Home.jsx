@@ -5,7 +5,7 @@ import { RiHotelLine } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdLocationCity } from "react-icons/md";
-import { useCategory } from '../../context/context';
+import { useCategory } from '../../Context/context';
 
 
 

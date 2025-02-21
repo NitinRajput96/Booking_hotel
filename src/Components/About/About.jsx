@@ -1,6 +1,6 @@
 import React from 'react'
 import Cars from "../Json-data/Cars.json"
-import Item from 'antd/es/list/Item'
+
 
 
 export const About = () => {
