@@ -2,35 +2,64 @@ import React, { useState } from 'react'
 import { useCategory } from '../../context/Context';
 import { IoSearchOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 export const CarRentls = () => {
 
     const {carRents,setCarRents}=useCategory()
-    const [newState,setNewState]=useState()
+    const [newState,setNewState]=useState({
+      pick_up_location: null,
+      pick_up_date: null,
+      time: null,
+      drop_off_date:null,
+      drop_off_time: null
+    })
     const [dropOffLOc,setDropOffLoc]=useState(false)
     const nevigate=useNavigate()
 
     const handler=(e)=>{
          const {name,value}=e.target;
-         setCarRents({...carRents,[name]:value})
+         setNewState({...newState,[name]:value})
     }
   
    
   
 
     const carRentlFunction=(e)=>{
-         e.preventDefault();
-        setNewState(carRents)  
-        nevigate("/carlist")
+         e.preventDefault(); 
+
+         if(newState.pick_up_location===null){
+            toast.error("please fill Pickup location")
+         } else if(newState.pick_up_date===null){
+          toast.error("please select your Pick up date ")
+        }  else if(newState.time===null){
+          toast.error("please select your Pick up Time ")
+        }
+        else if(newState.drop_off_date===null){
+          toast.error("please select your Drop off date ")
+         }
+        else if(newState.drop_off_time===null){
+          toast.error("please select your Drop off Time ")
+         }    
+        else{
+           toast.success("Success")
+           setCarRents(newState)
+           setTimeout(() => {
+            nevigate("/carlist")
+           },250);
+        
+        } 
     }
     
-    console.log(newState);
+   
     
-    
+  
     
    
   return (
     <>
+       <Toaster/>
          <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row   xl:p-3    '>
                <div className=' w-full h-auto flex flex-wrap justify-center items-center  gap-7'>
         
