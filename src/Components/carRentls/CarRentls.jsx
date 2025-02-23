@@ -33,7 +33,7 @@ export const CarRentls = () => {
          if(newState.pick_up_location===null){
           toast.error("please fill Pickup location") 
        }else if(dropOffLOc===true){
-        toast.error("please fill frop off location")
+        toast.error("please fill drop off location")
       } 
        
        else if(newState.pick_up_date===null){
@@ -82,8 +82,9 @@ export const CarRentls = () => {
 
            
                   
-                  
-                   <form onSubmit={carRentlFunction} className=' w-full h-auto bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2  mx-4 mb-5   '>    
+              <div className=' w-full h-auto flex justify-center items-center p-5 '>
+                       
+              <form onSubmit={carRentlFunction} className=' w-full h-auto bg-yellow-500 rounded-md p-2 flex justify-center flex-wrap gap-2  mb-5   '>    
                         <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                              <div className='w-9 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></div>
                              <div className=' w-full h-full flex flex-col py-2'>
@@ -136,6 +137,7 @@ export const CarRentls = () => {
                         </div>
                   </form> 
                 
+              </div>
                    
                </div>
                </div>
