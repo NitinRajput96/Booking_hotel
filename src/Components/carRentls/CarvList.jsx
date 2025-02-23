@@ -8,10 +8,10 @@ export const CarvList = () => {
   return (
    <>
      
-        <div className='w-full h-auto bg-gray-100 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 p-3  '>
+        <div className='w-full h-auto bg-gray-100 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 px-4  py-6 '>
             {
             Cars.CarsandBikes.map((item,i)=>
-                <div className=' w-full h-auto   bg-white shadow-sm rounded-md p-7 hover:shadow-lg   ' key={i}>
+                <div className=' w-full h-auto   bg-white shadow-sm rounded-md py-3 px-6 hover:shadow-lg   ' key={i}>
                        <div className=''>
                                 <span className='  text-[23px] font-bold '>{item.carName}</span>
                                 <span className=' text-[13px] text-gray-600 px-2'>or similar larg car</span>
