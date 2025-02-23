@@ -10,6 +10,7 @@ export const CarRentls = () => {
     const {carRents,setCarRents}=useCategory()
     const [newState,setNewState]=useState({
       pick_up_location: null,
+      drop_Off_location:null,
       pick_up_date: null,
       time: null,
       drop_off_date:null,
@@ -30,26 +31,30 @@ export const CarRentls = () => {
          e.preventDefault(); 
 
          if(newState.pick_up_location===null){
-            toast.error("please fill Pickup location")
-         } else if(newState.pick_up_date===null){
-          toast.error("please select your Pick up date ")
-        }  else if(newState.time===null){
-          toast.error("please select your Pick up Time ")
+          toast.error("please fill Pickup location") 
+       }else if(dropOffLOc===true){
+        toast.error("please fill frop off location")
+      } 
+       
+       else if(newState.pick_up_date===null){
+          toast.error("please select your pick up date ")
+        } else if(newState.time===null){
+          toast.error("please select your pick up time ")
+        } else if(newState.drop_off_date===null){
+          toast.error("please select your drop off date ")
+        } else if(newState.drop_off_time===null){
+          toast.error("please select your drop off Time ")
         }
-        else if(newState.drop_off_date===null){
-          toast.error("please select your Drop off date ")
-         }
-        else if(newState.drop_off_time===null){
-          toast.error("please select your Drop off Time ")
-         }    
         else{
-           toast.success("Success")
-           setCarRents(newState)
-           setTimeout(() => {
-            nevigate("/carlist")
-           },250);
-        
-        } 
+          toast.success("Success")
+          setCarRents(newState)
+          setTimeout(() => {
+           nevigate("/carlist")
+          },400);
+       
+       } 
+
+      
     }
     
    
