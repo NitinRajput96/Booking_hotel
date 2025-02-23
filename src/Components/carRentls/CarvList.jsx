@@ -7,7 +7,7 @@ import { IoSpeedometerOutline } from "react-icons/io5";
 export const CarvList = () => {
   return (
    <>
-      <h3>Rent Cars</h3>
+     
         <div className='w-full h-auto bg-gray-100 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 p-3 '>
             {
             Cars.CarsandBikes.map((item,i)=>
