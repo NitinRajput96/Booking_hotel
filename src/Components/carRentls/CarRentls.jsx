@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import { useCategory } from '../../context/Context';
 import { IoSearchOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 export const CarRentls = () => {
 
     const {carRents,setCarRents}=useCategory()
     const [newState,setNewState]=useState()
     const [dropOffLOc,setDropOffLoc]=useState(false)
+    const nevigate=useNavigate()
 
     const handler=(e)=>{
          const {name,value}=e.target;
@@ -19,6 +21,7 @@ export const CarRentls = () => {
     const carRentlFunction=(e)=>{
          e.preventDefault();
         setNewState(carRents)  
+        nevigate("/carlist")
     }
     
     console.log(newState);
