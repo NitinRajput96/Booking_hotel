@@ -18,7 +18,7 @@ export const CarvList = () => {
                        </div>
 
                        <div className=' w-full h-2/6  flex justify-center items-center  mt-3  '>
-                             <div className=' w-3/5 h-full col-span-2border   '>
+                             <div className=' w-3/5 h-full col-span-2    '>
                                  <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[14px] font-sans '><span><LuUserRound/></span>5 seats</p>
                                  <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[14px] font-sans '><span><TbAutomaticGearbox/></span>Automatic</p>
                                  <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[14px] font-sans '><span><IoSpeedometerOutline/></span>Unlimited mileage</p>
