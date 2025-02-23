@@ -2,7 +2,7 @@
     "CarsandBikes":[
         {
             "id":1,
-            "carName":"Thar",
+            "carName":"Audi A3",
             "img":"/images1/35019_AudiA3Cabriolet2017-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
@@ -12,7 +12,7 @@
         },
         {
             "id":2,
-            "carName":"Thar",
+            "carName":"Fortuner",
             "img":"/images1/f-toyata-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
@@ -22,8 +22,8 @@
         },
         {
             "id":3,
-            "carName":"Thar",
-            "img":"/images1/fortunercar-removebg-preview.png",
+            "carName":"Lamborghini",
+            "img":"/images1/sp3lemo-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
@@ -32,7 +32,7 @@
         },
         {
             "id":4,
-            "carName":"Thar",
+            "carName":"Lamborghini",
             "img":"/images1/Lamborghini-Revuelt_-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
@@ -42,7 +42,7 @@
         },
         {
             "id":5,
-            "carName":"Thar",
+            "carName":"Scorpio",
             "img":"/images1/mh-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
@@ -62,7 +62,7 @@
         },
         {
             "id":7,
-            "carName":"Thar",
+            "carName":"XUV-500",
             "img":"/images1/mh3-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
@@ -93,7 +93,7 @@
         {
             "id":10,
             "carName":"Thar",
-            "img":"/images1/sp3lemo-removebg-preview.png",
+            "img":"/images1/fortunercar-removebg-preview.png",
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
