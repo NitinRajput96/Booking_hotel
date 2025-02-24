@@ -50,8 +50,8 @@ export const CarvList = () => {
                         </div>
 
                         <div  className=' w-full h-auto flex justify-between items-center'>
-                            <button onClick={viewcar} className=' px-2 py-1  hover:bg-indigo-700 shadow-md text-white rounded-md bg-indigo-500 font-sans font-semibold text-[12px]'  >Car view</button>
-                            <button onClick={bookcar} className=' px-2 py-1  hover:bg-indigo-700 shadow-md text-white rounded-md bg-indigo-500 font-sans font-semibold text-[12px]'  >Book car</button>
+                            <button onClick={viewcar} className=' px-2 py-1  hover:bg-indigo-700 shadow-md text-white rounded-md bg-indigo-500 font-sans font-bold text-[12px]'  >Car view</button>
+                            <button onClick={bookcar} className=' px-2 py-1  hover:bg-indigo-700 shadow-md text-white rounded-md bg-indigo-500 font-sans font-bold text-[12px]'  >Book car</button>
                         </div>
                     
                 </div>
