@@ -163,6 +163,8 @@ export const CarRentls = () => {
                </div>
                </div>
 
+               <div className=' w-full h-auto p-5 text-gray-500 font-sans font-semibold text-[13px]'>Cars and other motor vehicles have made it easy for people to travel within a city or across a continent. They have also influenced where people live. People once had to live near their jobs, but now they can live farther away and drive to work.</div>
+
            {
             carRents!=null?
                <div className=' w-full h-auto flex justify-center items-center bg-gray-50 p-4 mb-7 '>

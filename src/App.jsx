@@ -8,6 +8,7 @@ import { Hotels } from "./Components/Hotels/Hotels"
 import UseContaxtProvider from "./context/Context"
 import { CarRentls } from "./Components/carRentls/CarRentls"
 import { CarvList } from "./Components/carRentls/CarvList"
+import { ViewCars } from "./Components/carRentls/ViewCars"
 
 
 
@@ -29,6 +30,8 @@ function App() {
           <Route path="hotels" element={<Hotels/>} />
           <Route path="carsrentl" element={<CarRentls/>} />
           <Route path="carlist" element={<CarvList/>}/>
+          <Route path="carview" element={<ViewCars/>}/>
+         
          
         </Routes>
         <Footer/>
