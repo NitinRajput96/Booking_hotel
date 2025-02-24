@@ -3,11 +3,26 @@ import Cars from "../Json-data/Cars.json"
 import { LuUserRound } from "react-icons/lu";
 import { TbAutomaticGearbox } from "react-icons/tb";
 import { IoSpeedometerOutline } from "react-icons/io5";
+import toast, { Toaster } from 'react-hot-toast';
+
+
 
 export const CarvList = () => {
+
+    
+      const viewcar=(e)=>{
+               e.preventDefault()
+              toast.success(" view page  ...")
+      }
+
+      const bookcar=(e)=>{
+        e.preventDefault()
+        toast.success(" Booking succes...")
+}
+
   return (
    <>
-     
+      <Toaster/>
         <div className='w-full h-auto bg-gray-100 grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 px-4  py-6 '>
             {
             Cars.CarsandBikes.map((item,i)=>
@@ -33,7 +48,12 @@ export const CarvList = () => {
                          <div className=' font-semibold text-[13px] shadow-black '> Car Rent price for 24 hour </div>
                          <div className=' text-[14px] text-green-600 font-bold '>{item.rent_price} Rs</div>
                         </div>
-                       <span>{item.id}</span>
+
+                        <div  className=' w-full h-auto flex justify-between items-center'>
+                            <button onClick={viewcar} className=' px-2 py-[1px]  hover:bg-indigo-700 shadow-md text-white rounded-md bg-indigo-500 font-sans font-semibold text-[12px]'  >Car view</button>
+                            <button onClick={bookcar} className=' px-2 py-[1px]  hover:bg-indigo-700 shadow-md text-white rounded-md bg-indigo-500 font-sans font-semibold text-[12px]'  >Book car</button>
+                        </div>
+                    
                 </div>
             )
             }
