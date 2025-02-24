@@ -13,15 +13,15 @@ export const CarvList = () => {
             Cars.CarsandBikes.map((item,i)=>
                 <div className=' w-full h-auto   bg-white shadow-sm rounded-md py-3 px-6 hover:shadow-lg   ' key={i}>
                        <div className=''>
-                                <span className='  text-[22px] font-bold '>{item.carName}</span>
-                                <span className=' text-[13px] text-gray-600 px-2'>or similar larg car</span>
+                                <span className='  text-[20px] font-bold '>{item.carName}</span>
+                                <span className=' text-[12px] text-gray-600 pl-2'>or similar larg car</span>
                        </div>
 
                        <div className=' w-full h-2/6  flex justify-center items-center  mt-3  '>
-                             <div className=' w-3/5 h-full col-span-2    '>
-                                 <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[14px] font-sans '><span><LuUserRound/></span>5 seats</p>
-                                 <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[14px] font-sans '><span><TbAutomaticGearbox/></span>Automatic</p>
-                                 <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[14px] font-sans '><span><IoSpeedometerOutline/></span>Unlimited mileage</p>
+                             <div className=' w-3/5 h-full col-span-2 ]   '>
+                                 <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[13px] font-sans '><span><LuUserRound/></span>5 seats</p>
+                                 <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[13px] font-sans '><span><TbAutomaticGearbox/></span>Automatic</p>
+                                 <p className=' w-full h-auto  flex justify-start items-center gap-2 text-[13px] font-sans '><span><IoSpeedometerOutline/></span>Unlimited mileage</p>
                              </div>
                              <div className=' w-2/5 h-full flex justify-center  items-center'>
                                  <img src={item.img} className=' w-full h-full rounded-md ' alt="cars img" />
@@ -30,8 +30,8 @@ export const CarvList = () => {
 
 
                        <div className='w-full h-auto   flex justify-between items-center my-4 '>
-                         <div className=' font-semibold text-[14px] shadow-black '> Car Rent price for 24 hour </div>
-                         <div className=' text-lg text-green-600 font-bold '>4599 Rs</div>
+                         <div className=' font-semibold text-[13px] shadow-black '> Car Rent price for 24 hour </div>
+                         <div className=' text-[14px] text-green-600 font-bold '>{item.rent_price} Rs</div>
                         </div>
                        <span>{item.id}</span>
                 </div>

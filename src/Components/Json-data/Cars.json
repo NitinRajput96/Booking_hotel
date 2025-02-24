@@ -7,7 +7,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"15,000",
             "time":"24 hours"
         },
         {
@@ -17,7 +17,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"10,000",
             "time":"24 hours"
         },
         {
@@ -27,7 +27,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"28,000",
             "time":"24 hours"
         },
         {
@@ -37,7 +37,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"27,000",
             "time":"24 hours"
         },
         {
@@ -47,7 +47,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"7000",
             "time":"24 hours"
         },
         {
@@ -77,7 +77,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"4500",
             "time":"24 hours"
         },
         {
@@ -87,7 +87,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"19,000",
             "time":"24 hours"
         },
         {
@@ -97,7 +97,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"9000",
             "time":"24 hours"
         },
         {
@@ -127,7 +127,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Harley-devidson",
-            "rent_price":"6000",
+            "rent_price":"7000",
             "time":"24 hours"
         },
         {
@@ -197,7 +197,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"5000",
             "time":"24 hours"
         },
         {
@@ -207,7 +207,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"3000",
             "time":"24 hours"
         },
         {
@@ -217,7 +217,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"5500",
             "time":"24 hours"
         },
         {
@@ -237,7 +237,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"4000",
             "time":"24 hours"
         },
         {
@@ -247,7 +247,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"4500",
             "time":"24 hours"
         },
         {
@@ -267,7 +267,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"7000",
             "time":"24 hours"
         },
         {
@@ -277,7 +277,7 @@
             "cartype":"sports",
             "vehical_type":"car",
             "company":"Mahindra",
-            "rent_price":"6000",
+            "rent_price":"6500",
             "time":"24 hours"
         }
      
