@@ -33,26 +33,47 @@ export const CarRentls = () => {
          if(newState.pick_up_location===null){
           toast.error("please fill Pickup location") 
        }else if(dropOffLOc===true){
-        toast.error("please fill drop off location")
+            if(newState.drop_Off_location===null)
+            {
+              toast.error("Please fill your drop off location")
+            }
+            else{
+              
+            if(newState.pick_up_date===null){
+              toast.error("please select your pick up date ")
+            } else if(newState.time===null){
+              toast.error("please select your pick up time ")
+            } else if(newState.drop_off_date===null){
+              toast.error("please select your drop off date ")
+            } else if(newState.drop_off_time===null){
+              toast.error("please select your drop off Time ")
+            }
+          else{
+            toast.success("Success")
+            setCarRents(newState)
+            setTimeout(() => {
+            nevigate("/carlist")
+            },600);  
+          }}}
+
+      else if(newState.pick_up_date===null){
+        toast.error("please select your pick up date ")
+      } else if(newState.time===null){
+        toast.error("please select your pick up time ")
+      } else if(newState.drop_off_date===null){
+        toast.error("please select your drop off date ")
+      } else if(newState.drop_off_time===null){
+        toast.error("please select your drop off Time ")
+      }
+      else{
+      toast.success("Success")
+      setCarRents(newState)
+      setTimeout(() => {
+      nevigate("/carlist")
+      },600);  
       } 
-       
-       else if(newState.pick_up_date===null){
-          toast.error("please select your pick up date ")
-        } else if(newState.time===null){
-          toast.error("please select your pick up time ")
-        } else if(newState.drop_off_date===null){
-          toast.error("please select your drop off date ")
-        } else if(newState.drop_off_time===null){
-          toast.error("please select your drop off Time ")
-        }
-        else{
-          toast.success("Success")
-          setCarRents(newState)
-          setTimeout(() => {
-           nevigate("/carlist")
-          },600);
-       
-       } 
+
+        
 
       
     }

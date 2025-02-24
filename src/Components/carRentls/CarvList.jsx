@@ -13,7 +13,7 @@ export const CarvList = () => {
             Cars.CarsandBikes.map((item,i)=>
                 <div className=' w-full h-auto   bg-white shadow-sm rounded-md py-3 px-6 hover:shadow-lg   ' key={i}>
                        <div className=''>
-                                <span className='  text-[23px] font-bold '>{item.carName}</span>
+                                <span className='  text-[22px] font-bold '>{item.carName}</span>
                                 <span className=' text-[13px] text-gray-600 px-2'>or similar larg car</span>
                        </div>
 
@@ -33,7 +33,7 @@ export const CarvList = () => {
                          <div className=' font-semibold text-[14px] shadow-black '> Car Rent price for 24 hour </div>
                          <div className=' text-lg text-green-600 font-bold '>4599 Rs</div>
                         </div>
-                       
+                       <span>{item.id}</span>
                 </div>
             )
             }
