@@ -22,7 +22,7 @@ export const ViewCars = () => {
     <>
         <div className=' w-full h-auto my-2 text-[20px] font-semibold px-6 flex justify-center items-center '>{viewState}  <span className=' p-2  text-orange-600 font-semibold '>{vehical} </span></div>
 
-        <div className=' w-full  h-full flex justify-center items-center flex-col gap-4 '>
+        <div className=' w-full  h-full flex justify-center items-center flex-col gap-4 py-5 '>
             {
                 Cars.CarsandBikes.map((item,i)=>{
                     return item.carName===viewState?<>
