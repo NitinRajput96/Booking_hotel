@@ -20,9 +20,10 @@ export const ViewCars = () => {
          
   return (
     <>
-        <div className=' w-full h-full text-[20px] font-semibold  flex justify-center items-center  '>{viewState}  <span className=' p-2  text-orange-600 font-semibold '>{vehical} </span></div>
 
-        <div className=' w-full h-full flex justify-center items-center p-5 bg-gray-50 '>
+        <div className=' w-full h h-lvh flex justify-start items-center flex-col p-5 bg-gray-50 '>
+        <div className=' w-full h- text-[20px] font-semibold  flex justify-center items-center  '>{viewState}  <span className=' p-2  text-orange-600 font-semibold '>{vehical} </span></div>
+
             {
                 Cars.CarsandBikes.map((item,i)=>{
                     return item.carName===viewState?<>
