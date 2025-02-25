@@ -20,17 +20,19 @@ export const ViewCars = () => {
          
   return (
     <>
-        <div className=' w-full h-auto my-2 text-[20px] font-semibold px-6 '>{viewState}  <span className=' p-2  text-orange-600 font-semibold '>{vehical} </span></div>
+        <div className=' w-full h-auto my-2 text-[20px] font-semibold px-6 flex justify-center items-center '>{viewState}  <span className=' p-2  text-orange-600 font-semibold '>{vehical} </span></div>
 
-        <div className=' w-full h-auto'>
+        <div className=' w-full  h-full flex justify-center items-center flex-col gap-4 '>
             {
                 Cars.CarsandBikes.map((item,i)=>{
                     return item.carName===viewState?<>
                         {
                            <>
-                           <img src={item.img} className=' w-11/12 h-11/12' alt="" />
+                          <div className=' w-full h-56 flex justify-center items-center '>
+                             <img src={item.img} className=' w-11/12 h-11/12' alt="" />
+                          </div>
 
-                           <div className='w-full h-auto p-5 text-[12px] font-sans font-semibold text-gray-400 '>{item.about}</div>
+                           <div className='w-full h-auto  p-5 text-[13px] font-sans font-semibold text-gray-600 '>{item.about}</div>
 
                            </>
                             
