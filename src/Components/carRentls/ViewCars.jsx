@@ -32,7 +32,7 @@ export const ViewCars = () => {
                              <img src={item.img} className=' w-11/12 h-11/12' alt="" />
                           </div>
 
-                           <div className='w-full h-auto  p-5 text-[13px] font-sans font-semibold text-gray-600 '>{item.about}</div>
+                           <div className='w-full h-auto mb-2  p-7 text-[13px] font-sans font-semibold text-gray-600 '>{item.about}</div>
 
                            </>
                             
