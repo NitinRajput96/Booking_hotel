@@ -13,6 +13,8 @@ import { LiaHotelSolid } from "react-icons/lia";
 import { FaCar } from "react-icons/fa";
 import { MdOutlineAttractions } from "react-icons/md";
 import { MdOutlineLocalTaxi } from "react-icons/md";
+import { useCategory } from '../../context/Context';
+
 
 
  
@@ -21,7 +23,7 @@ import { MdOutlineLocalTaxi } from "react-icons/md";
 
 export const Header = () => {
 
-   
+       const {searchItems,setSearchItems}=useCategory()
        const [state,setState]=useState(false)
        console.log(state);
        
@@ -125,7 +127,7 @@ export const Header = () => {
 
      <div className=' w-full h-auto     bg-indigo-600 flex justify-center   '>
          <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center py-4 min-[450]:gap-4 gap-2 flex-wrap '>
-            <Link to="/" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><MdNightsStay/>Stays</Link>
+            <Link to="/" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
             <Link to="contact" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
             <Link to="about" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
             <Link to="carsrentl" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><FaCar/>Car rentals</Link>

@@ -6,6 +6,7 @@ import { FaEye } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 import { MdLocationCity } from "react-icons/md";
 import { useCategory } from '../../context/Context';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
@@ -14,20 +15,62 @@ import { useCategory } from '../../context/Context';
 
 export const Home = () => {
 
-     const {categ,setCateg}=useCategory()
-     const [newState,setNewState]=useState()
+     const {hotelData,setHotelData}=useCategory()
+     const {searchItems,setSearchItems}=useCategory()
+     const [newState,setNewState]=useState(
+          {
+               0: null,
+               staylocation: null,
+               checkingDate: null,
+               checkoutDate: null,
+               adults: null,
+               childrens: null,
+               rooms: 0
+           }
+     )
+   
 
      const handler=(e)=>{
           const {name,value}=e.target
-          setCateg({...categ,[name]:value})
+          setNewState({...newState,[name]:value})
      }
+
+     
    
     
    
 
      const getallData=(e)=>{
           e.preventDefault();
-         setNewState(categ)  
+
+          if(newState.staylocation===null){
+             toast.error(" please enter your state location")
+          }
+          else if(newState.checkingDate===null){
+               toast.error(" please enter your checking date ")
+          }
+          else if(newState.checkoutDate===null){
+               toast.error(" please enter your checkout date ")
+          }
+          else if(newState.adults===null){
+               toast.error(" please enter Adults ")
+          }
+          else if(newState.childrens===null){
+               toast.error(" please enter Childrens ")
+          }
+          else if(newState.rooms===0){
+               toast.error(" please enter Rooms ")
+          }
+          else{
+              
+               setHotelData(newState)  
+               setSearchItems(true)
+               toast.success(" Done")
+               if(newState.staylocation===null){
+                    setSearchItems(false)
+               }
+          }
+      
      }
      
     
@@ -50,6 +93,8 @@ export const Home = () => {
 {/* <div className='w-full h-60  bg-indigo-600'>
 
 </div> */}
+
+<  Toaster/>
 
   <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row   xl:p-3    '>
        <div className=' w-full h-auto xl:col-span-7 flex flex-wrap justify-center items-center p-4 gap-7'>
@@ -108,7 +153,7 @@ export const Home = () => {
                 </div>
 
                 <div className=' max-lg:w-full  w-3/5 h-14 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
-                     <button type='submit' className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' >Search</button>
+                     <button type='submit' className=' w-full h-12 text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
                 </div>
           </form>
         
@@ -119,8 +164,32 @@ export const Home = () => {
 
 
 
+    
+
+         {/* searching hotels  start */}
+         {
+          searchItems===true?<>
+          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center bg-slate-50  '>
+     
      {
-          newState!=null?<div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4   '>
+       Hotel_data.hotelDetails.map((item,i)=>
+           <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
+
+             <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
+             <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
+                 <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
+                 <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
+                 <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
+                 <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
+                   
+             </div>
+           </div>        
+       )
+     }       
+     </div> 
+          </>:<>
+          {
+           newState!=null?<div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4   '>
                {
                    
                     <div className=' w-11/12 p-5 flex justify-center items-center flex-col gap-1 shadow-sm bg-white py-2 hover:border-blue-800  '> 
@@ -135,32 +204,15 @@ export const Home = () => {
                   
                } 
             </div>:""
-     }
+          }
          
-         <div className=' w-full h-36 bg-gray-50 flex justify-center items-center py-5 rounded-sm'>
-               <span className=' w-full  h-full flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
-         </div>
-
-
-       <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center bg-slate-50  '>
-     
-       {
-         Hotel_data.hotelDetails.map((item,i)=>
-             <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
-
-               <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
-               <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
-                   <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
-                   <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
-                   <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
-                   <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
-                     
+               <div className=' w-full h-36 bg-gray-50 flex justify-center items-center py-5 rounded-sm'>
+                    <span className=' w-full  h-full flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
                </div>
-             </div>        
-         )
-       }       
-       </div> 
 
+          </>
+         }
+     
   </div> 
 
   
