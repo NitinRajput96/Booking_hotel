@@ -14,6 +14,7 @@ export const ViewCars = () => {
          console.log(vehical);
          
 
+         window.scroll(0,100)
          useEffect(() => {
             viehcil()
          },[viehcil])
