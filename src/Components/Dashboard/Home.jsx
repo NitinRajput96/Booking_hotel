@@ -96,10 +96,10 @@ export const Home = () => {
 
 <  Toaster/>
 
-  <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row      '>
-       <div className=' w-full h-44 xl:col-span-7 flex flex-wrap justify-center items-center gap-7 bg-indigo-600 '>
+  <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row  m-0 border-none     '>
+       <div className=' w-full h-44 xl:col-span-7 flex flex-wrap justify-center items-cente pt-3 bg-indigo-600 '>
 
-          <div className=' max-lg:w-full h-26 w-11/12 lg:px-10 px-4  '>
+          <div className=' max-lg:w-full h-auto w-11/12  lg:px-10  px-4   '>
                  <span className=' text-[24px] font-sans font-extrabold text-white'>Find your next stay </span>
                  <p className=' text-[16px]   text-white'> Search low prices on hotels,homes and much more...</p>
           </div>
@@ -217,36 +217,9 @@ export const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
          {
           searchItems===true?<>
-          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center mt-28 bg-slate-50  '>
+          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center  max-lg:mt-72 mt-16 bg-slate-50  '>
      {
        Hotel_data.hotelDetails.map((item,i)=>
            <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>

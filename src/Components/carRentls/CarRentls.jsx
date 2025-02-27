@@ -211,27 +211,7 @@ export const CarRentls = () => {
                              <button type='submit' className=' w-full h-12 text-[20px]  font-semibold text-white font-sans' >Search</button>
                         </div>
                   </form> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
+                  
                  </div>
                    
                </div>

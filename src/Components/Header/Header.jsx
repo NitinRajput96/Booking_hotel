@@ -34,12 +34,12 @@ export const Header = () => {
 
   return (
    <>
-    <div className=' w-full  h-[70px]     flex justify-center items-center  bg-indigo-600  z-10 '>
+    <div className=' w-full  h-[70px]     m-0 border-none  flex justify-center items-center  bg-indigo-600  z-10 '>
           
     <div className='  max-[450px]:px-2  w-11/12 h-full   bg-indigo-600  flex  justify-between items-center border-b '>
          
          {/* logo */}
-         <div className=' max-sm:w-3/7 sm:w-40  border-b  lg:text-lg lg:font-bold px-2 text-white rounded-md font-semibold'>
+         <div className=' max-sm:w-3/7 sm:w-40   lg:text-lg lg:font-bold px-2 text-white rounded-md font-semibold'>
               <span className=''> Booking-hotels</span>
          </div>
 
@@ -125,7 +125,7 @@ export const Header = () => {
 
 
 
-     <div className=' w-full h-auto     bg-indigo-600 flex justify-center   '>
+     <div className=' w-full h-auto  m-0 border-none     bg-indigo-600 flex justify-center   '>
          <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center py-4 min-[450]:gap-4 gap-2 flex-wrap '>
             <Link to="/" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
             <Link to="contact" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
