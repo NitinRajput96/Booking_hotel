@@ -235,13 +235,13 @@ export const Home = () => {
           <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
 
                <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
-               <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
+             <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
                <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
                <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
                <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
-               <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
-               
-          </div>
+               <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>   
+             </div>
+
           </div>  
           </>:<>
             
@@ -266,11 +266,28 @@ export const Home = () => {
                   
                } 
             </div>:""
-          }
-         
-               <div className=' w-full h-auto bg-gray-50 flex justify-center  items-center  py-5 rounded-sm'>
+          },
+          <div className=' w-full h-auto bg-gray-50 flex justify-center  items-center  py-5 rounded-sm'>
                     <span className=' w-full  h-auto flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
                </div>
+          {
+               
+               Hotel_data.hotelDetails.map((item,i)=>
+                    <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
+
+                    <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
+                    <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
+                    <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
+                    <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
+                    <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
+                    <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
+
+                    </div>
+                    </div>  
+               )
+             
+          }
+         
 
           </>
          }
