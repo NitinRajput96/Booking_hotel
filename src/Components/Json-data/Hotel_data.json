@@ -4,7 +4,8 @@
             "id":1,
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_1.jpeg",
-            "hot_location":"Alipur",
+            "hot_location":"Rohini",
+            "city":"delhi",
             "hot_city":"Delhi",
             "hot_reviow":"230"
         },
@@ -12,7 +13,8 @@
             "id":2,
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_2.jpeg",
-            "hot_location":"Alipur",
+            "hot_location":"Ajadpur",
+            "city":"delhi",
             "hot_city":"Delhi",
             "hot_reviow":"230"
 
@@ -22,7 +24,8 @@
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_3.jpeg",
             "hot_location":"Alipur",
-            "hot_city":"Delhi",
+            "city":"up",
+            "hot_city":"Uttar pardesh",
             "hot_reviow":"230"
 
         },
@@ -31,7 +34,8 @@
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_4.jpeg",
             "hot_location":"Alipur",
-            "hot_city":"Delhi",
+            "city":"harya",
+            "hot_city":"Haryana",
             "hot_reviow":"230"
 
         },
@@ -40,7 +44,8 @@
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_5.jpeg",
             "hot_location":"Alipur",
-            "hot_city":"Delhi",
+            "city":"gujrat",
+            "hot_city":"Gujrat",
             "hot_reviow":"230"
 
         },
@@ -48,8 +53,9 @@
             "id":6,
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_6.jpeg",
-            "hot_location":"Alipur",
-            "hot_city":"Delhi",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
             "hot_reviow":"230"
 
         }
