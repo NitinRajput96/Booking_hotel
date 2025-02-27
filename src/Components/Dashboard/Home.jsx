@@ -18,6 +18,7 @@ export const Home = () => {
      const {hotelData,setHotelData}=useCategory()
      const {searchItems,setSearchItems}=useCategory()
      const [newState,setNewState]=useState(
+          
           {
                0: null,
                staylocation: null,
@@ -28,11 +29,13 @@ export const Home = () => {
                rooms: 0
            }
      )
-   
+
 
      const handler=(e)=>{
           const {name,value}=e.target
           setNewState({...newState,[name]:value})
+        
+          
      }
 
      
@@ -64,11 +67,11 @@ export const Home = () => {
           else{
               
                setHotelData(newState)  
-               setSearchItems(true)
                toast.success(" Done")
-               if(newState.staylocation===null){
-                    setSearchItems(false)
-               }
+               setSearchItems(true)
+               e.target.reset() 
+            
+          
           }
       
      }
@@ -227,7 +230,22 @@ export const Home = () => {
   
   {
           searchItems===true?<>
-          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center  max-lg:mt-72   bg-slate-50  '>
+          <div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4 max-lg:mt-72   '>
+               {
+                   
+                    <div className=' w-11/12 p-5 flex justify-center items-center flex-col gap-1 shadow-sm bg-white py-2 hover:border-blue-800  '> 
+                         <h1 className=' font-bold'>Recent Dates</h1>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Adults    <span className=' text-sm px-[10px] bg-yellow-500' >{hotelData.adults} </span>          </h4>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Childerns <span className=' text-sm px-[10px] bg-yellow-500' >{hotelData.childrens} </span>       </h4>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Rooms     <span className=' text-sm px-[10px] bg-yellow-500' >{hotelData.rooms} </span>           </h4>
+                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Location  <span className=' text-sm px-[10px] bg-yellow-500' >{hotelData.staylocation} </span>   </h4>
+
+ 
+                    </div>  
+                  
+               } 
+            </div>
+          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center    bg-slate-50  '>
      {
        Hotel_data.hotelDetails.map((item,i)=>
          {
@@ -243,33 +261,17 @@ export const Home = () => {
              </div>
 
           </div>  
-          </>:<>
+          </>:""
             
-          </>
+         
          }      
        )
      }       
      </div> </>:<>
-          {
-           newState!=null?<div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4 max-lg:mt-72   '>
-               {
-                   
-                    <div className=' w-11/12 p-5 flex justify-center items-center flex-col gap-1 shadow-sm bg-white py-2 hover:border-blue-800  '> 
-                         <h1 className=' font-bold'>Recent Dates</h1>
-                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Adults    <span className=' text-sm px-[10px] bg-yellow-500' >{newState.adults} </span>          </h4>
-                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Childerns <span className=' text-sm px-[10px] bg-yellow-500' >{newState.childrens} </span>       </h4>
-                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Rooms     <span className=' text-sm px-[10px] bg-yellow-500' >{newState.rooms} </span>           </h4>
-                         <h4 className=' font-bold text-[13px] w-full flex  justify-between pl-5 pr-14 items-center  '> Location  <span className=' text-sm px-[10px] bg-yellow-500' >{ newState.staylocation} </span>   </h4>
-
- 
-                    </div>  
-                  
-               } 
-            </div>:""
-          },
-          <div className=' w-full h-auto bg-gray-50 flex justify-center  items-center  py-5 rounded-sm'>
+          
+              <div className=' w-full h-auto bg-gray-50 flex justify-center  items-center  py-5 rounded-sm max-lg:mt-72 '>
                     <span className=' w-full  h-auto flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
-               </div>
+               </div>      
           {
                
                Hotel_data.hotelDetails.map((item,i)=>
