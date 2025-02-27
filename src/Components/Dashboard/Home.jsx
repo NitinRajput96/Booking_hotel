@@ -214,12 +214,17 @@ export const Home = () => {
                      <button type='submit' className=' w-full h-12 text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
                 </div>
           </form>
+     
+  </div> 
 
 
 
-         {
+
+
+  
+  {
           searchItems===true?<>
-          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center  max-lg:mt-72 mt-16 bg-slate-50  '>
+          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center  max-lg:mt-72   bg-slate-50  '>
      {
        Hotel_data.hotelDetails.map((item,i)=>
            <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
@@ -238,7 +243,7 @@ export const Home = () => {
      </div> 
           </>:<>
           {
-           newState!=null?<div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4   '>
+           newState!=null?<div className=' w-full flex justify-center items-center h-auto bg-gray-50 py-4 max-lg:mt-72   '>
                {
                    
                     <div className=' w-11/12 p-5 flex justify-center items-center flex-col gap-1 shadow-sm bg-white py-2 hover:border-blue-800  '> 
@@ -255,20 +260,12 @@ export const Home = () => {
             </div>:""
           }
          
-               <div className=' w-full h-36 bg-gray-50 flex justify-center items-center py-5 rounded-sm'>
-                    <span className=' w-full  h-full flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
+               <div className=' w-full h-auto bg-gray-50 flex justify-center  items-center  py-5 rounded-sm'>
+                    <span className=' w-full  h-auto flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
                </div>
 
           </>
          }
-     
-  </div> 
-
-
-
-
-
-  {/* form--------input */}
 
  
 
