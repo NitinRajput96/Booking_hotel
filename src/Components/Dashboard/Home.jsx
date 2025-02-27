@@ -96,17 +96,21 @@ export const Home = () => {
 
 <  Toaster/>
 
-  <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row   xl:p-3    '>
-       <div className=' w-full h-auto xl:col-span-7 flex flex-wrap justify-center items-center p-4 gap-7'>
+  <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row      '>
+       <div className=' w-full h-44 xl:col-span-7 flex flex-wrap justify-center items-center gap-7 bg-indigo-600 '>
 
-          <div className=' w-full h-auto bg-white'>
-                 <span className=' text-[24px] font-sans font-extrabold'>Find your next stay </span>
-                 <p className=' text-[16px] text-gray-600'> Search low prices on hotels,homes and much more...</p>
+          <div className=' max-lg:w-full h-26 w-11/12 lg:px-10 px-4  '>
+                 <span className=' text-[24px] font-sans font-extrabold text-white'>Find your next stay </span>
+                 <p className=' text-[16px]   text-white'> Search low prices on hotels,homes and much more...</p>
           </div>
+ 
+       </div>
 
-          
-         
-           <form onSubmit={getallData} className=' max-md:w-full w-10/12    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-1 flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-1   '>    
+
+
+         {/* searching hotels  start */}
+
+         <form onSubmit={getallData} className=' absolute left-3 right-3 top-80    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  lg:hidden  '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
                      <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
@@ -156,21 +160,93 @@ export const Home = () => {
                      <button type='submit' className=' w-full h-12 text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
                 </div>
           </form>
-        
-           
-       </div>
-
-        
 
 
 
-    
 
-         {/* searching hotels  start */}
+          <form onSubmit={getallData} className=' absolute left-24 right-24 top-[278px]    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  max-lg:hidden  '>    
+                <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
+                     <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
+                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
+                </div>
+                <div className=' w-full h-14 grid grid-cols-1 gap-1   ' >
+                       <div className=' h-full bg-white rounded-md   flex justify-center items-center flex-wrap '>
+                             <div className=' w-full h-2/5  rounded-md flex justify-evenly gap-12 items-center '>
+                                 <span className=' text-[13px]  font-sans font-bold' >Check in date </span>
+                                 <span className=' text-[13px]  font-sans font-bold' >Check out date </span>
+                             </div>
+                             <div className=' w-full flex h-3/5    rounded-md   justify-center items-center  bg-white'>
+                                    <input type="date"  className=' w-2/4    h-full  rounded-md  bg-white   text-[13px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
+                                    <input type="date"  className=' w-2/4   h-full  rounded-md  bg-white  text-[13px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
+                             </div>
+                       </div>
+
+                    
+                </div>
+
+                <div className=' w-full h-14 grid grid-cols-3 max-md:gap-1  ' >
+                       <div        className='  w-full   bg-white max-md:rounded-md rounded-l-md  flex justify-center items-center flex-col flex-wrap '>
+                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Adults</span>
+                            <input className='  w-full    text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='2'   ></input>
+                       </div>
+
+                       <div        className='  w-full   bg-white max-md:rounded-md flex justify-center items-center flex-col flex-wrap '>
+                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Children</span>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='childrens' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                       </div>
+
+                       <div        className='  w-full   bg-white max-md:rounded-md rounded-r-md flex justify-center items-center flex-col flex-wrap '>
+                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Rooms</span>
+                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='1'   ></input>
+                       </div>
+
+                       {/* <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span  className=' w-full h-2/4 bg-slate-800 text-[13px]  font-sans' >Children</span>
+                            <input className=' text-[16px] font-bold font-sans outline-none' type='text' name='childrens' onChange={(e)=>handler(e)}  ></input>
+                       </div>  
+                       <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
+                            <span  className=' w-full h-2/4 bg-slate-800 text-[13px]  font-sans' >Rooms</span>
+                            <input className='  text-[16px] font-bold font-sans outline-none' type='text' name='room'  onChange={(e)=>handler(e)} ></input>
+                       </div>   */}
+                </div>
+
+                <div className=' max-lg:w-full  w-3/5 h-14 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
+                     <button type='submit' className=' w-full h-12 text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
+                </div>
+          </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          {
           searchItems===true?<>
-          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center bg-slate-50  '>
-     
+          <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center mt-28 bg-slate-50  '>
      {
        Hotel_data.hotelDetails.map((item,i)=>
            <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
@@ -214,6 +290,15 @@ export const Home = () => {
          }
      
   </div> 
+
+
+
+
+
+  {/* form--------input */}
+
+ 
+
 
   
   
