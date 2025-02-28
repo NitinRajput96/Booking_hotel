@@ -272,6 +272,7 @@ export const Home = () => {
               <div className=' w-full h-auto bg-gray-50 flex justify-center  items-center  py-5 rounded-sm max-lg:mt-72 '>
                     <span className=' w-full  h-auto flex justify-center items-center text-md bg-white  rounded-sm font-semibold '> Search Hotels near by your Location..</span>
                </div>      
+               <div className='  xl:col-span-4  gap-2 flex justify-center flex-wrap items-center    bg-slate-50  '>
           {
                
                Hotel_data.hotelDetails.map((item,i)=>
@@ -289,6 +290,7 @@ export const Home = () => {
                )
              
           }
+          </div>  
          
 
           </>
