@@ -11,7 +11,7 @@
         },
         {
             "id":2,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Frosty Fern Hotel",
             "img":"/images/img_2.jpeg",
             "hot_location":"Ajadpur",
             "city":"delhi",
@@ -21,7 +21,7 @@
         },
         {
             "id":3,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Holiday Express",
             "img":"/images/img_3.jpeg",
             "hot_location":"Alipur",
             "city":"up",
@@ -31,7 +31,7 @@
         },
         {
             "id":4,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Pearl Paradise Palms",
             "img":"/images/img_4.jpeg",
             "hot_location":"Alipur",
             "city":"haryana",
@@ -41,7 +41,7 @@
         },
         {
             "id":5,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"La Cascade Elegante",
             "img":"/images/img_5.jpeg",
             "hot_location":"Alipur",
             "city":"gujrat",
@@ -51,7 +51,7 @@
         },
         {
             "id":6,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Red Flag Boutique Hotel",
             "img":"/images/img_6.webp",
             "hot_location":"shalimar",
             "city":"raj",
@@ -61,7 +61,7 @@
         },
         {
             "id":7,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Radiant Rosewood Inn",
             "img":"/images/img_7.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -71,7 +71,7 @@
         },
         {
             "id":8,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Prestine Pine Inn",
             "img":"/images/img_8.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -81,7 +81,7 @@
         },
         {
             "id":9,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Countryside Retreat",
             "img":"/images/img_9.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -91,7 +91,7 @@
         },
         {
             "id":10,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Middlemore Motel",
             "img":"/images/img_10.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -101,7 +101,7 @@
         },
         {
             "id":11,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Tropical Island Cottages",
             "img":"/images/img_11.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -111,7 +111,7 @@
         },
         {
             "id":12,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Aria Astral Hotel",
             "img":"/images/img_12.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -121,7 +121,7 @@
         },
         {
             "id":13,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Grandview Mansion Hotels",
             "img":"/images/3d-rendering-beautiful.avif",
             "hot_location":"shalimar",
             "city":"raj",
@@ -131,7 +131,7 @@
         },
         {
             "id":14,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Country House",
             "img":"/images/download (1).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -141,7 +141,7 @@
         },
         {
             "id":15,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Peaceful Pine Hotel",
             "img":"/images/download (2).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -151,7 +151,7 @@
         },
         {
             "id":16,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Majestic Mansion",
             "img":"/images/download (3).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -161,7 +161,7 @@
         },
         {
             "id":17,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Indigo Suites Hotel",
             "img":"/images/download.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -171,7 +171,7 @@
         },
         {
             "id":18,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Omni Oasis Inn",
             "img":"/images/hotel_room_stock_photo_515821.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -181,7 +181,7 @@
         },
         {
             "id":19,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Twilight Tulip Lodge",
             "img":"/images/hotel-room-26001164.webp",
             "hot_location":"shalimar",
             "city":"raj",
@@ -191,7 +191,7 @@
         },
         {
             "id":20,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Grand Goldfinch Grande",
             "img":"/images/hotel-room-27254386.webp",
             "hot_location":"shalimar",
             "city":"raj",
@@ -201,7 +201,7 @@
         },
         {
             "id":21,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Spark Riser Hotel",
             "img":"/images/hotel-room-wallpaper-preview.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -211,7 +211,7 @@
         },
         {
             "id":22,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Luxuriant Lily Lodge",
             "img":"/images/images (1).jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -221,7 +221,7 @@
         },
         {
             "id":23,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Tropical Oasis Suites",
             "img":"/images/images (2).jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -231,7 +231,7 @@
         },
         {
             "id":24,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Nest Hotel",
             "img":"/images/images (3).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -241,7 +241,7 @@
         },
         {
             "id":25,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Satin Waters Hotel",
             "img":"/images/images (4).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -251,7 +251,7 @@
         },
         {
             "id":26,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Sapphire Shield Resort",
             "img":"/images/images (5).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -261,7 +261,7 @@
         },
         {
             "id":27,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Garden Villa",
             "img":"/images/images (6).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -271,7 +271,7 @@
         },
         {
             "id":28,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"North Nebula Hotel",
             "img":"/images/images (7).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -281,7 +281,7 @@
         },
         {
             "id":29,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Outside The Box Hotel",
             "img":"/images/images (8).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -291,7 +291,7 @@
         },
         {
             "id":29,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Artsy Fartsy Hotel",
             "img":"/images/images (9).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -301,7 +301,7 @@
         },
         {
             "id":30,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Home Away Haven",
             "img":"/images/images (10).jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -312,7 +312,7 @@
         },
         {
             "id":31,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Pier Hotel",
             "img":"/images/images1.avif",
             "hot_location":"shalimar",
             "city":"raj",
@@ -322,7 +322,7 @@
         },
         {
             "id":32,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Mountain Dreamers Lodges",
             "img":"/images/imagesfam1.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -336,7 +336,7 @@
         },
         {
             "id":33,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Palazzo Resort",
             "img":"/images/jaipur-rajasthan.webp",
             "hot_location":"shalimar",
             "city":"raj",
@@ -346,7 +346,7 @@
         },
         {
             "id":34,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Soft Petal",
             "img":"/images/life-room.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -356,7 +356,7 @@
         },
         {
             "id":35,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Dreamy Drizzle Hotel",
             "img":"/images/lovepik-hotel-standard.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -366,7 +366,7 @@
         },
         {
             "id":36,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Gorgeous Grove Inn",
             "img":"/images/luxury-hotel-bedroom.jpeg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -376,7 +376,7 @@
         },
         {
             "id":37,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Dream Suite Resort & Spa",
             "img":"/images/pexels-pixabay-237371.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -386,7 +386,7 @@
         },
         {
             "id":38,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Royal Tulip Luxury Hotels",
             "img":"/images/pngtree-bedroom.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -396,7 +396,7 @@
         },
         {
             "id":39,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"Majestic Mountain Inn",
             "img":"/images/pngtree-single-bed.jpg",
             "hot_location":"shalimar",
             "city":"raj",
@@ -406,7 +406,7 @@
         },
         {
             "id":40,
-            "hote_name":"Hotel SunshineOpens",
+            "hote_name":"The Rock ‘N’ Roll Hotel",
             "img":"/images/small-hotel-room.avif",
             "hot_location":"shalimar",
             "city":"raj",
