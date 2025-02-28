@@ -52,7 +52,7 @@
         {
             "id":6,
             "hote_name":"Hotel SunshineOpens",
-            "img":"/images/img_6.jpeg",
+            "img":"/images/img_6.webp",
             "hot_location":"shalimar",
             "city":"raj",
             "hot_city":"Rajsthan",
@@ -323,7 +323,7 @@
         {
             "id":32,
             "hote_name":"Hotel SunshineOpens",
-            "img":"/images/imagesfam1.jpeg",
+            "img":"/images/imagesfam1.jpg",
             "hot_location":"shalimar",
             "city":"raj",
             "hot_city":"Rajsthan",
