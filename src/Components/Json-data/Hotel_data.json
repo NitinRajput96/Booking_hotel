@@ -34,7 +34,7 @@
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_4.jpeg",
             "hot_location":"Alipur",
-            "city":"har",
+            "city":"haryana",
             "hot_city":"Haryana",
             "hot_reviow":"230"
 
@@ -53,6 +53,206 @@
             "id":6,
             "hote_name":"Hotel SunshineOpens",
             "img":"/images/img_6.jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":7,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/3d-rendering-beautiful.avif",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":8,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/download (1).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":9,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/download (2).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":10,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/download (3).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":11,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/download.jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":12,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/hotel_room_stock_photo_515821.jpg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":13,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/hotel-room-26001164.webp",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":14,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/hotel-room-27254386.webp",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":15,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/hotel-room-wallpaper-preview.jpg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":16,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/image(1).jpg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":17,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (3).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":18,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (5).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":19,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (6).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":20,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (7).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":21,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (8).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":22,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (9).jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":23,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images fam3.jpeg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":24,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images(2).jpg",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":25,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images1.avif",
+            "hot_location":"shalimar",
+            "city":"raj",
+            "hot_city":"Rajsthan",
+            "hot_reviow":"230"
+
+        },
+        {
+            "id":26,
+            "hote_name":"Hotel SunshineOpens",
+            "img":"/images/images (4).jpeg",
             "hot_location":"shalimar",
             "city":"raj",
             "hot_city":"Rajsthan",

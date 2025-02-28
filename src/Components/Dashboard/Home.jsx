@@ -279,7 +279,7 @@ export const Home = () => {
 
                     <img className=' w-32 h-5/6 xl:w-2/5  xl:h-5/6 border rounded-md   ' src={item.img} alt="" />
                     <div className=' h-5/6 xl:h-5/6  w-60 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
-                    <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
+                    <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name}     {item.id} </span>
                     <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
                     <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
                     <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
