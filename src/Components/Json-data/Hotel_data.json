@@ -23,9 +23,9 @@
             "id":3,
             "hote_name":"Holiday Express",
             "img":"/images/img_3.jpeg",
-            "hot_location":"Alipur",
-            "city":"up",
-            "hot_city":"Uttar pardesh",
+            "hot_location":"Meerut",
+            "city":"uttar pardesh",
+            "hot_city":"Uttar Pardesh",
             "hot_reviow":"230"
 
         },
@@ -33,9 +33,9 @@
             "id":4,
             "hote_name":"Pearl Paradise Palms",
             "img":"/images/img_4.jpeg",
-            "hot_location":"Alipur",
-            "city":"haryana",
-            "hot_city":"Haryana",
+            "hot_location":"Baddha",
+            "city":"uttar pardesh",
+            "hot_city":"Uttar Pardesh",
             "hot_reviow":"230"
 
         },
@@ -43,7 +43,7 @@
             "id":5,
             "hote_name":"La Cascade Elegante",
             "img":"/images/img_5.jpeg",
-            "hot_location":"Alipur",
+            "hot_location":"G-city",
             "city":"gujrat",
             "hot_city":"Gujrat",
             "hot_reviow":"230"
@@ -53,9 +53,9 @@
             "id":6,
             "hote_name":"Red Flag Boutique Hotel",
             "img":"/images/img_6.webp",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"",
+            "city":"jaipur",
+            "hot_city":"Jaipur City",
             "hot_reviow":"230"
 
         },
@@ -63,9 +63,9 @@
             "id":7,
             "hote_name":"Radiant Rosewood Inn",
             "img":"/images/img_7.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Hawa Mahal",
+            "city":"udaypur",
+            "hot_city":"Udaypur",
             "hot_reviow":"230"
 
         },
@@ -73,19 +73,19 @@
             "id":8,
             "hote_name":"Prestine Pine Inn",
             "img":"/images/img_8.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
-            "hot_reviow":"230"
+            "hot_location":"Alipur 110036",
+            "city":"delhi",
+            "hot_city":"Delhi",
+            "hot_reviow":"1040"
 
         },
         {
             "id":9,
             "hote_name":"The Countryside Retreat",
             "img":"/images/img_9.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Garh Brijghat",
+            "city":"uttar pardesh",
+            "hot_city":"Uttar Pardesh",
             "hot_reviow":"230"
 
         },
@@ -93,9 +93,9 @@
             "id":10,
             "hote_name":"Middlemore Motel",
             "img":"/images/img_10.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Cnat Place",
+            "city":"delhi",
+            "hot_city":"Delhi",
             "hot_reviow":"230"
 
         },
@@ -103,9 +103,9 @@
             "id":11,
             "hote_name":"Tropical Island Cottages",
             "img":"/images/img_11.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Model Town",
+            "city":"delhi",
+            "hot_city":"Delhi",
             "hot_reviow":"230"
 
         },
@@ -113,19 +113,19 @@
             "id":12,
             "hote_name":"Aria Astral Hotel",
             "img":"/images/img_12.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
-            "hot_reviow":"230"
+            "hot_location":"Sadarpur",
+            "city":"uttar pardesh",
+            "hot_city":"Uttar Pardesh",
+            "hot_reviow":"150"
 
         },
         {
             "id":13,
             "hote_name":"Grandview Mansion Hotels",
             "img":"/images/3d-rendering-beautiful.avif",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Dal Jhil",
+            "city":"kashmir",
+            "hot_city":"Kashmir India",
             "hot_reviow":"230"
 
         },
@@ -133,19 +133,19 @@
             "id":14,
             "hote_name":"The Country House",
             "img":"/images/download (1).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
-            "hot_reviow":"230"
+            "hot_location":"Dehradhun",
+            "city":"hridwar",
+            "hot_city":"Uttrakhand",
+            "hot_reviow":"340"
 
         },
         {
             "id":15,
             "hote_name":"Peaceful Pine Hotel",
             "img":"/images/download (2).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Rishikesh",
+            "city":"hridwar",
+            "hot_city":"Uttrakhand",
             "hot_reviow":"230"
 
         },
@@ -153,9 +153,9 @@
             "id":16,
             "hote_name":"The Majestic Mansion",
             "img":"/images/download (3).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Patna City",
+            "city":"bihar",
+            "hot_city":"Bihar",
             "hot_reviow":"230"
 
         },
@@ -163,9 +163,9 @@
             "id":17,
             "hote_name":"Indigo Suites Hotel",
             "img":"/images/download.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Samashtipur",
+            "city":"bihar",
+            "hot_city":"Bihar",
             "hot_reviow":"230"
 
         },
@@ -173,9 +173,9 @@
             "id":18,
             "hote_name":"Omni Oasis Inn",
             "img":"/images/hotel_room_stock_photo_515821.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Rajpur",
+            "city":"bihar",
+            "hot_city":"Bihar",
             "hot_reviow":"230"
 
         },
@@ -183,9 +183,9 @@
             "id":19,
             "hote_name":"Twilight Tulip Lodge",
             "img":"/images/hotel-room-26001164.webp",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Ice Rock",
+            "city":"kashmir",
+            "hot_city":"Kashmir India",
             "hot_reviow":"230"
 
         },
@@ -193,9 +193,9 @@
             "id":20,
             "hote_name":"Grand Goldfinch Grande",
             "img":"/images/hotel-room-27254386.webp",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Panipat",
+            "city":"haryana",
+            "hot_city":"Haryana",
             "hot_reviow":"230"
 
         },
@@ -203,9 +203,9 @@
             "id":21,
             "hote_name":"Spark Riser Hotel",
             "img":"/images/hotel-room-wallpaper-preview.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Sonipat",
+            "city":"haryana",
+            "hot_city":"Haryana",
             "hot_reviow":"230"
 
         },
@@ -213,9 +213,9 @@
             "id":22,
             "hote_name":"Luxuriant Lily Lodge",
             "img":"/images/images (1).jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Tajpur Kalan",
+            "city":"haryana",
+            "hot_city":"Haryana",
             "hot_reviow":"230"
 
         },
@@ -223,9 +223,9 @@
             "id":23,
             "hote_name":"Tropical Oasis Suites",
             "img":"/images/images (2).jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Rampur",
+            "city":"uttar pardesh",
+            "hot_city":"Uttar Pardesh",
             "hot_reviow":"230"
 
         },
@@ -233,9 +233,9 @@
             "id":24,
             "hote_name":"The Nest Hotel",
             "img":"/images/images (3).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Mumbi City",
+            "city":"mumbi",
+            "hot_city":"Maharashtra",
             "hot_reviow":"230"
 
         },
@@ -243,9 +243,9 @@
             "id":25,
             "hote_name":"Satin Waters Hotel",
             "img":"/images/images (4).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Mumbi",
+            "city":"mumbi",
+            "hot_city":"Maharashtra",
             "hot_reviow":"230"
 
         },
@@ -253,9 +253,9 @@
             "id":26,
             "hote_name":"Sapphire Shield Resort",
             "img":"/images/images (5).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Indore",
+            "city":"mp",
+            "hot_city":"Madhya Pardesh",
             "hot_reviow":"230"
 
         },
@@ -263,9 +263,9 @@
             "id":27,
             "hote_name":"The Garden Villa",
             "img":"/images/images (6).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Ujjan Mahakal",
+            "city":"mp",
+            "hot_city":"Madhya Pardesh",
             "hot_reviow":"230"
 
         },
@@ -273,7 +273,7 @@
             "id":28,
             "hote_name":"North Nebula Hotel",
             "img":"/images/images (7).jpeg",
-            "hot_location":"shalimar",
+            "hot_location":"Shivaji Nagar",
             "city":"raj",
             "hot_city":"Rajsthan",
             "hot_reviow":"230"
@@ -283,7 +283,7 @@
             "id":29,
             "hote_name":"Outside The Box Hotel",
             "img":"/images/images (8).jpeg",
-            "hot_location":"shalimar",
+            "hot_location":"MahaRana Partab Nagar",
             "city":"raj",
             "hot_city":"Rajsthan",
             "hot_reviow":"230"
@@ -293,9 +293,9 @@
             "id":29,
             "hote_name":"The Artsy Fartsy Hotel",
             "img":"/images/images (9).jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Janpath",
+            "city":"delhi",
+            "hot_city":"Delhi",
             "hot_reviow":"230"
 
         },
@@ -303,9 +303,9 @@
             "id":30,
             "hote_name":"Home Away Haven",
             "img":"/images/images (10).jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Rohini East",
+            "city":"delhi",
+            "hot_city":"Delhi",
             "hot_reviow":"230",
             "imgss":{}
 
@@ -314,9 +314,9 @@
             "id":31,
             "hote_name":"The Pier Hotel",
             "img":"/images/images1.avif",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Goa Beach",
+            "city":"goa",
+            "hot_city":"Goa",
             "hot_reviow":"230"
 
         },
@@ -324,9 +324,9 @@
             "id":32,
             "hote_name":"Mountain Dreamers Lodges",
             "img":"/images/imagesfam1.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Near Beach",
+            "city":"goa",
+            "hot_city":"Goa",
             "hot_reviow":"230",
             "photoImgs":[
                          {"pics":"/images/imagesfam2.jpeg"},
@@ -338,9 +338,9 @@
             "id":33,
             "hote_name":"The Palazzo Resort",
             "img":"/images/jaipur-rajasthan.webp",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"G-city",
+            "city":"goa",
+            "hot_city":"Goa",
             "hot_reviow":"230"
 
         },
@@ -348,9 +348,9 @@
             "id":34,
             "hote_name":"Soft Petal",
             "img":"/images/life-room.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Mussoorie",
+            "city":"uttrakhand",
+            "hot_city":"Uttrakhand",
             "hot_reviow":"230"
 
         },
@@ -358,9 +358,9 @@
             "id":35,
             "hote_name":"Dreamy Drizzle Hotel",
             "img":"/images/lovepik-hotel-standard.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Jhil",
+            "city":"uttrakhand",
+            "hot_city":"Uttrakhand",
             "hot_reviow":"230"
 
         },
@@ -368,9 +368,9 @@
             "id":36,
             "hote_name":"Gorgeous Grove Inn",
             "img":"/images/luxury-hotel-bedroom.jpeg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Indore City",
+            "city":"mp",
+            "hot_city":"Madhya Pardesh",
             "hot_reviow":"230"
 
         },
@@ -378,9 +378,9 @@
             "id":37,
             "hote_name":"Dream Suite Resort & Spa",
             "img":"/images/pexels-pixabay-237371.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Shambhaji Nagar",
+            "city":"mumbi",
+            "hot_city":"Maharashtra",
             "hot_reviow":"230"
 
         },
@@ -388,9 +388,9 @@
             "id":38,
             "hote_name":"Royal Tulip Luxury Hotels",
             "img":"/images/pngtree-bedroom.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Inderlock",
+            "city":"delhi",
+            "hot_city":"Delhi",
             "hot_reviow":"230"
 
         },
@@ -398,19 +398,19 @@
             "id":39,
             "hote_name":"Majestic Mountain Inn",
             "img":"/images/pngtree-single-bed.jpg",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
-            "hot_reviow":"230"
+            "hot_location":"Laxmi Nagar",
+            "city":"delhi",
+            "hot_city":"Delhi",
+            "hot_reviow":"540"
 
         },
         {
             "id":40,
             "hote_name":"The Rock ‘N’ Roll Hotel",
             "img":"/images/small-hotel-room.avif",
-            "hot_location":"shalimar",
-            "city":"raj",
-            "hot_city":"Rajsthan",
+            "hot_location":"Karol Bag",
+            "city":"delhi",
+            "hot_city":"Delhi",
             "hot_reviow":"230"
 
         }
