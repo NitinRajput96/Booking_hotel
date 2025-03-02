@@ -3,10 +3,12 @@ import { createContext, useContext, useState } from "react";
 export const UseContext=createContext()
 
 const UseContaxtProvider=({children})=>{
+
+        const [catagory,setCatagory]=useState(null)
         const [hotelData,setHotelData]=useState([null])
         const [carRents,setCarRents]=useState(null)
         const [viewState,setViewState]=useState(null)
-         const [searchItems,setSearchItems]=useState(false)
+        const [searchItems,setSearchItems]=useState(false)
     
         
         
@@ -16,6 +18,7 @@ const UseContaxtProvider=({children})=>{
           carRents,setCarRents,
           viewState,setViewState,
           searchItems,setSearchItems,
+          catagory,setCatagory
       
          }}>
          {children}

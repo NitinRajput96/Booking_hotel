@@ -7,6 +7,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { MdLocationCity } from "react-icons/md";
 import { useCategory } from '../../context/Context';
 import toast, { Toaster } from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -16,7 +17,8 @@ import toast, { Toaster } from 'react-hot-toast';
 export const Home = () => {
 
      const {hotelData,setHotelData}=useCategory()
-     const {searchItems,setSearchItems}=useCategory()
+     const {searchItems,setSearchItems,setCatagory}=useCategory()
+     const navigateH=useNavigate()
      const [newState,setNewState]=useState(
           
           {
@@ -36,6 +38,10 @@ export const Home = () => {
           setNewState({...newState,[name]:value})
         
           
+     }
+     const itemCatagory=(hote_name)=>{
+          setCatagory(hote_name)
+          navigateH("/hotelview")
      }
 
      
@@ -250,7 +256,7 @@ export const Home = () => {
        Hotel_data.hotelDetails.map((item,i)=>
          {
           return item.city===hotelData.staylocation ?<>
-          <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-1 gap-2 flex  justify-center items-center   rounded-md bg-white ' key={i}>
+          <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-1 gap-2 flex  justify-center items-center   rounded-md bg-white '  onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
              <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
                 <img className=' w-fit h-full  border rounded-md   ' src={item.img} alt="" />
              </div>
@@ -279,7 +285,7 @@ export const Home = () => {
           {
                
                Hotel_data.hotelDetails.map((item,i)=>
-                    <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' key={i}>
+                    <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
                     <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
                          <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
                     </div>
