@@ -16,14 +16,15 @@ export const HotelView = () => {
 
   return (
    <>
-     <div className=' w-full h-lvh flex justify-start items-center flex-col gap-3 p-2'>
+     <div className=' w-full h-full flex justify-start items-center flex-col gap-5 p-2'>
            {
             Hotel_data.hotelDetails.map((item,i)=>{
                 return item.hote_name===catagory?<>
                  <div className=' w-full  text-lg  px-2 font-bold p-3 '>{item.hote_name}</div>
-                <div className=' w-full h-4/6 flex justify-center items-center  '>
-                    <img src={item.img} className=' w-full h-full rounded-md p-3' alt="" />
+                <div className=' w-full h-3/6 flex justify-center items-center '>
+                    <img src={item.img} className=' w-full h-full rounded-md  shadow' alt="" />
                </div>
+               <div className=' w-full h-3/6' ></div>
                 </>:""
             })
            }
