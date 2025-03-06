@@ -50,7 +50,7 @@ export const HotelView = () => {
                                                         onClick={()=>(setRating(item))}
                                                         style={{
                                                           cursor:"pointer",
-                                                          fontSize:"18px",
+                                                          fontSize:"12px",
                                                           color:item<=rating?"gold":"gray"
                                                         }}
                                                       >
@@ -59,7 +59,7 @@ export const HotelView = () => {
                                             </>
                                       }) 
                                          }
-                                         <span className=' text-sm'>Rating..</span>
+                                         <span className=' text-[12px]'>Rating..</span>
                                     </>:""
                                   }
                                   </span>
