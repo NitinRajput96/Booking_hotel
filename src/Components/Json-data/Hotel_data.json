@@ -7,7 +7,8 @@
             "hot_location":"Rohini",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
         },
         {
             "id":2,
@@ -16,7 +17,8 @@
             "hot_location":"Ajadpur",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
 
         },
         {
@@ -26,7 +28,8 @@
             "hot_location":"Meerut",
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
 
         },
         {
@@ -36,7 +39,8 @@
             "hot_location":"Baddha",
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
 
         },
         {
@@ -46,7 +50,8 @@
             "hot_location":"G-city",
             "city":"gujrat",
             "hot_city":"Gujrat",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
 
         },
         {
@@ -56,7 +61,8 @@
             "hot_location":"",
             "city":"jaipur",
             "hot_city":"Jaipur City",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
 
         },
         {
@@ -66,7 +72,8 @@
             "hot_location":"Hawa Mahal",
             "city":"udaypur",
             "hot_city":"Udaypur",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4,5]
 
         },
         {
