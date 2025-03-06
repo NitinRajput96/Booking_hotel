@@ -38,7 +38,7 @@ export const HotelView = () => {
                 return item.hote_name===catagory?<>
                  <div className=' w-full h-full  p-1' key={i} >
                      <div className=' w-full h-auto flex  justify-between items-center my-2'>
-                                  <span className=' flex justify-center items-center  gap-[2px]'>
+                                  <span className=' flex justify-center items-center  gap-[1px]'>
                                   {
                                     item.stars!=null?
                                     <>
@@ -51,6 +51,7 @@ export const HotelView = () => {
                                                         style={{
                                                           cursor:"pointer",
                                                           fontSize:"12px",
+                                                          font:"bold",
                                                           color:item<=rating?"gold":"gray"
                                                         }}
                                                       >
