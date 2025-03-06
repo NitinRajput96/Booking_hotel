@@ -3,7 +3,7 @@ import { useCategory } from '../../context/Context'
 import Hotel_data from "../Json-data/Hotel_data.json"
 import { IoStar } from "react-icons/io5";
 import { IoShareSocialSharp } from "react-icons/io5";
-import { CiHeart } from "react-icons/ci";
+import { IoMdHeartEmpty } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -53,7 +53,7 @@ export const HotelView = () => {
                                                         onClick={()=>(setRating(item))}
                                                         style={{
                                                           cursor:"pointer",
-                                                          fontSize:"15px",
+                                                          fontSize:"16px",
                                                           font:"bold",
                                                           color:item<=rating?"gold":"gray"
                                                         }}
@@ -69,12 +69,12 @@ export const HotelView = () => {
                                   </span>
                                 
                                 
-                                <div className=' text-[20px] text-indigo-600 flex justify-center items-center gap-1'>
+                                <div className=' flex justify-center items-center '>
                                      {
-                                      like!=false?<> <span className=' text-[20px] text-red-600' onClick={()=>setLike(!like)} ><FaHeart/></span></>
-                                      :<span className=' text-[20px]'  onClick={()=>setLike(!like)}><CiHeart/></span>
+                                      like!=false?<> <span className=' w-8  h-10 p-1 flex justify-center items-center text-[19px] text-red-600 ' onClick={()=>setLike(!like)} ><FaHeart/></span></>
+                                      :<span className='w-8  h-10 p-1  flex justify-center items-center text-[23px]'  onClick={()=>setLike(!like)}><IoMdHeartEmpty/></span>
                                      }
-                                      <IoShareSocialSharp/>
+                                     <span className=' text-[21px] text-indigo-500'> <IoShareSocialSharp/></span>
                                 </div>
                                 
                               </div>
