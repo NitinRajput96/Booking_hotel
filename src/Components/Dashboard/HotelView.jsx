@@ -3,6 +3,8 @@ import { useCategory } from '../../context/Context'
 import Hotel_data from "../Json-data/Hotel_data.json"
 import { IoStar } from "react-icons/io5";
 import { IoShareSocialSharp } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
+import { FaHeart } from "react-icons/fa";
 import toast, { Toaster } from 'react-hot-toast';
 
 
@@ -12,6 +14,7 @@ export const HotelView = () => {
 
     const {catagory,setCatagory}=useCategory()
     const [rating,setRating]=useState(0)
+    const [like,setLike]=useState(false)
      
     const ratingFunk =()=>{
          rating>0?toast.success("You rate "+rating+" Stars"):""
@@ -50,7 +53,7 @@ export const HotelView = () => {
                                                         onClick={()=>(setRating(item))}
                                                         style={{
                                                           cursor:"pointer",
-                                                          fontSize:"16px",
+                                                          fontSize:"15px",
                                                           font:"bold",
                                                           color:item<=rating?"gold":"gray"
                                                         }}
@@ -66,9 +69,13 @@ export const HotelView = () => {
                                   </span>
                                 
                                 
-                                <span className=' text-[20px] text-indigo-600'>
+                                <div className=' text-[20px] text-indigo-600 flex justify-center items-center gap-1'>
+                                     {
+                                      like!=false?<> <span className=' text-[20px] text-red-600' onClick={()=>setLike(!like)} ><FaHeart/></span></>
+                                      :<span className=' text-[20px]'  onClick={()=>setLike(!like)}><CiHeart/></span>
+                                     }
                                       <IoShareSocialSharp/>
-                                </span>
+                                </div>
                                 
                               </div>
                          
