@@ -5,6 +5,8 @@ import { IoStar } from "react-icons/io5";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
+import { BiSolidLike } from "react-icons/bi";
+import { TiPlus } from "react-icons/ti";
 import toast, { Toaster } from 'react-hot-toast';
 
 
@@ -53,7 +55,7 @@ export const HotelView = () => {
                                                         onClick={()=>(setRating(item))}
                                                         style={{
                                                           cursor:"pointer",
-                                                          fontSize:"17px",
+                                                          fontSize:"15px",
                                                           font:"bold",
                                                           color:item<=rating?"gold":"gray"
                                                         }}
@@ -63,7 +65,7 @@ export const HotelView = () => {
                                             </>
                                       }) 
                                          }
-                                         <span className=' text-[10px]'>Rating</span>
+                                         <span className=' px-1 rounded-sm py-1 text-[17px] text-white flex jc items-center' style={{background:"gold"}}><BiSolidLike/><TiPlus/> </span>
                                     </>:""
                                   }
                                   </span>
@@ -72,7 +74,7 @@ export const HotelView = () => {
                                 <div className=' flex justify-center items-center '>
                                      {
                                       like!=false?<> <span className=' w-8  h-10 p-1 flex justify-center items-center text-[19px] text-red-600 ' onClick={()=>setLike(!like)} ><FaHeart/></span></>
-                                      :<span className='w-8  h-10 p-1  flex justify-center items-center text-[23px]'  onClick={()=>setLike(!like)}><IoMdHeartEmpty/></span>
+                                      :<span className='w-8  h-10 p-1  flex justify-center items-center text-[23px] text-red-500'  onClick={()=>setLike(!like)}><IoMdHeartEmpty/></span>
                                      }
                                      <span className=' text-[21px] text-indigo-500'> <IoShareSocialSharp/></span>
                                 </div>
