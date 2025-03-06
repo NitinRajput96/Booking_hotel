@@ -7,7 +7,8 @@ import { IoSearchOutline } from "react-icons/io5";
 import { MdLocationCity } from "react-icons/md";
 import { useCategory } from '../../context/Context';
 import toast, { Toaster } from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { list } from 'postcss';
 
 
 
@@ -18,6 +19,9 @@ export const Home = () => {
 
      const {hotelData,setHotelData}=useCategory()
      const {searchItems,setSearchItems,setCatagory}=useCategory()
+     const [gridList,setGridList]=useState(true)
+
+     console.log(gridList);
      const navigateH=useNavigate()
      const [newState,setNewState]=useState(
           
@@ -43,6 +47,9 @@ export const Home = () => {
           setCatagory(hote_name)
           navigateH("/hotelview")
      }
+
+
+     
 
      
    
@@ -83,6 +90,9 @@ export const Home = () => {
      }
 
      
+     useEffect(() => {
+          window.scroll(0,280)
+     }, [gridList,getallData])
      
      
     
@@ -279,39 +289,89 @@ export const Home = () => {
                </div> </>:<>
                     
                      
-                       <div  className=' w-full h-full xl:h-screen flex justify-center items-center max-xl:flex-col max-lg:px-2 gap-6 border-2 pt-64 xl:pt-6 '>
-                              <div className=' w-1/6 border h-full bg-gray-100'>
-                                             
-                              </div>
-
-
-
-                              <div className=' w-full xl:w-4/6 border h-full bg-gray-100 flex justify-evenly items-center flex-col xl:overflow-auto'>
-
-                              <div className=' w-full h-auto  gap-2 flex justify-center flex-wrap items-center    bg-slate-50  '>
-                              {
-                                   
-                                   Hotel_data.hotelDetails.map((item,i)=>
-                                        <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
-                                             <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
-                                                  <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
-                                             </div>
-                                             <div className=' h-5/6 xl:h-5/6  w-52 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
-                                                  <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
-                                                  <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
-                                                  <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
-                                                  <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
-                                                  <span className=' flex items-center gap-1 '><FaEye />{item.id}</span>
-                                             </div>
-                                      </div>  
-                                   )
+                       <div  className=' w-full h-full flex justify-center items-center flex-col  max-lg:px-2 border-2 pt-[256px] xl:pt-6 '>
+                              <div className='  max-sm:w-11/12 w-[86%]  h-12 flex justify-between items-center py-2'>
+                                    <div className=' w-auto h-full flex justify-center items-center gap-2 font-semibold underline'>
+                                        <Link  to="" >About</Link>
+                                        <Link  to="" >Delhit</Link>
+                                        <Link  to="" >New Delhi</Link>
+                                    </div>
+                                    <div className=' w-auto h-full border  bg-gray-100  py-2 px-1  rounded-full flex justify-center items-center gap-[2px]'>
+                                         <button onClick={()=>setGridList(true)} type='button' className='   active:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full'>List</button>
+                                         <button onClick={()=>setGridList(false)} type='button' className='  active:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full '>Grid</button>
+                                    </div>
                               
+                              </div>
+                              {
+                                   gridList===true?<>
+                                   <div className=' w-[86%] h-screen max-lg:h-full flex justify-between items-center gap-2 xl:gap-5  max-xl:flex-col   '>
+
+
+                                   <div className=' w-[25%] border h-full bg-gray-100  rounded-md'>
+                                             
+                                             </div>
+
+
+
+                                             <div className=' w-full xl:w-[75%]  rounded-md h-full bg-gray-100 flex justify-evenly items-center flex-col xl:overflow-auto'>
+
+                                             <div className=' w-full h-auto  gap-2 flex justify-center flex-wrap items-center    bg-slate-50  '>
+                                             {
+                                                  
+                                                  Hotel_data.hotelDetails.map((item,i)=>
+                                                       <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
+                                                            <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
+                                                                 <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
+                                                            </div>
+                                                            <div className=' h-5/6 xl:h-5/6  w-52 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
+                                                                 <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
+                                                                 <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
+                                                                 <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
+                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
+                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.id}</span>
+                                                            </div>
+                                                  </div>  
+                                                  )
+                                             
+                                             }
+                                        </div>  
+
+                                        </div>
+
+                                        </div>
+                                   </>:<>
+                                        <div className=' w-full  xl:w-[86%] h-screen max-lg:h-full flex justify-between items-center gap-2 lg:gap-5  max-xl:flex-col   '>
+                                            <div className=' w-[25%] border h-full bg-gray-100  rounded-md max-sm:hidden'>        
+                                             </div>
+
+                                             <div className=' w-full xl:w-[75%]  rounded-md h-full bg-gray-100 flex justify-evenly items-center flex-col flex-wrap xl:overflow-auto'>
+
+                                             <div className=' w-full h-auto grid max-[400px]:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 justify-items-center items-center gap-2 px-2   bg-gray-50  '>
+                                             {
+                                                    Hotel_data.hotelDetails.map((item,i)=>
+                                                       <div className=' w-full  xl:h-[450px]  shadow-sm  px-2 gap-4 flex  justify-center items-center flex-col   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
+                                                            <div className=' w-full h-5/6'>
+                                                                 <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
+                                                            </div>
+                                                            <div className=' h-5/6 xl:h-5/6  w-52 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
+                                                                 <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
+                                                                 <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
+                                                                 <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
+                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
+                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.id}</span>
+                                                            </div>
+                                                  </div>  
+                                                  )
+                                             }
+                                        </div>  
+
+                                        </div>
+                                        </div>
+                                   </>
+
+                                  
                               }
-                    </div>  
-
-                             </div>
-
-                       </div>
+                          </div>
 
 
                    
