@@ -25,7 +25,7 @@ export const Header = () => {
 
        const {searchItems,setSearchItems}=useCategory()
        const [state,setState]=useState(false)
-       console.log(state);
+       
        
 
        
