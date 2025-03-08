@@ -133,7 +133,7 @@ export const Home = () => {
 
          {/* searching hotels  start */}
 
-         <form onSubmit={getallData} className=' absolute left-3 right-3 top-80    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  lg:hidden  '>    
+         <form onSubmit={getallData} className=' absolute left-3 right-3 top-80    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  sm:hidden  '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
                      <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
@@ -187,20 +187,20 @@ export const Home = () => {
 
 
 
-          <form onSubmit={getallData} className=' absolute left-24 right-24 top-[278px]    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  max-lg:hidden  '>    
+          <form onSubmit={getallData} className='absolute  md:left-24 md:right-24 top-[278px]    max-sm:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-sm:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  max-sm:hidden  '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
-                     <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
+                     <input className=' w-full text-[18px]    font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
                 </div>
                 <div className=' w-full h-14 grid grid-cols-1 gap-1   ' >
                        <div className=' h-full bg-white rounded-md   flex justify-center items-center flex-wrap '>
                              <div className=' w-full h-2/5  rounded-md flex justify-evenly gap-12 items-center '>
-                                 <span className=' text-[13px]  font-sans font-bold' >Check in date </span>
-                                 <span className=' text-[13px]  font-sans font-bold' >Check out date </span>
+                                 <span className=' text-[10px]     font-sans font-bold' >Check in date </span>
+                                 <span className=' text-[10px]     font-sans font-bold' >Check out date </span>
                              </div>
                              <div className=' w-full flex h-3/5    rounded-md   justify-center items-center  bg-white'>
-                                    <input type="date"  className=' w-2/4    h-full  rounded-md  bg-white   text-[13px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
-                                    <input type="date"  className=' w-2/4   h-full  rounded-md  bg-white  text-[13px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
+                                    <input type="date"  className=' w-2/4      h-full  rounded-md  bg-white   text-[9px] font-sans px-5  font-semibold ' name='checkingDate'  onChange={(e)=> handler(e)}  />
+                                    <input type="date"  className=' w-2/4     h-full  rounded-md  bg-white  text-[9px] font-sans px-5  font-semibold ' name='checkoutDate'  onChange={(e)=> handler(e)}   />
                              </div>
                        </div>
 
@@ -209,18 +209,18 @@ export const Home = () => {
 
                 <div className=' w-full h-14 grid grid-cols-3 max-md:gap-1  ' >
                        <div        className='  w-full   bg-white max-md:rounded-md rounded-l-md  flex justify-center items-center flex-col flex-wrap '>
-                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Adults</span>
-                            <input className='  w-full    text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='2'   ></input>
+                            <span  className= ' w-full   text-[10px] text-center font-bold     font-sans' >Adults</span>
+                            <input className='  w-full    text-[10px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='adults' onChange={(e)=>handler(e)} placeholder='2'   ></input>
                        </div>
 
                        <div        className='  w-full   bg-white max-md:rounded-md flex justify-center items-center flex-col flex-wrap '>
-                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Children</span>
-                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='childrens' onChange={(e)=>handler(e)} placeholder='0'   ></input>
+                            <span  className= ' w-full   text-[10px] text-center font-bold     font-sans' >Children</span>
+                            <input className='  w-full   text-[10px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='childrens' onChange={(e)=>handler(e)} placeholder='0'   ></input>
                        </div>
 
                        <div        className='  w-full   bg-white max-md:rounded-md rounded-r-md flex justify-center items-center flex-col flex-wrap '>
-                            <span  className= ' w-full   text-[13px] text-center font-bold   font-sans' >Rooms</span>
-                            <input className='  w-full   text-[15px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='1'   ></input>
+                            <span  className= ' w-full   text-[10px] text-center font-bold     font-sans' >Rooms</span>
+                            <input className='  w-full   text-[10px] font-bold font-sans outline-none  flex justify-center items-center text-center' type='text' name='rooms' onChange={(e)=>handler(e)} placeholder='1'   ></input>
                        </div>
 
                        {/* <div        className=' w-full h-full bg-white rounded-md flex justify-center items-center flex-col flex-wrap border'>
@@ -233,8 +233,8 @@ export const Home = () => {
                        </div>   */}
                 </div>
 
-                <div className=' max-lg:w-full  w-3/5 h-14 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
-                     <button type='submit' className=' w-full h-12 text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
+                <div className='  w-3/5  h-14 rounded-md flex justify-center bg-blue-700  items-center shadow-sm  '>
+                     <button type='submit' className=' w-full h-12 text-[12px] sm:text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
                 </div>
           </form>
      
@@ -268,7 +268,7 @@ export const Home = () => {
 
 
 
-            <div  className=' w-full h-full flex justify-center items-center flex-col  max-lg:px-2 border-2 pt-[256px] xl:pt-6 '>
+            <div  className=' w-full h-full flex justify-center items-center flex-col  max-lg:px-2 border-2   '>
                               <div className='  max-sm:w-11/12 w-[86%]  h-12 flex justify-between items-center py-2'>
                                     <div className=' w-auto h-full flex justify-center items-center gap-2 font-semibold underline'>
                                         <Link  to="" >About</Link>
@@ -276,8 +276,8 @@ export const Home = () => {
                                         <Link  to="" >New Delhi</Link>
                                     </div>
                                     <div className=' w-auto h-full border  bg-gray-100  py-2 px-1  rounded-full flex justify-center items-center gap-[2px]'>
-                                         <button onClick={()=>setGridList(true)} type='button' className='   active:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full'>List</button>
-                                         <button onClick={()=>setGridList(false)} type='button' className='  active:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full '>Grid</button>
+                                         <button onClick={()=>setGridList(true)} type='button' className='   hover:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full'>List</button>
+                                         <button onClick={()=>setGridList(false)} type='button' className='  hover:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full '>Grid</button>
                                     </div>
                               
                               </div>
@@ -392,8 +392,8 @@ export const Home = () => {
                                         <Link  to="" >New Delhi</Link>
                                     </div>
                                     <div className=' w-auto h-full border  bg-gray-100  py-2 px-1  rounded-full flex justify-center items-center gap-[2px]'>
-                                         <button onClick={()=>setGridList(true)} type='button' className='   active:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full'>List</button>
-                                         <button onClick={()=>setGridList(false)} type='button' className='  active:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full '>Grid</button>
+                                         <button onClick={()=>setGridList(true)} type='button' className='   hover:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full'>List</button>
+                                         <button onClick={()=>setGridList(false)} type='button' className='  hover:border   hover:bg-gray-200 hover:border-black px-[12px] py-[2px]   text-sm font-semibold rounded-full '>Grid</button>
                                     </div>
                               
                               </div>
