@@ -8,7 +8,7 @@
             "city":"delhi",
             "hot_city":"Delhi",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
         },
         {
             "id":2,
@@ -18,7 +18,7 @@
             "city":"delhi",
             "hot_city":"Delhi",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
 
         },
         {
@@ -29,7 +29,7 @@
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
 
         },
         {
@@ -40,7 +40,7 @@
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
 
         },
         {
@@ -51,7 +51,7 @@
             "city":"gujrat",
             "hot_city":"Gujrat",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
 
         },
         {
@@ -62,7 +62,7 @@
             "city":"jaipur",
             "hot_city":"Jaipur City",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
 
         },
         {
@@ -73,7 +73,7 @@
             "city":"udaypur",
             "hot_city":"Udaypur",
             "hot_reviow":"230",
-            "stars":[1,2,3,4,5]
+            "stars":[1,2,3,4]
 
         },
         {
@@ -83,7 +83,8 @@
             "hot_location":"Alipur 110036",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"1040"
+            "hot_reviow":"1040",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -93,7 +94,8 @@
             "hot_location":"Garh Brijghat",
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -103,7 +105,8 @@
             "hot_location":"Cnat Place",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -113,7 +116,8 @@
             "hot_location":"Model Town",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -123,7 +127,8 @@
             "hot_location":"Sadarpur",
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
-            "hot_reviow":"150"
+            "hot_reviow":"150",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -133,7 +138,8 @@
             "hot_location":"Dal Jhil",
             "city":"kashmir",
             "hot_city":"Kashmir India",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -143,7 +149,8 @@
             "hot_location":"Dehradhun",
             "city":"hridwar",
             "hot_city":"Uttrakhand",
-            "hot_reviow":"340"
+            "hot_reviow":"340",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -153,7 +160,8 @@
             "hot_location":"Rishikesh",
             "city":"hridwar",
             "hot_city":"Uttrakhand",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -163,7 +171,8 @@
             "hot_location":"Patna City",
             "city":"bihar",
             "hot_city":"Bihar",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -173,7 +182,8 @@
             "hot_location":"Samashtipur",
             "city":"bihar",
             "hot_city":"Bihar",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -183,7 +193,8 @@
             "hot_location":"Rajpur",
             "city":"bihar",
             "hot_city":"Bihar",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -193,7 +204,8 @@
             "hot_location":"Ice Rock",
             "city":"kashmir",
             "hot_city":"Kashmir India",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -203,7 +215,8 @@
             "hot_location":"Panipat",
             "city":"haryana",
             "hot_city":"Haryana",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -213,7 +226,8 @@
             "hot_location":"Sonipat",
             "city":"haryana",
             "hot_city":"Haryana",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -223,7 +237,8 @@
             "hot_location":"Tajpur Kalan",
             "city":"haryana",
             "hot_city":"Haryana",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -233,7 +248,8 @@
             "hot_location":"Rampur",
             "city":"uttar pardesh",
             "hot_city":"Uttar Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -243,7 +259,8 @@
             "hot_location":"Mumbi City",
             "city":"mumbi",
             "hot_city":"Maharashtra",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -253,7 +270,8 @@
             "hot_location":"Mumbi",
             "city":"mumbi",
             "hot_city":"Maharashtra",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -263,7 +281,8 @@
             "hot_location":"Indore",
             "city":"mp",
             "hot_city":"Madhya Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -273,7 +292,8 @@
             "hot_location":"Ujjan Mahakal",
             "city":"mp",
             "hot_city":"Madhya Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -283,7 +303,8 @@
             "hot_location":"Shivaji Nagar",
             "city":"raj",
             "hot_city":"Rajsthan",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -293,7 +314,8 @@
             "hot_location":"MahaRana Partab Nagar",
             "city":"raj",
             "hot_city":"Rajsthan",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -303,7 +325,8 @@
             "hot_location":"Janpath",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -314,7 +337,8 @@
             "city":"delhi",
             "hot_city":"Delhi",
             "hot_reviow":"230",
-            "imgss":{}
+            "imgss":{},
+            "stars":[1,2,3,4]
 
         },
         {
@@ -324,7 +348,8 @@
             "hot_location":"Goa Beach",
             "city":"goa",
             "hot_city":"Goa",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -338,7 +363,8 @@
             "photoImgs":[
                          {"pics":"/images/imagesfam2.jpeg"},
                          {"pics":"/images/imagesfam3.jpeg"}
-                        ]
+                        ],
+           "stars":[1,2,3,4]
 
         },
         {
@@ -348,7 +374,8 @@
             "hot_location":"G-city",
             "city":"goa",
             "hot_city":"Goa",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -358,7 +385,8 @@
             "hot_location":"Mussoorie",
             "city":"uttrakhand",
             "hot_city":"Uttrakhand",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -368,7 +396,8 @@
             "hot_location":"Jhil",
             "city":"uttrakhand",
             "hot_city":"Uttrakhand",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -378,7 +407,8 @@
             "hot_location":"Indore City",
             "city":"mp",
             "hot_city":"Madhya Pardesh",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -388,7 +418,8 @@
             "hot_location":"Shambhaji Nagar",
             "city":"mumbi",
             "hot_city":"Maharashtra",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -398,7 +429,8 @@
             "hot_location":"Inderlock",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -408,7 +440,8 @@
             "hot_location":"Laxmi Nagar",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"540"
+            "hot_reviow":"540",
+            "stars":[1,2,3,4]
 
         },
         {
@@ -418,7 +451,8 @@
             "hot_location":"Karol Bag",
             "city":"delhi",
             "hot_city":"Delhi",
-            "hot_reviow":"230"
+            "hot_reviow":"230",
+            "stars":[1,2,3,4]
 
         }
       

@@ -55,7 +55,7 @@ export const HotelView = () => {
                                                         onClick={()=>(setRating(item))}
                                                         style={{
                                                           cursor:"pointer",
-                                                          fontSize:"15px",
+                                                          fontSize:"18px",
                                                           font:"bold",
                                                           color:item<=rating?"gold":"gray"
                                                         }}

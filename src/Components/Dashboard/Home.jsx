@@ -303,7 +303,7 @@ export const Home = () => {
                                                   
                                                   Hotel_data.hotelDetails.map((item,i)=>
                                                    {
-                                                       return  item.hot_city || item.city=== newState.staylocation?<>
+                                                       return   item.city=== newState.staylocation?<>
                                                        <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
                                                             <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
                                                                  <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
@@ -342,7 +342,7 @@ export const Home = () => {
                                              {
                                                     Hotel_data.hotelDetails.map((item,i)=>{
 
-                                                       return item.city === hotelData.staylocation?<>
+                                                       return item.city === newState.staylocation?<>
                                                        <div className=' w-full  xl:h-[450px]  shadow-sm  px-2 gap-4 flex  justify-center items-center flex-col   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
                                                                  <div className=' w-full h-5/6'>
                                                                     <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
