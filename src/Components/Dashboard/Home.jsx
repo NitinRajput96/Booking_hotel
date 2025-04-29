@@ -8,7 +8,7 @@ import { MdLocationCity } from "react-icons/md";
 import { useCategory } from '../../context/Context';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
-import { list } from 'postcss';
+
 
 
 
@@ -91,12 +91,12 @@ export const Home = () => {
 
      
      useEffect(() => {
-          window.scroll(0,280)
+          window.scroll(0,20)
      }, [gridList,getallData])
      
      
     
-        console.log(hotelData.staylocation);
+        
         
 
      
@@ -303,8 +303,8 @@ export const Home = () => {
                                                   
                                                   Hotel_data.hotelDetails.map((item,i)=>
                                                    {
-                                                       return   item.city=== newState.staylocation?<>
-                                                       <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
+                                                       return   item.city === newState.staylocation?<>
+                                                       <div className=' w-11/12   xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
                                                             <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
                                                                  <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
                                                             </div>
@@ -314,7 +314,7 @@ export const Home = () => {
                                                                  <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
                                                                  <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
                                                                  <span className=' flex items-center gap-1 '><FaEye />{item.id}</span>
-                                                           </div>
+                                                           </div> 
                                                       </div>  
                                                        </>:""
                                                    }

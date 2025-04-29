@@ -34,7 +34,7 @@ export const CarvList = () => {
                 <div className=' w-full h-auto   bg-white shadow-sm rounded-md py-3 px-6 hover:shadow-lg   ' key={i}>
                        <div className=''>
                                 <span className='  text-[20px] font-bold '>{item.carName}</span>
-                                <span className=' text-[12px] text-gray-600 pl-2'>or similar larg car{item.id}</span>
+                                <span className=' text-[12px] text-gray-600 pl-2'>or similar larg car</span>
                        </div>
 
                        <div className=' w-full h-2/6  flex justify-center items-center  mt-3  '>

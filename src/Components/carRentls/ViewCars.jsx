@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import { useCategory } from '../../context/Context'
 import Cars from "../Json-data/Cars.json"
+import { useNavigate } from 'react-router-dom'
+
 
 export const ViewCars = () => {
        
          const {viewState,setViewState}=useCategory()
          const [vehical,setVehical]=useState()
+         const navigate=useNavigate()
 
          const viehcil=()=>{
               Cars.CarsandBikes.filter((item)=> item.carName===viewState?setVehical(item.vehical_type):"")
          }
 
-         console.log(vehical);
+        const morecars=()=>{
+            navigate("/carlist")
+        }
+
+        const bookcar=()=>{
+             alert("By")
+        }
          
 
          window.scroll(0,100)
@@ -30,12 +39,20 @@ export const ViewCars = () => {
                     return item.carName===viewState?<>
                         { 
                            <>
-                             <div className=' w-full h-5/6 gap-7 bg-white rounded-md shadow-sm  grid grid-rows-2 grid-flow-row justify-items-center items-center'>
-                                    <div className=' w-full  '>
-                                        <img src={item.img} className=' w-full h-full' alt="" />
+                             <div className=' w-full h-full bg-white rounded-md shadow-sm flex justify-center gap-4 items-center flex-wrap '>
+                                    <div className=' w-full h-auto  py-12   flex justify-center items-center shadow-sm '>
+                                        <img src={item.img} className=' w-full xl:h-64 xl:w-2/4' alt="" />
                                     </div>
 
-                                    <div className='w-full  h-full  mb-2  p-7 text-[13px] font-sans font-semibold text-gray-600 '>
+                                    <div  className=' w-full h-auto px-2 flex justify-between items-center'>
+                                           <button onClick={morecars} className='  w-[70px] p-[3px] hover:bg-indigo-500 hover:text-black  text-white  bg-indigo-400 font-sans font-bold text-[12px]'  >More Car</button>
+                                            <button onClick={bookcar} className='  w-[70px] p-[3px] hover:bg-indigo-500 hover:text-black  text-white  bg-indigo-400 font-sans font-bold text-[12px]'  >Book car</button>
+                                    </div>
+                                    
+                                  
+                    
+
+                                    <div className='w-full  h-auto text-[12px] p-7 font-sans font-semibold text-gray-600 '>
                                         {item.about}
                                     </div>
                              </div> 
