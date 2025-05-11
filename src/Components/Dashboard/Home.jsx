@@ -91,7 +91,7 @@ export const Home = () => {
 
      
      useEffect(() => {
-          window.scroll(0,20)
+     
      }, [gridList,getallData])
      
      

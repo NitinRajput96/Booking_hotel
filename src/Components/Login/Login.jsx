@@ -47,6 +47,11 @@ export const Login = () => {
 
                      <p className=' text-[12px] text-center mt-3'>By signing in or creating an account, you agree with our <Link className=' text-blue-500' to="#">Terms & conditions</Link> and Privacy statement</p>
 
+                     <p className=' text-[12px] text-center mt-3 px-10'>
+                        All rights reserved.
+                       Copyright (2025 by Nitn Rajput) - Bookinghotel96.netlify.app™
+                     </p>
+
                     
              </div>
 
