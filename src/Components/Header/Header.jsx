@@ -55,13 +55,14 @@ export const Header = () => {
 
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-lg text-white'><span className=' text-[22px]'><FaRegQuestionCircle /></span></Link>
               <Link className=' border px-2   rounded-md  text-white hover:bg-indigo-500 max-md:hidden'>List your property</Link>
-              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white max-sm:hidden'>Register</Link>
+              <Link to="login" className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white max-sm:hidden'>Register</Link>
               <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white  max-sm:hidden'>Sign in</Link>
          </div>
 
             <div className=' flex justify-center items-center gap-4 px-3 ' >
                   <div className=' flex justify-center items-center  text-lg text-white py-2 sm:hidden'>
-                        <FaRegUserCircle /> 
+                  <Link to="login"><FaRegUserCircle /> </Link>
+                        
                   </div>
                   <div className=' flex justify-center items-center  text-lg text-white py-2'>
                   <FaListCheck onClick={()=>{setState(!state)}}/>

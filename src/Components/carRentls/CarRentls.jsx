@@ -159,7 +159,7 @@ export const CarRentls = () => {
                   </form> 
 
 
-                  <form onSubmit={carRentlFunction} className='  absolute left-24 right-24 top-[278px] h-auto bg-yellow-500 rounded-md max-md:p-2 p-[2px] flex justify-center  max-lg:flex-wrap flex-nowrap max-md:gap-2 gap-1   max-lg:hidden  '>    
+                  <form onSubmit={carRentlFunction} className='  absolute left-24 right-24 top-[278px] h-auto bg-yellow-500 rounded-md max-md:p-2 p-[4px] flex justify-center  max-lg:flex-wrap flex-nowrap max-md:gap-2 gap-1   max-lg:hidden  '>    
                         <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                              <div className='w-9 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></div>
                              <div className=' w-full h-full flex flex-col py-2'>
