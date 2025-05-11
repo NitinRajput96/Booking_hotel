@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from "../Json-data/logo.json"
 
 
 export const Login = () => {
@@ -29,17 +30,17 @@ export const Login = () => {
                      </div>
 
                      <div className=' w-full h-24  mt-3 mb-3 flex justify-center gap-7 items-center '>
-                         <div className=' w-16 h-16 border p-5 justify-center items-center rounded-sm'>
-                             <img src="public/images/google.png" height="100%" width="100%" alt="" />
-                         </div>
+                        {
+                            logo.logos.map((item,i)=>{
+                                return(
+                                    <div className=' w-20 h-20 border  p-7 justify-center items-center rounded-sm'>
+                                     <img src={item.img} className=' w-full h-full' alt="" />
+                                    </div>
 
-                          <div className=' w-16 h-16 border flex  p-2 justify-center items-center rounded-sm'>
-                             <img src="public/images/apple.png" height="100%" width="100%" alt="" />
-                         </div>
-
-                          <div className=' w-16 h-16 border p-5 justify-center items-center rounded-sm'>
-                             <img src="public/images/facbookl.webp" height="100%" width="100%" alt="" />
-                         </div>
+                                )
+                            })
+                        }
+                       
                      </div>
 
                      <hr />
