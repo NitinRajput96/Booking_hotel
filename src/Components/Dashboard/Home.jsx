@@ -133,7 +133,7 @@ export const Home = () => {
 
          {/* searching hotels  start */}
 
-         <form onSubmit={getallData} className=' absolute left-3 right-3 top-80    max-md:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  sm:hidden  '>    
+         <form onSubmit={getallData} className=' absolute left-3 right-3 top-80     max-md:h-[262px] bg-yellow-500 rounded-md max-sm: p-[2px] flex justify-center max-lg:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  sm:hidden  '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
                      <input className=' w-full text-[18px] font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
@@ -187,7 +187,7 @@ export const Home = () => {
 
 
 
-          <form onSubmit={getallData} className='absolute  md:left-24 md:right-24 top-[278px]    max-sm:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-sm:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  max-sm:hidden  '>    
+          <form onSubmit={getallData} className='absolute  md:left-24 md:right-24 top-[278px]     max-sm:h-[262px] bg-yellow-500 rounded-md max-sm:p-2 p-[2px] flex justify-center max-sm:flex-wrap  flex-nowrap  max-md:gap-2 gap-0.5  max-sm:hidden  '>    
                 <div className='w-full h-14 rounded-md flex justify-center items-center  bg-white '>
                      <span className='w-8 text-black text-md  font-semibold h-5/6 flex justify-center items-center'><IoSearchOutline/></span>
                      <input className=' w-full text-[18px]    font-sans font-bold outline-none' type="text" name='staylocation' onChange={(e)=>handler(e)} placeholder=' Location'  />
