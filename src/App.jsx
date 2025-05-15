@@ -11,6 +11,7 @@ import { CarvList } from "./Components/carRentls/CarvList"
 import { ViewCars } from "./Components/carRentls/ViewCars"
 import { HotelView } from "./Components/Dashboard/HotelView"
 import { Login } from "./Components/Login/Login"
+import { Myaccount } from "./Components/Login/Myaccount"
 
 
 
@@ -34,7 +35,8 @@ function App() {
           <Route path="carlist" element={<CarvList/>}/>
           <Route path="carview" element={<ViewCars/>}/>
           <Route path="hotelview" element={<HotelView/>}/>
-           <Route path="login" element={<Login/>}/>
+          <Route path="login" element={<Login/>}/>
+          <Route path="myaccount" element={<Myaccount/>}/>
          
          
          
