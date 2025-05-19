@@ -187,7 +187,7 @@ export const Dashboard = () => {
                        
         </div>
 
-        <div className=' w-full  h-auto bg-gray-100 pt-12  max-sm:pt-[300px]  '>
+        <div className=' w-full  h-auto bg-gray-100 pt-12  max-sm:pt-[280px]  '>
               <div className=' w-full h-auto flex justify-center bg-white '>
                       <div className=' w-11/12 px-10  h-auto text-left'>
                             <h1 className=' text-lg font-bold '>Offers</h1>
