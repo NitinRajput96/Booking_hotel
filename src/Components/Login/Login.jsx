@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from "../Json-data/logo.json"
 import toast, { Toaster } from 'react-hot-toast'
+
 
 
 
 export const Login = () => {
 
            const [email,setEmail]=useState({email:""})
+           const  naviii=useNavigate()
           
 
            const handler=(e)=>{
@@ -24,9 +26,13 @@ export const Login = () => {
                  else{
                     toast.success("Login Successfully")
                     e.target.reset()
+                   naviii("/")
+                      
                    
                  }
            }
+
+        
            useEffect(() => {
               
            }, [getEmail])
