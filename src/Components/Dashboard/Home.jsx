@@ -255,7 +255,7 @@ export const Home = () => {
             </div> */}
 
 
-            <div  className=' w-full max-sm:mt-[250px]  sm:mt-10 h-full flex justify-center items-center flex-col  max-lg:px-2    '>
+            <div  className=' w-full max-sm:mt-[260px]  sm:mt-10 h-full flex justify-center items-center flex-col  max-lg:px-2    '>
                               <div className='  max-sm:w-11/12 w-[86%]  h-12 flex justify-between items-center py-2'>
                                     <div className=' w-auto h-full flex justify-center items-center gap-2 font-semibold underline'>
                                         <Link  to="" >About</Link>

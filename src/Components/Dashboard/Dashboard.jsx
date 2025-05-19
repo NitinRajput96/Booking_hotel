@@ -8,6 +8,9 @@ import { MdLocationCity } from "react-icons/md";
 import { useCategory } from '../../context/Context';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaIndianRupeeSign } from "react-icons/fa6";
+import { LiaRupeeSignSolid } from "react-icons/lia";
+
 
 export const Dashboard = () => {
 
@@ -80,7 +83,7 @@ export const Dashboard = () => {
 
     <>
      <Toaster/>
-           <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row  m-0 border-none     '>
+           <div className='w-full h-auto grid grid-cols-1  xl:grid-cols-7 grid-flow-row  m-0 border-none    '>
                 <div className=' w-full h-44 xl:col-span-7 flex flex-wrap justify-center items-cente pt-3 bg-indigo-600 '>
 
                     <div className=' max-lg:w-full h-auto w-11/12  lg:px-10  px-4   '>
@@ -180,137 +183,56 @@ export const Dashboard = () => {
                                      <button type='submit' className=' w-full h-12 text-[12px] sm:text-[20px] outline-none  font-semibold text-white font-sans' >Search</button>
                                 </div>
                           </form>
+
+                       
+        </div>
+
+        <div className=' w-full  h-[1000px] bg-gray-100 pt-12 sm:pt[250px]  '>
+              <div className=' w-full h-auto flex justify-center bg-white '>
+                      <div className=' w-11/12 px-10  h-auto text-left'>
+                            <h1 className=' text-lg font-bold '>Offers</h1>
+                            <p className=' text-gray-600'> Promotions, deals and special offers for you</p>
+                      </div>
+              </div>
+
+
+               <div className=' w-full h-auto flex justify-center items-center    bg-white '>
+                      <div className='w-[85%] h-[500px]  pt-4   overflow-scroll overflow-y-hidden  flex justify-center  gap-2 items-center  flex-col flex-wrap  '>
+                             {
+                                Hotel_data.hotelDetails.map((item,i)=>
+                              
+                                         <div className='  w-[280px] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg '>
+                                            <div className=' w-full h-2/4'>
+                                                <img src={item.img} className=' w-[100%] shadow-lg rounded-t-lg  h-[100%]  ' alt="" />
+                                            </div>
+                                            <div className=' w-full h-[50%] p-2'>
+                                               <h1 className=' text-md font-bold'>{item.hote_name}</h1>
+                                               <p className=' text-gray-500 text-sm font-semibold  font-mono'>{item.hot_location},{item.hot_city}</p>
+                                               <p className=' text-xs font-semibold text-gray-500'>Review score {item.hot_reviow}</p>
+                                               <p className=' h-[50%] gap-3 text-sm flex justify-end items-center mt-14'>2 nights <span className=' text-xs text-red-600  flex justify-center items-center'><LiaRupeeSignSolid/>1999</span> <FaIndianRupeeSign/>{1900}</p>
+                                            </div>
+                                         </div>   
+                                   
+                                     
+                                      )
+                                
+                             }
+                             
+                             
+                                                  
+                      </div>
+               </div>
+
+
+
+
+
+         
         </div>
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div  className=' w-full h-20  mt-[210px]'></div>
-                               gridList===true?
-                              
-                                   {/* <div className=' max-sm:w-full w-[86%] h-screen max-lg:h-full flex justify-between items-center gap-2 xl:gap-5  max-xl:flex-col   '>
-
-
-                                              <div className=' w-[25%] border h-full bg-gray-100  rounded-md'>
-                                             
-                                             </div>
-
-
-
-                                             <div className=' w-full xl:w-[75%]  rounded-md h-full bg-gray-100 flex justify-evenly items-center flex-col xl:overflow-auto'>
-
-                                             <div className=' w-full h-auto  gap-2 flex justify-center flex-wrap items-center    bg-slate-50  '>
-                                             {
-                                                  
-                                                  Hotel_data.hotelDetails.map((item,i)=>
-                                                       <div className=' w-11/12  xl:h-56 shadow-sm  h-36  px-2 gap-4 flex  justify-center items-center   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
-                                                            <div className='w-44 h-5/6 xl:w-2/5  xl:h-5/6'>
-                                                                 <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
-                                                            </div>
-                                                            <div className=' h-5/6 xl:h-5/6  w-52 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
-                                                                 <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
-                                                                 <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
-                                                                 <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
-                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
-                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.id}</span>
-                                                            </div>
-                                                  </div>  
-                                                  )
-                                             
-                                             }
-                                        </div>  
-
-                                        </div>
-
-                                        </div>:"" */}
-                                  
-                              
-
-                              /* Normal List */
-                              
-                                   gridList===false? 
-                                        {/* <div className=' w-full  xl:w-[86%] h-screen max-lg:h-full flex justify-between items-center gap-2 lg:gap-5  max-xl:flex-col   '>
-                                            <div className=' w-[25%] border h-full bg-gray-100  rounded-md max-sm:hidden'>        
-                                             </div>
-
-                                             <div className=' w-full xl:w-[75%]  rounded-md h-full bg-gray-100 flex justify-evenly items-center flex-col flex-wrap xl:overflow-auto'>
-
-                                             <div className=' w-full h-auto grid max-[400px]:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 justify-items-center items-center gap-2 px-2   bg-gray-50  '>
-                                             {
-                                                    Hotel_data.hotelDetails.map((item,i)=>
-                                                       <div className=' w-full  xl:h-[450px]  shadow-sm  px-2 gap-4 flex  justify-center items-center flex-col   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
-                                                            <div className=' w-full h-5/6'>
-                                                                 <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
-                                                            </div>
-                                                            <div className=' h-5/6 xl:h-5/6  w-52 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
-                                                                 <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
-                                                                 <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
-                                                                 <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
-                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.hot_reviow}</span>
-                                                                 <span className=' flex items-center gap-1 '><FaEye />{item.id}</span>
-                                                            </div>
-                                                  </div>  
-                                                  )
-                                             }
-                                        </div>  
-
-                                        </div>
-                                        </div>:""
-                               */}
+                            
     </>
   )
 }
