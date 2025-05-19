@@ -187,7 +187,7 @@ export const Dashboard = () => {
                        
         </div>
 
-        <div className=' w-full  h-[1000px] bg-gray-100 pt-12  max-sm:mt-80  '>
+        <div className=' w-full  h-auto bg-gray-100 pt-12  max-sm:pt-[400px]  '>
               <div className=' w-full h-auto flex justify-center bg-white '>
                       <div className=' w-11/12 px-10  h-auto text-left'>
                             <h1 className=' text-lg font-bold '>Offers</h1>
@@ -196,12 +196,12 @@ export const Dashboard = () => {
               </div>
 
 
-               <div className=' w-full h-auto flex justify-center items-center    bg-white '>
+               <div className=' w-full h-auto flex justify-center items-center    bg-white mb-14 '>
                       <div className=' max-sm:w-full sm:w-[85%] h-[500px]  pt-4   overflow-scroll overflow-y-hidden  flex justify-center  gap-2 items-center  flex-col flex-wrap  '>
                              {
                                 Hotel_data.hotelDetails.map((item,i)=>
                               
-                                         <div className=' max-sm:w-full  sm:w-[280px] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg '>
+                                         <div className=' max-sm:w-11/12  sm:w-[280px] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg '>
                                             <div className=' w-full h-2/4'>
                                                 <img src={item.img} className=' w-[100%] shadow-lg rounded-t-lg  h-[100%]  ' alt="" />
                                             </div>
