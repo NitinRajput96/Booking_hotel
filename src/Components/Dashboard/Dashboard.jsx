@@ -189,7 +189,7 @@ export const Dashboard = () => {
 
         <div className=' w-full  h-auto bg-gray-100 pt-12  max-sm:pt-[280px]  '>
               <div className=' w-full h-auto flex justify-center bg-white '>
-                      <div className=' w-11/12 px-10  h-auto text-left'>
+                      <div className=' w-11/12 px-10 max-sm:px-2  h-auto text-left'>
                             <h1 className=' text-lg font-bold '>Offers</h1>
                             <p className=' text-gray-600'> Promotions, deals and special offers for you</p>
                       </div>
