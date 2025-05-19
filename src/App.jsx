@@ -12,6 +12,7 @@ import { ViewCars } from "./Components/carRentls/ViewCars"
 import { HotelView } from "./Components/Dashboard/HotelView"
 import { Login } from "./Components/Login/Login"
 import { Myaccount } from "./Components/Login/Myaccount"
+import { Dashboard } from "./Components/Dashboard/Dashboard"
 
 
 
@@ -27,9 +28,10 @@ function App() {
         <Header/>
         <Routes>
 
-          <Route path="/" element={<Home/>} />
+          <Route path="search" element={<Home/>} />
           <Route path="contact" element={<Contact/>} />
           <Route path="about" element={<About/>} />
+           <Route path="/" element={<Dashboard/>} />
           <Route path="hotels" element={<Hotels/>} />
           <Route path="carsrentl" element={<CarRentls/>} />
           <Route path="carlist" element={<CarvList/>}/>

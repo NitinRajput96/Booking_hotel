@@ -126,7 +126,7 @@ export const Header = () => {
 
 
 
-     <div className=' w-full h-auto    bg-indigo-600 flex justify-center  py-2 border   '>
+     <div className=' w-full h-auto    bg-indigo-600 flex justify-center  py-2   '>
           <div className=' w-11/12 h-auto md:h-12  bg-indigo-600  flex justify-start items-center min-[450]:gap-4 gap-2 flex-wrap '>
             <Link to="/"         className=' px-[5px] py-[5px]  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
             <Link to="contact"   className=' px-[5px] py-[5px]  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
