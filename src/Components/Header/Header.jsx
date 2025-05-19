@@ -54,9 +54,9 @@ export const Header = () => {
                  }</Link>
 
               <Link className=' w-12   hover:bg-indigo-500 hover:rounded-md h-11  flex justify-center items-center text-lg text-white'><span className=' text-[22px]'><FaRegQuestionCircle /></span></Link>
-              <Link className=' border px-2   rounded-md  text-white hover:bg-indigo-500 max-md:hidden'>List your property</Link>
-              <Link to="login" className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white max-sm:hidden'>Register</Link>
-              <Link className=' w-auto px-2  hover:bg-indigo-50 hover:rounded-md   rounded-md flex justify-center items-center text-indigo-600 font-sans bg-white  max-sm:hidden'>Sign in</Link>
+              <Link className='  px-2 py-1   rounded-md  text-white hover:bg-indigo-500 max-md:hidden'>List your property</Link>
+              <Link to="login"  className=' text-sm w-auto px-3 py-[5px]  hover:bg-indigo-50 hover:rounded-md   rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white font-semibold max-sm:hidden'>Register</Link>
+              <Link to="login"  className=' text-sm w-auto px-3 py-[5px]  hover:bg-indigo-50 hover:rounded-md   rounded-md  flex justify-center items-center  text-indigo-600 font-sans bg-white font-semibold max-sm:hidden'>Sign in</Link>
          </div>
 
             <div className=' flex justify-center items-center gap-4 px-3 ' >
@@ -128,12 +128,12 @@ export const Header = () => {
 
      <div className=' w-full h-auto  m-0 border-none     bg-indigo-600 flex justify-center   '>
          <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center py-4 min-[450]:gap-4 gap-2 flex-wrap '>
-            <Link to="/" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
-            <Link to="contact" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
-            <Link to="about" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
-            <Link to="carsrentl" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><FaCar/>Car rentals</Link>
-            <Link to="hotels" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
-            <Link to="/" className='  py-1 px-2 sm:py-[1px] sm:[1px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:border  gap-1 text-white  rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
+            <Link to="/"         className='  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
+            <Link to="contact"   className='  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
+            <Link to="about"     className='  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
+            <Link to="carsrentl" className='  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><FaCar/>Car rentals</Link>
+            <Link to="hotels"    className='  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
+            <Link to="/"         className='  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
          </div>
      </div>
 
