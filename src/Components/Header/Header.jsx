@@ -127,7 +127,7 @@ export const Header = () => {
 
 
      <div className=' w-full h-auto    bg-indigo-600 flex justify-center    '>
-          <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center  min-[450]:gap-4 gap-2 flex-wrap '>
+          <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center  min-[450]:gap-4 gap-1 flex-wrap '>
             <Link to="/"         className=' px-2 py-2  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
             <Link to="contact"   className=' px-2 py-2  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
             <Link to="about"     className=' px-2 py-2  sm:py-[6px] sm:px-[8px] max-[450px]:text-[12px] flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
