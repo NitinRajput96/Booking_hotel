@@ -201,7 +201,7 @@ export const Dashboard = () => {
                              {
                                 Hotel_data.hotelDetails.map((item,i)=>
                               
-                                         <div className=' max-[639px]:w-10/12  max-sm:px-2 sm:w-[280px] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg '>
+                                         <div className=' max-[639px]:w-10/12  max-sm:pl-4 sm:w-[280px] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg '>
                                             <div className=' w-full h-2/4'>
                                                 <img src={item.img} className=' w-[100%] shadow-lg rounded-t-lg  h-[100%]  ' alt="" />
                                             </div>
