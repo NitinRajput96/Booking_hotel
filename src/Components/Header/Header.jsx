@@ -34,9 +34,9 @@ export const Header = () => {
 
   return (
    <>
-    <div className=' w-full  h-[70px]     m-0 border-none  flex justify-center items-center  bg-indigo-600  z-10 '>
+    <div className=' w-full  h-[70px]    m-0 border-none  flex justify-center items-center  bg-indigo-600  z-10 '>
           
-    <div className='  max-[450px]:px-2  w-11/12 h-full   bg-indigo-600  flex  justify-between items-center border-b '>
+    <div className='  max-[450px]:px-2  w-11/12 h-full   bg-indigo-600  flex  justify-between items-center border-b  '>
          
          {/* logo */}
          <div className=' max-sm:w-3/7 sm:w-40   lg:text-lg lg:font-bold px-2 text-white rounded-md font-semibold'>
@@ -126,14 +126,14 @@ export const Header = () => {
 
 
 
-     <div className=' w-full h-auto  m-0 border-none     bg-indigo-600 flex justify-center   '>
-         <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center py-4 min-[450]:gap-4 gap-2 flex-wrap '>
-            <Link to="/"         className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
-            <Link to="contact"   className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
-            <Link to="about"     className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
-            <Link to="carsrentl" className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><FaCar/>Car rentals</Link>
-            <Link to="hotels"    className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
-            <Link to="/"         className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500 max-md:hidden  gap-1 text-white  rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
+     <div className=' w-full h-auto    bg-indigo-600 flex justify-center    '>
+          <div className=' w-11/12 md:h-16  bg-indigo-600  flex justify-start items-center py- min-[450]:gap-4 gap-2 flex-wrap '>
+            <Link to="/"         className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' onClick={()=>setSearchItems(false)} ><MdNightsStay/>Stays</Link>
+            <Link to="contact"   className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><PiAirplaneTakeoffLight/>Flights</Link>
+            <Link to="about"     className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><LiaHotelSolid/>Flights + Hotel</Link>
+            <Link to="carsrentl" className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><FaCar/>Car rentals</Link>
+            <Link to="hotels"    className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><MdOutlineAttractions/>Attractions</Link>
+            <Link to="/"         className=' px-2 py-1  sm:py-[6px] sm:px-[6px] max-[450px]:text-[12px] max-[450px]:px-1 flex justify-center items-center   hover:bg-indigo-500   gap-1 text-white  rounded-lg ' ><MdOutlineLocalTaxi/>Airport taxis</Link>
          </div>
      </div>
 
