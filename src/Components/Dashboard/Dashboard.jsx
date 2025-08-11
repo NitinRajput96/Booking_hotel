@@ -10,6 +10,8 @@ import toast, { Toaster } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { LiaRupeeSignSolid } from "react-icons/lia";
+import CategoryByImg from "../Json-data/Category.json"
+import Item from 'antd/es/list/Item';
 
 
 export const Dashboard = () => {
@@ -186,6 +188,22 @@ export const Dashboard = () => {
 
                        
         </div>
+
+        {/* categorys */}
+          
+               <div className=' w-full h-32  mt-32'>
+                  {
+                    CategoryByImg.category.map((item,i)=>{
+                          <>
+                              <img src={item.id} className=' w-11 h-10' alt="" />
+                          </>
+                    })
+                  }
+
+
+               </div>
+
+        {/* category end */}
 
         <div className=' w-full  h-auto bg-gray-100 pt-12  max-sm:pt-[280px]  '>
               <div className=' w-full h-auto flex justify-center bg-white '>

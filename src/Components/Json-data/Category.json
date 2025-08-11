@@ -1,0 +1,32 @@
+{
+    "category":[
+        {
+           "id":1,
+           "img":"/categoryimg/aagra.jpg" 
+        },
+         {
+           "id":2,
+           "img":"/categoryimg/delhi.jpeg" 
+        },
+         {
+           "id":3,
+           "img":"/categoryimg/indore.webp" 
+        },
+         {
+           "id":4,
+           "img":"/categoryimg/mumbi.jpeg" 
+        },
+         {
+           "id":5,
+           "img":"/categoryimg/ujjan.webp" 
+        },
+         {
+           "id":1,
+           "img":"/categoryimg/uttarpradesh.jpg" 
+        },
+         {
+           "id":1,
+           "img":"/categoryimg/uttrakhand.webp" 
+        }
+    ]
+}
