@@ -246,13 +246,13 @@ export const Dashboard = () => {
 
 
 
-        <div className=' w-full h-44  flex justify-center items-center'>
+        {/* <div className=' w-full h-44  flex justify-center items-center'>
               {
                CateByImg.categoryofstate.map((item)=>{
                     <p className=' text-lg text-center text-black'>{item.id}</p>
                })
               }
-        </div>
+        </div> */}
  
 
 
