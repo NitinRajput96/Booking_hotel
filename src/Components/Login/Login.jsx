@@ -9,7 +9,7 @@ import toast, { Toaster } from 'react-hot-toast'
 export const Login = () => {
 
            const [email,setEmail]=useState({email:""})
-           const  naviii=useNavigate()
+          const navigateH=useNavigate()
           
 
            const handler=(e)=>{
@@ -25,8 +25,9 @@ export const Login = () => {
                  }
                  else{
                     toast.success("Login Successfully")
+                    navigateH("/")
                     e.target.reset()
-                   naviii("/")
+                   
                       
                    
                  }

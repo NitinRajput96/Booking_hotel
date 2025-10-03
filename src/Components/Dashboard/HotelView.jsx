@@ -42,7 +42,7 @@ export const HotelView = () => {
             Hotel_data.hotelDetails.map((item,i)=>{
                 return item.hote_name===catagory?<>
                  <div className=' w-full h-full  p-1' key={i} >
-                     <div className=' w-full h-auto flex  justify-between items-center mt-2 mb-4'>
+                     <div className=' w-full h-auto flex  justify-between items-center mt-2 lg:px-4 mb-4'>
                                   <span className=' flex justify-center items-center  gap-[.5px]'>
                                   {
                                     item.stars!=null?
@@ -81,11 +81,15 @@ export const HotelView = () => {
                                 
                               </div>
                          
-                        <div className=' w-full h-auto  text-lg   font-bold '>{item.hote_name}</div>
-                            <div className=' w-full h-3/6 flex justify-center items-center '>
+                        <div className=' w-full h-auto  text-lg  shadow-sm mb-2  p-3 lg:p-5 flex justify-between items-center   font-bold '>{item.hote_name}</div>
+                           <div className='  w-full h-auto  text-lg shadow-md p-2  lg:flex justify-center items-center'>
+                                 <div className=' w-full lg:w-[50%] h-3/6 flex justify-center items-center '>
                                   <img src={item.img} className=' w-full h-full rounded-md  shadow' alt="" />
-                            </div>
-                            <div className=' w-full h-3/6' ></div>
+                                  </div>
+                                  <div className=' w-full lg:w-[50%] border border-2 h-3/6' >
+
+                                  </div>
+                           </div>
                      </div>
                 </>:""
             })

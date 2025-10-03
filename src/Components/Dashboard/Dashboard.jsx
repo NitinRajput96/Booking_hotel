@@ -9,9 +9,10 @@ import { useCategory } from '../../context/Context';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaIndianRupeeSign } from "react-icons/fa6";
-import { LiaRupeeSignSolid } from "react-icons/lia";
-import CategoryByImg from "../Json-data/Category.json"
-import Item from 'antd/es/list/Item';
+import { LiaCreativeCommonsSamplingPlus, LiaRupeeSignSolid } from "react-icons/lia";
+import CateByImg from "../Json-data/Category.json"
+
+
 
 
 export const Dashboard = () => {
@@ -74,10 +75,24 @@ export const Dashboard = () => {
       
      }
 
+
+     const sendData=(item)=>{
+            setCatagory(item)
+            navigateH("/hotelview")
+            console(item)
+
+     }
+
      
      useEffect(() => {
      
      }, [0])
+
+
+ 
+     console.log(CateByImg.categoryofstate.map((item)=>(item.img)));
+     
+     
      
      
     
@@ -189,22 +204,6 @@ export const Dashboard = () => {
                        
         </div>
 
-        {/* categorys */}
-          
-               <div className=' w-full h-32  mt-32'>
-                  {
-                    CategoryByImg.category.map((item,i)=>{
-                          <>
-                              <img src={item.id} className=' w-11 h-10' alt="" />
-                          </>
-                    })
-                  }
-
-
-               </div>
-
-        {/* category end */}
-
         <div className=' w-full  h-auto bg-gray-100 pt-12  max-sm:pt-[280px]  '>
               <div className=' w-full h-auto flex justify-center bg-white '>
                       <div className='  max-sm:w-ful w-11/12 px-10 max-sm:px-2  h-auto text-left'>
@@ -219,7 +218,7 @@ export const Dashboard = () => {
                              {
                                 Hotel_data.hotelDetails.map((item,i)=>
                               
-                                         <div className=' max-[639px]:w-[78%]   sm:w-[280px] max-sm:h-[75%] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg '>
+                                         <div className=' max-[639px]:w-[78%]   sm:w-[280px] max-sm:h-[75%] h-[95%]  flex  items-center flex-wrap  rounded-t-lg shadow-lg ' onClick={()=>{sendData(item.hote_name)}}>
                                             <div className=' w-full h-2/4'>
                                                 <img src={item.img} className=' w-[100%] shadow-lg rounded-t-lg  h-[100%]  ' alt="" />
                                             </div>
@@ -239,13 +238,20 @@ export const Dashboard = () => {
                              
                                                   
                       </div>
-               </div>
+               </div>         
+        </div>
 
 
 
 
 
-         
+
+        <div className=' w-full h-44  flex justify-center items-center'>
+              {
+               CateByImg.categoryofstate.map((item)=>{
+                    <p className=' text-lg text-center text-black'>{item.id}</p>
+               })
+              }
         </div>
  
 

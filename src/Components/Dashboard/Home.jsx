@@ -330,11 +330,12 @@ export const Home = () => {
                                                     Hotel_data.hotelDetails.map((item,i)=>{
 
                                                        return item.city === newState.staylocation?<>
-                                                       <div className=' w-full  xl:h-[450px]  shadow-sm  px-2 gap-4 flex  justify-center items-center flex-col   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
+                                                       <div className=' w-full  xl:h-[320px]  shadow-sm my-2  px-2 gap-4 flex  justify-center items-center flex-col   rounded-md bg-white ' onClick={()=>{itemCatagory(item.hote_name)}} key={i}>
                                                                  <div className=' w-full h-5/6'>
                                                                     <img className=' w-full h-full  border rounded-md   ' src={item.img} alt="" />
                                                                  </div>
-                                                                 <div className=' h-5/6 xl:h-5/6  w-52 xl:w-3/5 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
+
+                                                                 <div className=' w-full h-5/6 font-serif text-[11px] xl:text-sm font-semibold flex flex-wrap  flex-col '>
                                                                       <span className=' flex items-center gap-1'><RiHotelLine /> {item.hote_name} </span>
                                                                       <span className=' flex items-center gap-1'><MdLocationCity /> {item.hot_city}</span>
                                                                       <span className=' flex items-center gap-1 '><IoLocationSharp /> {item.hot_location} </span>
